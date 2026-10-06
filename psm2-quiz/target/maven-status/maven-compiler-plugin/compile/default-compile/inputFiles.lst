@@ -1,0 +1,9 @@
+/Users/vincentleroy/psm2-quiz/src/main/java/Main.java
+/Users/vincentleroy/psm2-quiz/src/main/java/application/QuizRunner.java
+/Users/vincentleroy/psm2-quiz/src/main/java/domain/model/Choice.java
+/Users/vincentleroy/psm2-quiz/src/main/java/domain/model/Question.java
+/Users/vincentleroy/psm2-quiz/src/main/java/domain/model/QuestionListWrapper.java
+/Users/vincentleroy/psm2-quiz/src/main/java/domain/service/QuizService.java
+/Users/vincentleroy/psm2-quiz/src/main/java/infrastructure/file/JsonQuestionProvider.java
+/Users/vincentleroy/psm2-quiz/src/main/java/infrastructure/file/JsonQuestionRepository.java
+/Users/vincentleroy/psm2-quiz/src/main/java/infrastructure/file/QuestionProvider.java

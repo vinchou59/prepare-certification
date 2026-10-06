@@ -1,0 +1,1286 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "How does Kanban for Scrum Teams maximize value delivered?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "By optimizing the flow of value.",
+          "isCorrect": true,
+          "explanation": "Optimizing flow of value directly answers how Kanban increases delivered value by reducing delays between start and finish."
+        },
+        {
+          "label": "B",
+          "text": "By minimizing transaction costs.",
+          "isCorrect": false,
+          "explanation": "Transaction costs are not mentioned in the question and are not the primary value mechanism in Kanban."
+        },
+        {
+          "label": "C",
+          "text": "By choosing higher-value items to deliver.",
+          "isCorrect": false,
+          "explanation": "Choosing items is a Product Backlog concern, not how Kanban itself maximizes value."
+        },
+        {
+          "label": "D",
+          "text": "By minimizing time spent in meetings/events.",
+          "isCorrect": false,
+          "explanation": "Reducing meetings is not how Kanban increases value delivery."
+        },
+        {
+          "label": "E",
+          "text": "By enabling tighter empirical feedback loops via faster Cycle Times.",
+          "isCorrect": true,
+          "explanation": "Faster Cycle Times improve feedback loops, which increases value delivered sooner."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "In which of these situations should the Scrum Team adjust their Work in Progress (WIP) Limits?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "When they see that the average story size they are working on is growing.",
+          "isCorrect": false,
+          "explanation": "Story size growth does not directly indicate a need to change WIP Limits."
+        },
+        {
+          "label": "B",
+          "text": "When they have extra capacity during the Sprint and want to start some new work items from the Sprint Backlog.",
+          "isCorrect": false,
+          "explanation": "Extra capacity alone is not a valid reason to increase WIP."
+        },
+        {
+          "label": "C",
+          "text": "When they want to improve their Cycle Time, flow, and focus.",
+          "isCorrect": true,
+          "explanation": "WIP Limits are adjusted specifically to improve flow, focus, and Cycle Time."
+        },
+        {
+          "label": "D",
+          "text": "When there is unplanned urgent work that emerges during the Sprint.",
+          "isCorrect": false,
+          "explanation": "Urgent work should be managed within existing limits, not by changing them reactively."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which metric makes most sense to look at during Sprint Planning?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Service Level Expectation.",
+          "isCorrect": false,
+          "explanation": "SLE is about expectations, not planning how much work to take."
+        },
+        {
+          "label": "B",
+          "text": "Work in Progress.",
+          "isCorrect": false,
+          "explanation": "Current WIP does not indicate future delivery capacity."
+        },
+        {
+          "label": "C",
+          "text": "Throughput.",
+          "isCorrect": true,
+          "explanation": "Throughput reflects how much work the team typically finishes and supports forecasting."
+        },
+        {
+          "label": "D",
+          "text": "Work Item Aging.",
+          "isCorrect": false,
+          "explanation": "Work Item Aging is used during execution, not planning."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Little's Law states that:\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Average Cycle Time = Average Work in Progress / Average Throughput.",
+          "isCorrect": true,
+          "explanation": "This formula is the correct expression of Little’s Law."
+        },
+        {
+          "label": "B",
+          "text": "Average Throughput = Average Cycle Time * Average Work in Progress.",
+          "isCorrect": false,
+          "explanation": "This formula is mathematically incorrect."
+        },
+        {
+          "label": "C",
+          "text": "Average Work in Progress = Average Cycle Time / Average Throughput.",
+          "isCorrect": false,
+          "explanation": "This formula inverts Little’s Law incorrectly."
+        },
+        {
+          "label": "D",
+          "text": "Average Throughput = Average Cycle Time / Average Work in Progress.",
+          "isCorrect": false,
+          "explanation": "This formula does not represent Little’s Law."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "When is the most appropriate time for Scrum Teams practicing professional Scrum with Kanban to inspect and adapt their Work in Progress (WIP) Limits?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "During the Sprint Retrospective.",
+          "isCorrect": false,
+          "explanation": "WIP Limits are not restricted to a single Scrum event."
+        },
+        {
+          "label": "B",
+          "text": "Anytime the Developers see fit.",
+          "isCorrect": true,
+          "explanation": "Developers can inspect and adapt WIP Limits whenever flow requires it."
+        },
+        {
+          "label": "C",
+          "text": "Never. Once set, WIP Limits cannot be modified.",
+          "isCorrect": false,
+          "explanation": "WIP Limits are explicitly meant to evolve over time."
+        },
+        {
+          "label": "D",
+          "text": "Every day during Daily Scrum.",
+          "isCorrect": false,
+          "explanation": "Daily Scrum is not the only moment to adjust WIP."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "A Scrum Team’s service level expectation (SLE) is an input into the various Scrum events. In which event will SLE provide the most benefit towards maintaining good flow?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Sprint Planning.",
+          "isCorrect": false,
+          "explanation": "Sprint Planning uses SLE indirectly but does not actively manage flow."
+        },
+        {
+          "label": "B",
+          "text": "Sprint Retrospective.",
+          "isCorrect": false,
+          "explanation": "Retrospectives inspect past performance rather than daily flow."
+        },
+        {
+          "label": "C",
+          "text": "Daily Scrum.",
+          "isCorrect": true,
+          "explanation": "Daily Scrum uses SLE to detect aging work and flow risks early."
+        },
+        {
+          "label": "D",
+          "text": "Sprint Review.",
+          "isCorrect": false,
+          "explanation": "Sprint Review focuses on product feedback, not flow management."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "You still need a Scrum Master when applying Kanban practices in the Scrum framework.\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Always.",
+          "isCorrect": true,
+          "explanation": "Scrum roles remain unchanged when Kanban practices are added."
+        },
+        {
+          "label": "B",
+          "text": "It Depends.",
+          "isCorrect": false,
+          "explanation": "Kanban does not remove the accountability of the Scrum Master."
+        },
+        {
+          "label": "C",
+          "text": "Never.",
+          "isCorrect": false,
+          "explanation": "Scrum Master responsibilities still apply with Kanban."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the potential benefit of limiting Work in Progress (WIP)?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Shorter feedback cycles.",
+          "isCorrect": false,
+          "explanation": "Limiting WIP shortens feedback loops by finishing work sooner."
+        },
+        {
+          "label": "B",
+          "text": "More sustainable pace of work.",
+          "isCorrect": false,
+          "explanation": "Lower WIP reduces overloading and supports sustainable pace."
+        },
+        {
+          "label": "C",
+          "text": "Faster realization of value.",
+          "isCorrect": false,
+          "explanation": "Completing fewer items at once accelerates value realization."
+        },
+        {
+          "label": "D",
+          "text": "Improved collaboration.",
+          "isCorrect": false,
+          "explanation": "WIP limits encourage collaboration to finish work together."
+        },
+        {
+          "label": "E",
+          "text": "All of the answers.",
+          "isCorrect": true,
+          "explanation": "All listed effects are direct outcomes of limiting WIP."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "When using Kanban, it is useful to have explicit policies. What existing elements in the Scrum Guide might be used as explicit policies?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Definition of Done.",
+          "isCorrect": true,
+          "explanation": "Definition of Done is an explicit policy already defined in Scrum."
+        },
+        {
+          "label": "B",
+          "text": "Definition of Ready.",
+          "isCorrect": false,
+          "explanation": "Definition of Ready is not part of the Scrum Guide."
+        },
+        {
+          "label": "C",
+          "text": "Product Backlog refinement.",
+          "isCorrect": false,
+          "explanation": "Refinement is an activity, not a policy."
+        },
+        {
+          "label": "D",
+          "text": "All of the above.",
+          "isCorrect": false,
+          "explanation": "Not all listed items are explicit Scrum policies."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Which of the following metrics are likely to be reviewed during flow-based Daily Scrum?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Process control chart and Scrum Team’s 85th percentile.",
+          "isCorrect": false,
+          "explanation": "Process control charts are not reviewed daily."
+        },
+        {
+          "label": "B",
+          "text": "Velocity.",
+          "isCorrect": false,
+          "explanation": "Velocity is not a flow metric."
+        },
+        {
+          "label": "C",
+          "text": "Cycle Time.",
+          "isCorrect": false,
+          "explanation": "Cycle Time trends are not typically inspected daily."
+        },
+        {
+          "label": "D",
+          "text": "Work Item Age.",
+          "isCorrect": true,
+          "explanation": "Work Item Age highlights flow risks in progress."
+        },
+        {
+          "label": "E",
+          "text": "Lead Time.",
+          "isCorrect": false,
+          "explanation": "Lead Time includes backlog time, not daily flow."
+        },
+        {
+          "label": "F",
+          "text": "Work in Progress (WIP).",
+          "isCorrect": true,
+          "explanation": "WIP directly reflects current flow constraints."
+        },
+        {
+          "label": "G",
+          "text": "Throughput.",
+          "isCorrect": false,
+          "explanation": "Throughput is reviewed over time, not daily."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "How do Work in Progress (WIP) Limits relate to self-management?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "WIP Limits inhibit self-management since they limit the team's autonomy to pull work.",
+          "isCorrect": false,
+          "explanation": "Reducing variability is not the primary intent of WIP limits in this question."
+        },
+        {
+          "label": "B",
+          "text": "As part of self-managing, Scrum Teams figure out their own WIP Limits.",
+          "isCorrect": true,
+          "explanation": "WIP limits directly control how many items are started at the same time."
+        },
+        {
+          "label": "C",
+          "text": "WIP Limits provide a boundary/container in which the Scrum Team self-manages.",
+          "isCorrect": true,
+          "explanation": "Prioritization is handled separately and is not what WIP limits address."
+        },
+        {
+          "label": "D",
+          "text": "A Scrum Master defines a WIP Limit to help the Scrum Team self-manage.",
+          "isCorrect": false,
+          "explanation": "Predictability improves indirectly but is not the direct mechanism described."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "True or False: The Scrum framework already contains elements that create a pull system.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True",
+          "isCorrect": true,
+          "explanation": "Lead Time includes waiting before work starts, which matches the definition asked."
+        },
+        {
+          "label": "B",
+          "text": "False",
+          "isCorrect": false,
+          "explanation": "Cycle Time excludes backlog waiting, so it does not fully match the question."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "True or False: When the Developers add Kanban to Scrum, the way they use the Sprint Goal during their Daily Scrum changes.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True",
+          "isCorrect": false,
+          "explanation": "Daily tracking of finished work does not describe forecasting."
+        },
+        {
+          "label": "B",
+          "text": "False",
+          "isCorrect": true,
+          "explanation": "Throughput data is explicitly used to forecast future delivery."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "True or False: Little's Law is used to forecast a Scrum Team’s output.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True",
+          "isCorrect": true,
+          "explanation": "Explicit policies describe how work is handled, which matches the question."
+        },
+        {
+          "label": "B",
+          "text": "False",
+          "isCorrect": false,
+          "explanation": "Technical design decisions are not workflow policies."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "The Cycle Time metric for a certain Work Item cannot be used:\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "As a leading indicator to the length of the feedback loop for that Work Item.",
+          "isCorrect": true,
+          "explanation": "Visualizing workflow makes blocked work immediately visible."
+        },
+        {
+          "label": "B",
+          "text": "To help the Scrum Team inspect and adapt their process.",
+          "isCorrect": false,
+          "explanation": "Visualization does not replace planning activities."
+        },
+        {
+          "label": "C",
+          "text": "As a lagging indicator to the length of the feedback loop for that Work Item.",
+          "isCorrect": false,
+          "explanation": "Visibility supports collaboration rather than individual optimization."
+        },
+        {
+          "label": "D",
+          "text": "To influence the team’s SLE.",
+          "isCorrect": false,
+          "explanation": "The goal is transparency, not reporting compliance."
+        },
+        {
+          "label": "E",
+          "text": "To help the Developers inspect and adapt their Sprint in the Daily Scrum.",
+          "isCorrect": true,
+          "explanation": "This answer aligns with the Kanban Guide for Scrum Teams principles and demonstrates correct application of Kanban within the Scrum framework."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "What is the best use for the Work Item Aging metric?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "As an indicator of the Work Item size.",
+          "isCorrect": false,
+          "explanation": "Daily Scrum focuses on inspecting current progress, not historical averages."
+        },
+        {
+          "label": "B",
+          "text": "To help the Developers inspect and adapt their Sprint in the Daily Scrum.",
+          "isCorrect": true,
+          "explanation": "Work Item Age highlights items at risk during the current Sprint."
+        },
+        {
+          "label": "C",
+          "text": "To influence the Scrum Team’s SLE.",
+          "isCorrect": false,
+          "explanation": "Velocity is not a Kanban flow metric."
+        },
+        {
+          "label": "D",
+          "text": "As a leading indicator to the length of the feedback loop for that Work Item.",
+          "isCorrect": true,
+          "explanation": "Cycle Time trends are analyzed over time, not daily execution."
+        },
+        {
+          "label": "E",
+          "text": "To help the Scrum Team inspect and adapt their process and Definition of Workflow in their Retrospective.",
+          "isCorrect": false,
+          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "What should the Developers do if, during the Sprint, the Product Owner asks them to add an urgent unplanned work item that aligns to the Sprint Goal but does not fit into the current Work in Progress (WIP) Limits?\n(choose the two best answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Reject the urgent item since the WIP Limits do not allow it. Tell the Product Owner to wait until the next Sprint.",
+          "isCorrect": false,
+          "explanation": "Limiting WIP forces finishing work before starting new items."
+        },
+        {
+          "label": "B",
+          "text": "Add the urgent item to their Sprint Backlog but only start working on it when their WIP Limits allow it.",
+          "isCorrect": true,
+          "explanation": "WIP limits do not increase multitasking."
+        },
+        {
+          "label": "C",
+          "text": "Take on the urgent item as an exception to the WIP Limits and visualize that they are above their WIP Limit.",
+          "isCorrect": false,
+          "explanation": "The intent is smoother flow, not higher individual utilization."
+        },
+        {
+          "label": "D",
+          "text": "Adjust the WIP Limits to allow for taking on the extra item and record it as part of their Definition of Workflow.",
+          "isCorrect": false,
+          "explanation": "Quality improves as a consequence, not the direct mechanism."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "What might a Scrum Team visualize with Kanban?\n(choose the best three answers)",
+      "expectedAnswers": 3,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The Product Backlog.",
+          "isCorrect": true,
+          "explanation": "Service Level Expectation expresses probabilistic delivery expectations."
+        },
+        {
+          "label": "B",
+          "text": "The Sprint Backlog.",
+          "isCorrect": true,
+          "explanation": "Commitments are different from statistical expectations."
+        },
+        {
+          "label": "C",
+          "text": "The Sprint Retrospective.",
+          "isCorrect": false,
+          "explanation": "SLE is not a guarantee, but an expectation based on data."
+        },
+        {
+          "label": "D",
+          "text": "The Definition of Done.",
+          "isCorrect": true,
+          "explanation": "SLE focuses on time, not cost."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "What qualitative information can you get from a Cycle Time Scatterplot?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "General Cycle Time trends.",
+          "isCorrect": false,
+          "explanation": "Cumulative Flow Diagrams show WIP, throughput, and bottlenecks."
+        },
+        {
+          "label": "B",
+          "text": "Single Cycle Time outliers.",
+          "isCorrect": false,
+          "explanation": "Burn‑down charts are not flow‑based metrics."
+        },
+        {
+          "label": "C",
+          "text": "Clusters of Cycle Time outliers.",
+          "isCorrect": false,
+          "explanation": "Individual task tracking does not show system flow."
+        },
+        {
+          "label": "D",
+          "text": "All of the answers.",
+          "isCorrect": true,
+          "explanation": "Financial reports do not visualize workflow."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Which of the following are leading indicator metrics?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Monte Carlo.",
+          "isCorrect": false,
+          "explanation": "Throughput reflects how many items are completed per time period."
+        },
+        {
+          "label": "B",
+          "text": "Cycle Time.",
+          "isCorrect": false,
+          "explanation": "Cycle Time measures duration, not volume."
+        },
+        {
+          "label": "C",
+          "text": "Work in Progress.",
+          "isCorrect": true,
+          "explanation": "Lead Time includes waiting and is not about rate."
+        },
+        {
+          "label": "D",
+          "text": "Service Level Expectation.",
+          "isCorrect": false,
+          "explanation": "Work Item Age is about ongoing work, not completed output."
+        },
+        {
+          "label": "E",
+          "text": "Work Item Aging.",
+          "isCorrect": true,
+          "explanation": "This answer aligns with the Kanban Guide for Scrum Teams principles and demonstrates correct application of Kanban within the Scrum framework."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "When can a Work in Progress (WIP) Limit change?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Only during Sprint Planning.",
+          "isCorrect": false,
+          "explanation": "Starting all items at once increases parallel work rather than answering the question about flow improvement."
+        },
+        {
+          "label": "B",
+          "text": "Only during the Daily Scrum.",
+          "isCorrect": false,
+          "explanation": "Limiting started items directly addresses flow by reducing congestion."
+        },
+        {
+          "label": "C",
+          "text": "It never changes.",
+          "isCorrect": false,
+          "explanation": "Changing priorities does not explain how flow is improved."
+        },
+        {
+          "label": "D",
+          "text": "At any time.",
+          "isCorrect": true,
+          "explanation": "Team size does not describe a flow mechanism."
+        },
+        {
+          "label": "E",
+          "text": "When the Product Owner decides to change it.",
+          "isCorrect": false,
+          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+        },
+        {
+          "label": "F",
+          "text": "Only during the Sprint Retrospective.",
+          "isCorrect": false,
+          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "True or False: If you reduce your batch size, your overall efficiency will always increase.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True",
+          "isCorrect": false,
+          "explanation": "A CFD shows accumulation of work, which is what the question asks about."
+        },
+        {
+          "label": "B",
+          "text": "False",
+          "isCorrect": true,
+          "explanation": "Velocity does not visualize work states over time."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Which statements best describe the purpose of a Scrum Team’s Definition of Workflow?\n(choose the best three answers)",
+      "expectedAnswers": 3,
+      "choices": [
+        {
+          "label": "A",
+          "text": "It provides a mutual understanding of when the work is considered to be started and finished.",
+          "isCorrect": true,
+          "explanation": "Work Item Age measures how long an item has been in progress, which answers the question."
+        },
+        {
+          "label": "B",
+          "text": "It creates transparency over the Work in Progress (WIP) limiting rules.",
+          "isCorrect": true,
+          "explanation": "Throughput measures completed items, not aging."
+        },
+        {
+          "label": "C",
+          "text": "It defines how value flows through the system.",
+          "isCorrect": true,
+          "explanation": "Lead Time includes waiting before start, not in-progress aging."
+        },
+        {
+          "label": "D",
+          "text": "It makes handoff policies explicit by defining clear quality gates between the development stages.",
+          "isCorrect": false,
+          "explanation": "Story points do not measure time."
+        },
+        {
+          "label": "E",
+          "text": "It is used as a checklist of all the states that every work item should go through before it is considered to be done.",
+          "isCorrect": false,
+          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+        },
+        {
+          "label": "F",
+          "text": "It helps Service Request Manager track the percent completeness of a work item.",
+          "isCorrect": false,
+          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "True or False: The Definition of Done still applies even if policies are explicitly stated at each column of your Workflow.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True",
+          "isCorrect": true,
+          "explanation": "Explicit policies define how work moves through the workflow."
+        },
+        {
+          "label": "B",
+          "text": "False",
+          "isCorrect": false,
+          "explanation": "Implicit rules are the opposite of what the question targets."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "A service level expectation (SLE) consists of which two items?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "A forecasted date.",
+          "isCorrect": false,
+          "explanation": "SLE communicates expected delivery time, which matches the question."
+        },
+        {
+          "label": "B",
+          "text": "A period of elapsed days.",
+          "isCorrect": true,
+          "explanation": "A fixed deadline is not probabilistic."
+        },
+        {
+          "label": "C",
+          "text": "A probability.",
+          "isCorrect": true,
+          "explanation": "Capacity planning does not describe customer expectations."
+        },
+        {
+          "label": "D",
+          "text": "A cost of delay.",
+          "isCorrect": false,
+          "explanation": "SLE is not a guarantee."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "In the context of Scrum, which of the following statements about Cycle Time are true?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cycle Time for some Product Backlog items might be longer than a length of Sprint.",
+          "isCorrect": true,
+          "explanation": "Inspecting WIP helps detect flow problems early."
+        },
+        {
+          "label": "B",
+          "text": "Average Cycle Time should be shorter than a length of Sprint.",
+          "isCorrect": true,
+          "explanation": "Cost tracking does not address flow."
+        },
+        {
+          "label": "C",
+          "text": "Cycle Time should be exactly the length of a Sprint.",
+          "isCorrect": false,
+          "explanation": "Individual performance is not the focus of flow metrics."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Within the same Kanban system, Work in Progress (WIP), is NOT a leading indicator for:\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Throughput.",
+          "isCorrect": false,
+          "explanation": "Reducing batch size shortens feedback loops."
+        },
+        {
+          "label": "B",
+          "text": "Cycle Time.",
+          "isCorrect": false,
+          "explanation": "Batch size does not increase parallelism."
+        },
+        {
+          "label": "C",
+          "text": "Story points delivered.",
+          "isCorrect": true,
+          "explanation": "Large batches delay learning."
+        },
+        {
+          "label": "D",
+          "text": "Number of Product Backlog items finished in a Sprint.",
+          "isCorrect": false,
+          "explanation": "Batch size is not about utilization."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "What does it mean when a Scrum Team chooses to communicate an 85% 5-day service level expectation (SLE)?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "In the last Sprint the team has been able to complete 85% of Product Backlog items within 5 days of starting work on the item.",
+          "isCorrect": false,
+          "explanation": "Daily review of blocked items supports flow recovery."
+        },
+        {
+          "label": "B",
+          "text": "The team promises to have 85% of all Product Backlog items done within 5 days.",
+          "isCorrect": false,
+          "explanation": "Ignoring blockers contradicts the question intent."
+        },
+        {
+          "label": "C",
+          "text": "The team expects they will complete a work item within 5 days of when they start working on it 85% of the time.",
+          "isCorrect": true,
+          "explanation": "Retrospectives are not daily flow controls."
+        },
+        {
+          "label": "D",
+          "text": "The team can get any critical system backup within 5 days.",
+          "isCorrect": false,
+          "explanation": "Reporting does not remove blockers."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Some Kanban implementations prescribe the practice of implementing feedback loops. The Kanban Guide for Scrum Teams does not include that practice. Why?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Kanban boards become an official Scrum feedback loop in a Scrum with Kanban environment.",
+          "isCorrect": false,
+          "explanation": "Throughput stability supports predictability."
+        },
+        {
+          "label": "B",
+          "text": "A Scrum Team must devise and design their own feedback loops through an inspection and adaptation process.",
+          "isCorrect": false,
+          "explanation": "Individual estimates do not reflect system behavior."
+        },
+        {
+          "label": "C",
+          "text": "There are five feedback loops in Scrum. The Kanban Guide for Scrum Teams builds upon the Scrum guide. There is no need to explicitly add that practice.",
+          "isCorrect": true,
+          "explanation": "Scope commitments do not explain predictability."
+        },
+        {
+          "label": "D",
+          "text": "There is no need to implement feedback loops in Kanban. Feedback loops only apply at the enterprise level.",
+          "isCorrect": false,
+          "explanation": "Tool choice does not impact predictability."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "What are the four key flow metrics in Scrum with Kanban?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Work in Progress (WIP), Velocity, Lead Time, Cycle Time.",
+          "isCorrect": false,
+          "explanation": "Visualizing workflow makes bottlenecks observable."
+        },
+        {
+          "label": "B",
+          "text": "Velocity, Lead Time, Cycle Time, Cost.",
+          "isCorrect": false,
+          "explanation": "Hidden work cannot reveal bottlenecks."
+        },
+        {
+          "label": "C",
+          "text": "Throughput, Work in Progress (WIP), Velocity, Lead Time.",
+          "isCorrect": false,
+          "explanation": "Planning sessions do not visualize flow."
+        },
+        {
+          "label": "D",
+          "text": "Work in Progress (WIP), Work Item Age, Throughput, Cycle Time.",
+          "isCorrect": true,
+          "explanation": "Email communication does not expose bottlenecks."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Which of the following are flow metrics needed when doing Scrum with Kanban?\n(choose the best four answers)",
+      "expectedAnswers": 4,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Work in Progress (WIP).",
+          "isCorrect": true,
+          "explanation": "Work in Progress (WIP) is a required flow metric because it shows how much work is currently started and not finished."
+        },
+        {
+          "label": "B",
+          "text": "Throughput.",
+          "isCorrect": true,
+          "explanation": "Throughput is required because it measures how many items finish per time period, which supports flow-based forecasting."
+        },
+        {
+          "label": "C",
+          "text": "CFD.",
+          "isCorrect": false,
+          "explanation": "A CFD is a chart, not a flow metric; it visualizes metrics like WIP and throughput rather than being one itself."
+        },
+        {
+          "label": "D",
+          "text": "Lead Time.",
+          "isCorrect": false,
+          "explanation": "Lead Time is useful, but it is not one of the required flow metrics in Scrum with Kanban for this question."
+        },
+        {
+          "label": "E",
+          "text": "Work Item Age.",
+          "isCorrect": true,
+          "explanation": "Work Item Age is required because it highlights how long an in-progress item has been active and helps spot flow risks early."
+        },
+        {
+          "label": "F",
+          "text": "Cycle Time.",
+          "isCorrect": true,
+          "explanation": "Cycle Time is required because it measures how long work takes from start to finish once it begins."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Which of these statements about Sprints and Kanban is NOT correct?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The Sprint is an example of an explicit policy for how a team is working.",
+          "isCorrect": false,
+          "explanation": "A Sprint can be treated as an explicit policy because it defines a clear rule for how the team timeboxes work and review."
+        },
+        {
+          "label": "B",
+          "text": "The Sprint is an example of a cadence.",
+          "isCorrect": false,
+          "explanation": "A Sprint is a cadence because it repeats on a regular rhythm (fixed-length timeboxes)."
+        },
+        {
+          "label": "C",
+          "text": "The Sprint is an example of limiting Work in Progress (WIP).",
+          "isCorrect": false,
+          "explanation": "A Sprint acts like a WIP limit by constraining how much work can be taken on within the Sprint timebox."
+        },
+        {
+          "label": "D",
+          "text": "A Scrum Team will eventually stop using Sprints if they correctly implement Kanban.",
+          "isCorrect": true,
+          "explanation": "Scrum with Kanban does not remove Sprints; Kanban practices are additive and do not require stopping Sprint timeboxes."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "question": "What are possible benefits of supplementing Scrum with Kanban practices?\n(choose the best four answers)",
+      "expectedAnswers": 4,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Allows teams to release multiple times a Sprint.",
+          "isCorrect": true,
+          "explanation": "Releasing multiple times a Sprint is enabled by focusing on flow and finishing work in smaller slices instead of batching until the end."
+        },
+        {
+          "label": "B",
+          "text": "May reduce the average Cycle Time.",
+          "isCorrect": true,
+          "explanation": "Reducing average Cycle Time is a direct benefit of improving flow and reducing delays between start and finish."
+        },
+        {
+          "label": "C",
+          "text": "May result in greater collaboration within the Scrum Team.",
+          "isCorrect": false,
+          "explanation": "Greater collaboration can happen because teams often swarm to finish work and respect WIP limits instead of working in isolation."
+        },
+        {
+          "label": "D",
+          "text": "May help to discover areas of variability within your Sprint.",
+          "isCorrect": true,
+          "explanation": "Kanban practices can reveal variability within a Sprint by making flow patterns visible through metrics and charts."
+        },
+        {
+          "label": "E",
+          "text": "Introduces better transparency into state of Work in Progress (WIP).",
+          "isCorrect": true,
+          "explanation": "Transparency of Work in Progress (WIP) improves because the workflow and item states are explicitly visualized."
+        },
+        {
+          "label": "F",
+          "text": "Scrum Teams no longer need the Sprint time box.",
+          "isCorrect": false,
+          "explanation": "Scrum with Kanban keeps the Sprint timebox; Kanban does not replace Scrum’s timeboxed cadence."
+        },
+        {
+          "label": "G",
+          "text": "Removes the need for the Sprint Planning event.",
+          "isCorrect": false,
+          "explanation": "Sprint Planning is still needed in Scrum; Kanban practices do not remove Scrum events."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "question": "True or False: The primary effect of limiting Work in Progress (WIP) is that it creates a pull system.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True",
+          "isCorrect": true,
+          "explanation": "Limiting WIP is what enables pull because new work is started only when capacity is freed by finishing existing work."
+        },
+        {
+          "label": "B",
+          "text": "False",
+          "isCorrect": false,
+          "explanation": "A pull system depends on limiting WIP; without WIP limits, work can be pushed regardless of available capacity."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Which of the following statements about supplementing Scrum with Kanban practices is true?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "It applies primarily to maintenance type of work.",
+          "isCorrect": false,
+          "explanation": "Scrum with Kanban can apply to any type of work; it is not limited to maintenance-only contexts."
+        },
+        {
+          "label": "B",
+          "text": "It implies that the Scrum Team must have a sequential approach to work.",
+          "isCorrect": false,
+          "explanation": "Kanban does not require a sequential approach; workflow states can reflect how work actually flows in the team."
+        },
+        {
+          "label": "C",
+          "text": "It encourages team collaboration/swarming.",
+          "isCorrect": true,
+          "explanation": "Kanban encourages collaboration/swarming because keeping WIP within limits often requires people to help finish work together."
+        },
+        {
+          "label": "D",
+          "text": "Scrum Teams may choose to skip the Sprint Planning event.",
+          "isCorrect": false,
+          "explanation": "Sprint Planning remains a Scrum event; adding Kanban practices does not make it optional to skip."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "question": "What is Kanban?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "A methodology aimed at visualizing your Workflow for effectiveness and enhance productivity within the team.",
+          "isCorrect": false,
+          "explanation": "Visualizing workflow alone is not enough; Kanban is defined by optimizing flow using a WIP-limited pull system."
+        },
+        {
+          "label": "B",
+          "text": "A strategy for optimizing the flow of value through a process that uses a visual, Work in Progress (WIP) limited pull system.",
+          "isCorrect": true,
+          "explanation": "This matches the definition: Kanban is a strategy to optimize flow of value using visualization and a WIP-limited pull system."
+        },
+        {
+          "label": "C",
+          "text": "A set of practices that are additive to the Scrum framework.",
+          "isCorrect": false,
+          "explanation": "Kanban is not defined as “a set of practices additive to Scrum”; it exists as a broader strategy that Scrum teams can adopt."
+        },
+        {
+          "label": "D",
+          "text": "None of the above.",
+          "isCorrect": false,
+          "explanation": "Because option B is a correct definition of Kanban, “None of the above” cannot be correct."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Which of these statements are true about Kanban and the Scrum theory of empiricism?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The Kanban board provides Scrum Teams with transparency that helps them inspect and adapt their process.",
+          "isCorrect": true,
+          "explanation": "A Kanban board increases transparency by making work states visible, which supports inspection and adaptation."
+        },
+        {
+          "label": "B",
+          "text": "Kanban metrics are used in the Sprint Review to allow the Product Owner to inspect the Throughput and adapt the Scrum Team’s Cycle Time.",
+          "isCorrect": false,
+          "explanation": "Throughput and Cycle Time are mainly used to manage flow; Sprint Review focuses on product outcomes, not on adapting the team’s Cycle Time."
+        },
+        {
+          "label": "C",
+          "text": "Kanban helps Scrum Teams deal with simple and complicated work where empiricism is not necessary.",
+          "isCorrect": false,
+          "explanation": "Kanban is valuable when work is complex and benefits from empiricism; it is not specifically for cases “where empiricism is not necessary.”"
+        },
+        {
+          "label": "D",
+          "text": "Kanban helps Scrum Teams achieve faster, healthier flow. That brings more rapid transparency about the product, enabling a more effective inspection and adaptation loop.",
+          "isCorrect": true,
+          "explanation": "Faster, healthier flow makes product progress visible sooner, tightening the inspection-and-adaptation loop central to empiricism."
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Which of these are typically included in the Definition of Workflow policies?\n(choose the best six answers)",
+      "expectedAnswers": 6,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Gantt chart.",
+          "isCorrect": false,
+          "explanation": "A Gantt chart is a scheduling artifact, not a typical workflow policy in the Definition of Workflow."
+        },
+        {
+          "label": "B",
+          "text": "Work Item types.",
+          "isCorrect": true,
+          "explanation": "Work Item types are commonly part of workflow policies because they define what kinds of work move through the workflow."
+        },
+        {
+          "label": "C",
+          "text": "Service Level Expectations.",
+          "isCorrect": true,
+          "explanation": "Service Level Expectations are workflow policies because they set explicit expectations about how quickly items should be completed."
+        },
+        {
+          "label": "D",
+          "text": "Burndown chart.",
+          "isCorrect": false,
+          "explanation": "A Burndown chart is a Scrum progress chart, not a Definition of Workflow policy."
+        },
+        {
+          "label": "E",
+          "text": "WIP limits.",
+          "isCorrect": true,
+          "explanation": "WIP limits are workflow policies because they explicitly constrain how much work can be in progress in a state."
+        },
+        {
+          "label": "F",
+          "text": "The Increment.",
+          "isCorrect": false,
+          "explanation": "The Increment is a Scrum artifact, not a workflow policy definition."
+        },
+        {
+          "label": "G",
+          "text": "Definition of Done.",
+          "isCorrect": true,
+          "explanation": "Definition of Done is a policy that clarifies when work is complete, which fits into workflow policies."
+        },
+        {
+          "label": "H",
+          "text": "Pull/prioritization policies.",
+          "isCorrect": true,
+          "explanation": "Pull/prioritization policies are workflow policies because they define how work is selected and pulled into the system."
+        },
+        {
+          "label": "I",
+          "text": "Visualization policies.",
+          "isCorrect": true,
+          "explanation": "Visualization policies are workflow policies because they define how the workflow and states are represented on the board."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "question": "True or False: Limiting Work in Progress (WIP) will likely reduce the amount of collaboration in the Scrum Team.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True",
+          "isCorrect": false,
+          "explanation": "If WIP is limited, teams often collaborate more (swarm) to finish work, so collaboration is not likely to reduce."
+        },
+        {
+          "label": "B",
+          "text": "False",
+          "isCorrect": true,
+          "explanation": "Limiting WIP typically increases collaboration because people help each other complete items before starting new ones."
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "question": "What might be considered during the Sprint Retrospective once a team decides to supplement their Scrum with Kanban?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Workflow.",
+          "isCorrect": false,
+          "explanation": "Workflow is a key topic because the team may need to adjust workflow states and handoffs after adopting Kanban practices."
+        },
+        {
+          "label": "B",
+          "text": "Current policies.",
+          "isCorrect": false,
+          "explanation": "Current policies matter because explicit policies (like pull rules) may need inspection and adaptation in the Retrospective."
+        },
+        {
+          "label": "C",
+          "text": "WIP Limit.",
+          "isCorrect": false,
+          "explanation": "WIP Limit is considered because it directly affects flow and may need tuning based on what the team learned."
+        },
+        {
+          "label": "D",
+          "text": "Metrics and charts such as Cumulative Flow Diagram, Cycle Time Scatterplot, and Work Item Aging.",
+          "isCorrect": false,
+          "explanation": "Metrics and charts (CFD, Cycle Time Scatterplot, Work Item Aging) are reviewed to understand flow behavior and improvement opportunities."
+        },
+        {
+          "label": "E",
+          "text": "All of the answers.",
+          "isCorrect": true,
+          "explanation": "All of these can be inspected in the Retrospective because workflow, policies, WIP limits, and flow metrics jointly drive flow outcomes."
+        }
+      ]
+    }
+  ]
+}

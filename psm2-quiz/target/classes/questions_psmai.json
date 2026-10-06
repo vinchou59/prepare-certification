@@ -1,0 +1,314 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "A city’s public chatbot is found to be providing inaccurate compliance advice to small business owners. To restore trust with the public and mitigate legal risk, how should you resolve the concern about inaccurate responses?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Restrict the chatbot to high-level summaries to obscure limitations from the public",
+          "isCorrect": false,
+          "explanation": "This reduces usefulness without addressing accuracy or accountability. Obscuring limitations undermines transparency and can further damage public trust."
+        },
+        {
+          "label": "B",
+          "text": "Rely on user reports to identify errors instead of implementing proactive monitoring.",
+          "isCorrect": false,
+          "explanation": "This is reactive and leaves incorrect guidance in place until someone reports it. Lack of monitoring increases ongoing legal and reputational risk."
+        },
+        {
+          "label": "C",
+          "text": "Adjust the model's settings to allow for more creative and helpful-sounding responses.",
+          "isCorrect": false,
+          "explanation": "Increasing creativity typically increases the risk of fabricated or unsupported content. That directly worsens the inaccuracy problem and related compliance risk."
+        },
+        {
+          "label": "D",
+          "text": "Ground responses in policy sources, add disclaimers, and provide a human hand-off path.",
+          "isCorrect": true,
+          "explanation": "Grounding ties answers to authoritative sources, reducing hallucinations and improving auditability. Disclaimers and human escalation set proper expectations and limit harm when uncertainty exists."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "As the Developers begin integrating AI into their workflow, they seek to ensure that the Increment remains transparent and high-quality according to the Scrum Framework. They ask how to capture the use of AI in the Definition of Done. What should the Scrum Team consider?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Only note that ‘AI was used’ but do not offer any details about how it was used.",
+          "isCorrect": false,
+          "explanation": "Lack of detail reduces transparency and makes it harder to verify quality and compliance. The Definition of Done should enable clear understanding of what was done to meet the quality bar."
+        },
+        {
+          "label": "B",
+          "text": "Adapt the Definition of Done with transparency about AI contribution.",
+          "isCorrect": true,
+          "explanation": "The Definition of Done exists to make quality and completeness transparent for every Increment. If AI affects how work is produced or verified, the Scrum Team can update the DoD so the outcome remains inspectable."
+        },
+        {
+          "label": "C",
+          "text": "Skip documentation to stay agile. Rely on the logs of the AI tool as the official record of compliance.",
+          "isCorrect": false,
+          "explanation": "Agility does not remove the need for transparency and a shared, explicit quality standard. Tool logs are not a Scrum artifact and are insufficient as a Definition of Done for inspection."
+        },
+        {
+          "label": "D",
+          "text": "Keep a private checklist of the AI prompts used by the Scrum Master.",
+          "isCorrect": false,
+          "explanation": "The Definition of Done is a shared standard for the whole Scrum Team, not a private list owned by one role. Making it private undermines transparency and consistent application."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "As Scrum Teams begin to responsibly integrate AI into their daily work, which statement reflects\nhow AI should impact the Scrum accountabilities?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The Scrum Guide requires that AI generated contributions be documented, so that\nthe Scrum Master maintains all legal accountability.",
+          "isCorrect": false,
+          "explanation": "The Scrum Guide does not include requirements about documenting AI-generated work or assigning legal accountability to the Scrum Master. Scrum accountabilities are not about transferring legal responsibility to one person."
+        },
+        {
+          "label": "B",
+          "text": "AI changes how accountabilities are fulfilled, some activities become AI-augmented\nor AI-assisted, while others remain purely human.",
+          "isCorrect": true,
+          "explanation": "Accountabilities remain with the Scrum Team, but tools like AI can support how the work is done. Responsible use means humans still make key decisions and remain accountable for outcomes."
+        },
+        {
+          "label": "C",
+          "text": "AI shifts accountability for quality from the Scrum Team to the automated verification\ntools and algorithms.",
+          "isCorrect": false,
+          "explanation": "In Scrum, the Scrum Team remains accountable for quality and the Definition of Done, regardless of which tools are used. Tools can help verify quality but cannot hold accountability."
+        },
+        {
+          "label": "D",
+          "text": "AI replaces several Scrum accountabilities, by automating the conversion of\nstakeholder input into code, making most Scrum Team roles unnecessary.",
+          "isCorrect": false,
+          "explanation": "Scrum accountabilities (Product Owner, Scrum Master, Developers) remain necessary to maximize value, facilitate Scrum, and create a usable Increment. Automation does not remove the need for these human accountabilities and decisions."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Why does Deep Learning generally outperform classic Machine Learning for complex\nmultimodal tasks like image and text analysis?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Deep Learning operates through rules rather than data-driven training.",
+          "isCorrect": false,
+          "explanation": "Deep Learning primarily learns patterns from data via training, not from hand-crafted rules. Rule-based systems typically struggle to generalize across complex, noisy inputs like images and text."
+        },
+        {
+          "label": "B",
+          "text": "Deep Learning uses layered neural networks that learn hierarchical features.",
+          "isCorrect": true,
+          "explanation": "Stacked layers can automatically learn increasingly abstract representations, which is effective for images and language. This reduces reliance on manual feature engineering and improves performance on unstructured data."
+        },
+        {
+          "label": "C",
+          "text": "Deep Learning uses shallower architectures and reduced parameter counts for\n  efficiency.",
+          "isCorrect": false,
+          "explanation": "Deep Learning commonly leverages deeper models with many parameters to capture complex relationships. Efficiency is not the main reason it outperforms classic ML on multimodal tasks."
+        },
+        {
+          "label": "D",
+          "text": "Classic Machine Learning scales better when processing unstructured multi-\n  dimensional data.",
+          "isCorrect": false,
+          "explanation": "Classic ML often depends on engineered features and can degrade on raw unstructured inputs at scale. Deep Learning tends to handle high-dimensional unstructured data better by learning representations directly."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "During a brainstorming session, the Scrum Team struggles with generating ideas and\norganizing their thoughts. How can AI best support the effectiveness of this brainstorming\nprocess?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cancel the brainstorming and use AI to synthesize the initial problem statement into\na solution for the Scrum Team to implement.",
+          "isCorrect": false,
+          "explanation": "This bypasses collaboration and critical thinking, which are central to effective Scrum Team discovery. AI can support ideation, but it should not replace the team’s sense-making and decision-making."
+        },
+        {
+          "label": "B",
+          "text": "Use AI to help guard the structure, suggest ideas using different personas, cluster\noutput, analyze patterns, and rapidly prototype concepts.",
+          "isCorrect": true,
+          "explanation": "This uses AI as a facilitator to expand divergent thinking and improve convergence by organizing and synthesizing outputs. It enhances speed and structure while keeping ownership of decisions with the Scrum Team."
+        },
+        {
+          "label": "C",
+          "text": "Restrict AI to capturing meeting transcripts and applying grammar correction to\nensure human ideas are not influenced by AI.",
+          "isCorrect": false,
+          "explanation": "This limits AI to administrative tasks and doesn’t address the team’s main challenge of generating and organizing ideas. Scrum benefits from tools that improve outcomes, not from avoiding influence at all costs."
+        },
+        {
+          "label": "D",
+          "text": "Rely on AI to rank ideas based on objective data to eliminate the need for team\nvoting.",
+          "isCorrect": false,
+          "explanation": "Selecting ideas requires context, trade-offs, and alignment to the Product Goal, which cannot be reduced to “objective” scoring alone. Removing team choice undermines transparency and shared commitment."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "The Developers want to improve the effectiveness of their Daily Scrum by experimenting with a\nnew format. According to the Scrum values of Focus and Openness, how can AI best support\nthis improvement?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Use AI to monitor individual speaking time and ensure every Scrum Team member\nspeaks in order.",
+          "isCorrect": false,
+          "explanation": "This optimizes compliance and equal airtime rather than focusing on progress toward the Sprint Goal. It can also reduce openness by making the event feel policed instead of collaborative."
+        },
+        {
+          "label": "B",
+          "text": "Replace the Daily Scrum with a bot that provides AI-driven status updates,\ndistributed to leadership via email.",
+          "isCorrect": false,
+          "explanation": "The Daily Scrum is for the Developers to inspect progress and adapt their plan, not to report to leadership. Replacing it undermines focus on the Sprint Goal and reduces openness within the team."
+        },
+        {
+          "label": "C",
+          "text": "Co-create with AI a safe-to-try experiment, define success criteria, and review the\nresults together.",
+          "isCorrect": true,
+          "explanation": "This supports focus by setting clear goals and measures for improving the Daily Scrum. It supports openness by making assumptions, outcomes, and learnings transparent to the team."
+        },
+        {
+          "label": "D",
+          "text": "Use AI to generate Daily Scrum updates based on the movement of tickets,\neliminating the need to discuss impediments.",
+          "isCorrect": false,
+          "explanation": "Ticket movement alone doesn’t reveal impediments or coordination needs that affect achieving the Sprint Goal. Skipping impediment discussion reduces openness and weakens adaptation."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Using the exact same prompt multiple times can still create different outputs from a generative\nAI model. What is the reason for the different outputs?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "This occurs because the model automatically updates its training data after every\nuser interaction.",
+          "isCorrect": false,
+          "explanation": "Most deployed models do not retrain or update their weights after each individual user interaction. Any variation you see is not due to the training data changing in real time."
+        },
+        {
+          "label": "B",
+          "text": "This is caused by hallucination when the model reinforces incorrect answers as it\nlearns from each prompt.",
+          "isCorrect": false,
+          "explanation": "Hallucinations are incorrect outputs, not the underlying reason outputs vary with the same input. The model does not inherently “learn from each prompt” during normal use."
+        },
+        {
+          "label": "C",
+          "text": "This happens because generative AI often uses probabilistic sampling (non-\ndeterministic generation).",
+          "isCorrect": true,
+          "explanation": "Token selection is often sampled from a probability distribution, so different valid next tokens can be chosen across runs. Randomness (e.g., temperature/seed) can therefore produce different completions."
+        },
+        {
+          "label": "D",
+          "text": "This happens because the model adjusts its logic based on the user's physical\nlocation and time zone.",
+          "isCorrect": false,
+          "explanation": "Location and time zone are not fundamental inputs to the model’s reasoning unless explicitly provided or used by an external system. Output differences are primarily explained by stochastic generation settings."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "As a Product Owner, how can you most effectively use AI-transcribed customer interviews to improve your product?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Ask AI to summarize key pain points and recurring themes across multiple interviews.",
+          "isCorrect": true,
+          "explanation": "This efficiently turns large amounts of qualitative data into actionable insights you can use to refine Product Backlog ordering. You should still validate critical findings, but synthesis is the highest-value use."
+        },
+        {
+          "label": "B",
+          "text": "Manually rewatch all interviews, as AI-generated transcripts are not fully trustworthy.",
+          "isCorrect": false,
+          "explanation": "This is inefficient and delays learning; a Product Owner benefits from using AI to accelerate discovery while spot-checking accuracy where it matters. Distrust alone isn’t a reason to ignore automation."
+        },
+        {
+          "label": "C",
+          "text": "Ask the Business Analyst to read transcripts and apply their perception to the Product Backlog items.",
+          "isCorrect": false,
+          "explanation": "Backlog decisions and accountability for value belong to the Product Owner, not a proxy interpreting customer input. This increases the risk of bias and misalignment with actual customer needs."
+        },
+        {
+          "label": "D",
+          "text": "Use raw transcripts as-is to document conversations.",
+          "isCorrect": false,
+          "explanation": "Raw transcripts are low-signal and don’t directly support decisions without synthesis and analysis. The goal is to extract insights that guide outcomes, not just store documentation."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "A vendor demonstrates an autonomous AI agent capable of deploying production changes without human involvement. To ensure system stability and accountability, which prerequisite is minimally required?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Automate the rollback process to allow the agent to self-correct without generating error logs.",
+          "isCorrect": false,
+          "explanation": "Accountability requires traceability, so suppressing error logs undermines auditability. Rollback automation alone does not provide governance or oversight for production changes."
+        },
+        {
+          "label": "B",
+          "text": "Validate the agent's reliability based on a successful performance record in a single controlled trial.",
+          "isCorrect": false,
+          "explanation": "One controlled trial is insufficient evidence to trust autonomous production deployments in varied real-world conditions. Minimal prerequisites focus on controls and accountability mechanisms, not a limited performance sample."
+        },
+        {
+          "label": "C",
+          "text": "Implement guardrails, sandboxing, approvals, audit trails, and keep a human in the loop for oversight.",
+          "isCorrect": true,
+          "explanation": "These controls reduce blast radius, ensure changes are reviewed, and provide traceability for who/what did what and why. Human oversight supports accountability when production risk is high."
+        },
+        {
+          "label": "D",
+          "text": "Authorize unattended access for the AI agent only during low-traffic hours to minimize potential business impact.",
+          "isCorrect": false,
+          "explanation": "Timing restrictions may reduce immediate impact but do not ensure accountability or prevent unsafe changes. Minimal requirements include governance controls like approvals and audit trails, regardless of traffic levels."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "How is Machine Learning best characterized within the broader hierarchy of Artificial Intelligence?\n\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The stage of development where a model achieves human-level general intelligence.",
+          "isCorrect": false,
+          "explanation": "This describes Artificial General Intelligence (AGI), not Machine Learning. ML systems are typically narrow and task-specific rather than human-level across domains."
+        },
+        {
+          "label": "B",
+          "text": "A system that identifies patterns in data to improve without explicit rules.",
+          "isCorrect": true,
+          "explanation": "Machine Learning is a subset of AI that learns from data to make predictions or decisions. It improves performance by finding patterns instead of being fully programmed with explicit rules."
+        },
+        {
+          "label": "C",
+          "text": "A subset of robotics focused on the physical automation of mechanical tasks.",
+          "isCorrect": false,
+          "explanation": "Robotics concerns embodied systems and physical actuation, which is not how ML is defined in the AI hierarchy. ML can be used in robotics, but it is not a subset of robotics."
+        },
+        {
+          "label": "D",
+          "text": "A neural network that relies on hard-coded logic and \"If-Then\" rules.",
+          "isCorrect": false,
+          "explanation": "Hard-coded \"If-Then\" rules describe rule-based programming, not learning-based approaches. Neural networks learn their behavior from data rather than being explicitly defined by fixed logic rules."
+        }
+      ]
+    }
+  ]
+}
