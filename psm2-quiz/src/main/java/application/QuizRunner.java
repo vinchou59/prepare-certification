@@ -42,6 +42,11 @@ public class QuizRunner {
 		this.provider = new JsonQuestionProvider(jsonFile);
 	}
 
+	QuizRunner(QuestionProvider provider, Scanner scanner) {
+		this.scanner = scanner;
+		this.provider = provider;
+	}
+
 	public void run() throws Exception {
 		boolean retry;
 		do {
