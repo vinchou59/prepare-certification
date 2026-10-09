@@ -3,16 +3,17 @@ schema: spec-driven
 # Project context: constraints an agent cannot infer from the code.
 context: |
   Rédiger tous les artefacts OpenSpec (proposal, design, specs, tasks) en français.
-  Application personnelle d'entraînement aux certifications agiles (Scrum.org PSM II, PSPO I, PSK I, PSM-AI, CCA Agile).
-  Utilisateur unique, sur macOS ; lancée via psm2-quiz/launch_quiz.command qui démarre un serveur web local
-  (127.0.0.1 uniquement) et ouvre le navigateur. Pas de déploiement, pas de comptes, pas de réseau externe requis.
-  Stack : Java 25 (Maven, pas de framework), Jackson pour le JSON, serveur HTTP du JDK (com.sun.net.httpserver),
-  front-end en HTML/CSS/JS vanilla sans build (src/main/resources/web). Éviter d'ajouter des dépendances.
-  Architecture en couches : domain (modèle + QuizService, sans dépendance technique), infrastructure (lecture JSON),
-  application/web (serveur, API, session de quiz). La logique métier reste dans domain.
-  Les bonnes réponses et explications ne doivent jamais être envoyées au navigateur avant la correction.
-  Les questions (src/main/resources/questions_*.json) sont dans la langue de l'examen officiel (anglais pour Scrum.org, français pour CCA Agile) ; l'interface est en français.
-  Tests : JUnit 5, à faire évoluer avec chaque changement de comportement.
+  Application d'entraînement aux certifications agiles (Scrum.org PSM II, PSPO I, PSK I, PSM-AI, CCA Agile),
+  publiée comme site statique sur GitHub Pages (https://vinchou59.github.io/prepare-certification/), dépôt public.
+  Pas de serveur, pas de comptes : tout s'exécute dans le navigateur, sur ordinateur et téléphone.
+  Stack : HTML/CSS/JavaScript vanilla en modules ES, sans framework ni étape de build (dossier site/).
+  Éviter d'ajouter des dépendances ; une bibliothèque externe éventuelle est chargée à la demande, avec un repli.
+  Architecture : site/js/quiz-core.js contient la logique métier pure (tirage, correction, score), sans accès au DOM ;
+  site/js/app.js gère l'interface ; site/data/ contient certifications.json et les banques questions_*.json.
+  L'interface ne doit jamais afficher les bonnes réponses ni les explications avant la correction.
+  Les questions sont dans la langue de l'examen officiel (anglais pour Scrum.org, français pour CCA Agile) ; l'interface est en français.
+  Tests : lanceur intégré de Node.js (npm test), à faire évoluer avec chaque changement de comportement ;
+  la publication GitHub Actions est bloquée si un test échoue.
 
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.

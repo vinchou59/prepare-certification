@@ -1,0 +1,10 @@
+{
+  "name": "prepare-certification",
+  "private": true,
+  "type": "module",
+  "description": "Quiz d'entraînement aux certifications agiles (site statique)",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 8765 --directory site"
+  }
+}

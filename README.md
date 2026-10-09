@@ -1,36 +1,42 @@
 # prepare-certification
-Permet de s'entrainter aux différentes certifications (PSM, PSPO, PSK, ...)
 
-Le lancement de l'application nécessite Java 25 ou ultérieur (via `JAVA_HOME` ou `PATH`).
+Quiz d'entraînement aux certifications agiles : PSM II, PSPO I, PSK I, PSM-AI et CCA Agile.
 
-## Lancer le quiz
+**Site : https://vinchou59.github.io/prepare-certification/**
 
-```bash
-cd psm2-quiz
-mvn package          # construit target/psm2-quiz-1.0-SNAPSHOT-jar-with-dependencies.jar
-./launch_quiz.command
-```
+Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur téléphone, sans installation ni compte. Le bouton « Partager » de l'accueil affiche le lien et un QR code.
 
-L'application démarre un petit serveur local (uniquement accessible depuis votre machine) et ouvre
-l'interface dans votre navigateur, par défaut sur http://localhost:8765/.
-Pour l'arrêter : bouton « Quitter l'application » sur l'accueil, ou Ctrl+C dans le terminal.
+## Fonctionnement
 
-Deux modes de travail :
 - **Entraînement** : correction et explications après chaque question.
 - **Examen** : chronomètre, navigation libre entre les questions, correction complète à la fin.
+- Raccourcis clavier : les lettres (A, B, C…) pour répondre, Entrée pour valider, flèches gauche et droite pour naviguer.
+- `?seed=42` à la fin de l'adresse rend le tirage des questions reproductible.
 
-Raccourcis clavier pendant le quiz : les lettres (A, B, C…) pour répondre, Entrée pour valider,
-flèches gauche/droite pour naviguer.
+Les réponses ne sont affichées qu'à la correction, mais elles font partie des données du site : c'est un outil d'entraînement, pas d'examen.
 
-Options (propriétés système, à passer avant `-jar`) :
+## Organisation du dépôt
 
-| Option | Effet |
+| Dossier | Contenu |
 | --- | --- |
-| `-Dquiz.port=9000` | Port préféré (un port libre est pris s'il est occupé) |
-| `-Dquiz.noBrowser=true` | N'ouvre pas le navigateur automatiquement |
-| `-Dquiz.seed=42` | Tirage des questions reproductible |
+| `site/` | Le site publié : `index.html`, `app.css`, `js/` (interface et logique du quiz) |
+| `site/data/` | `certifications.json` et une banque `questions_*.json` par certification |
+| `tests/` | Tests de la logique du quiz et de la cohérence des banques (Node.js) |
+| `openspec/` | Specs du projet et historique des changements (OpenSpec) |
 
-## Ajouter des questions
+## Travailler en local
 
-Les questions sont dans `psm2-quiz/src/main/resources/questions_*.json`. Pour une nouvelle
-certification, ajoutez le fichier puis une entrée dans `domain/model/Certification.java`.
+```bash
+npm test     # lance les tests (Node.js 20 ou plus, aucune dépendance à installer)
+npm start    # sert le site sur http://localhost:8765/ (Python 3)
+```
+
+## Publication
+
+À chaque push sur `main`, GitHub Actions lance les tests puis publie le dossier `site/` sur GitHub Pages. Si un test échoue, par exemple une question incohérente, rien n'est publié et l'ancienne version reste en ligne.
+
+## Ajouter une certification
+
+1. Ajouter `site/data/questions_<certif>.json` (même format que les fichiers existants).
+2. Déclarer la certification dans `site/data/certifications.json` (identifiant, noms, fichier, seuil de réussite ou `null`).
+3. Lancer `npm test` : le test de cohérence signale toute question incomplète.
