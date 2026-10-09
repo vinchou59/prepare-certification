@@ -1791,38 +1791,38 @@
     },
     {
       "id": 56,
-      "question": "Your Scrum Team has been working together for over a dozen Sprints. The Scrum Team consists of 10 members. Each Sprint takes four weeks. As a Scrum Master, you observe that the Developers are hardly collaborating: during the Sprint, members are primarily working on their own items. You also notice that the items on the Sprint Backlog are mostly unrelated. You suspect that the lack of a Sprint Goal might be the cause. Although you have encouraged the use of a Sprint Goal, both the Product Owner and the Developers have concluded that they are unable to create Sprint Goals based on the wide variety of items on their Product Backlog, What might explain why this Scrum Team is struggling to craft a Sprint Goal?\n(choose all that apply)",
-      "expectedAnswers": 2,
+      "question": "Your Scrum Team has been working together for over a dozen Sprints. The Scrum Team consists of 10 members. Each Sprint takes four weeks. As a Scrum Master, you observe that the Developers are hardly collaborating: during the Sprint, members are primarily working on their own items. You also notice that the items on the Sprint Backlog are mostly unrelated. You suspect that the lack of a Sprint Goal might be the cause. Although you have encouraged the use of a Sprint Goal, both the Product Owner and the Developers have concluded that they are unable to create Sprint Goals based on the wide variety of items on their Product Backlog. What might explain why this Scrum Team is struggling to craft a Sprint Goal?\n(choose all that apply)",
+      "expectedAnswers": 3,
       "choices": [
         {
           "label": "A",
           "text": "The Scrum Team is too big",
           "isCorrect": false,
-          "explanation": "Team size alone does not explain the issue."
+          "explanation": "Ten members is within Scrum's guidance; team size is not the main cause here."
         },
         {
           "label": "B",
           "text": "Scrum might not be the best framework for the work done by this team.",
           "isCorrect": true,
-          "explanation": "If Scrum is not suitable for the team's work, it can explain the difficulty in creating a Sprint Goal."
+          "explanation": "If the work is mostly unrelated requests, another framework may suit it better."
         },
         {
           "label": "C",
           "text": "The Product Owner does not have the mandate to make decisions about items on the Product Backlog nor their ordering.",
-          "isCorrect": false,
-          "explanation": "The Product Owner\u2019s mandate does not directly affect Sprint Goal creation."
+          "isCorrect": true,
+          "explanation": "Without authority over the Product Backlog, the Product Owner cannot order it around a common objective."
         },
         {
           "label": "D",
           "text": "The Sprints are too long.",
           "isCorrect": false,
-          "explanation": "Sprint length does not necessarily impact the ability to create a Sprint Goal."
+          "explanation": "Sprint length alone does not explain the difficulty in creating a Sprint Goal."
         },
         {
           "label": "E",
           "text": "The Product Owner is not communicating the Product Goal that they want to achieve in upcoming Sprints.",
           "isCorrect": true,
-          "explanation": "Without a communicated Product Goal, it\u2019s hard to align on a Sprint Goal."
+          "explanation": "Without a communicated Product Goal, nothing ties the items together into a coherent Sprint Goal."
         }
       ]
     },
