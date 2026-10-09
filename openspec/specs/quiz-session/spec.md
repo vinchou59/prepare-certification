@@ -63,7 +63,7 @@ En mode Examen, le quiz SHALL reprendre le format de l'examen officiel de la cer
 - **THEN** un avertissement indique que 2 questions sont marquées à revoir ; « Y retourner » mène à la première d'entre elles
 
 ### Requirement: Résultats et correction
-À la fin d'un quiz, le système SHALL afficher le score, le pourcentage, la durée, le seuil de réussite s'il est connu, puis la correction détaillée de chaque question. La correction SHALL être filtrable entre les erreurs seulement et toutes les questions ; le filtre par défaut SHALL être les erreurs, sauf en cas de sans-faute. L'utilisateur SHALL pouvoir relancer un quiz avec les mêmes réglages, retravailler les questions ratées de ce quiz, ou revenir à l'accueil.
+À la fin d'un quiz, le système SHALL afficher le score, le pourcentage, la durée, le seuil de réussite s'il est connu, puis la correction détaillée de chaque question. La correction SHALL être filtrable entre les erreurs seulement et toutes les questions ; le filtre par défaut SHALL être les erreurs, sauf en cas de sans-faute. L'utilisateur SHALL pouvoir relancer un quiz avec les mêmes réglages, retravailler les questions ratées de ce quiz, ou revenir à l'accueil avec un bouton « Retour à l'accueil » affiché en rouge.
 
 #### Scenario: Sans-faute
 - **GIVEN** un quiz terminé sans aucune erreur
@@ -74,6 +74,11 @@ En mode Examen, le quiz SHALL reprendre le format de l'examen officiel de la cer
 - **GIVEN** un quiz de 10 questions terminé avec 3 erreurs
 - **WHEN** l'utilisateur clique sur « Retravailler ces erreurs »
 - **THEN** un quiz de 3 questions démarre avec ces questions, dans le même mode
+
+#### Scenario: Retour à l'accueil
+- **GIVEN** l'écran de résultat d'un quiz
+- **WHEN** l'utilisateur clique sur le bouton rouge « Retour à l'accueil »
+- **THEN** l'accueil s'affiche avec les réglages du quiz précédent et l'historique à jour
 
 ### Requirement: Confidentialité des réponses
 L'interface MUST NOT afficher les bonnes réponses ni les explications d'une question avant sa correction : vérification de la question en mode Entraînement, ou fin du quiz. Les données du site contiennent les réponses ; seule leur présentation est contrôlée.
