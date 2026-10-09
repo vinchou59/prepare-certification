@@ -18,6 +18,8 @@ test("certifications.json : identifiants uniques et fichiers existants", () => {
     ids.add(c.id);
     assert.ok(files.includes(c.file), `fichier introuvable : ${c.file}`);
     assert.ok(c.passMark === null || (c.passMark > 0 && c.passMark <= 100), `seuil invalide : ${c.id}`);
+    assert.ok(c.exam && Number.isInteger(c.exam.questions) && c.exam.questions > 0
+      && Number.isInteger(c.exam.minutes) && c.exam.minutes > 0, `format d'examen invalide : ${c.id}`);
   }
 });
 

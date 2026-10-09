@@ -147,6 +147,18 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 
 .mode-help { color: var(--muted); font-size: 15px; margin: 8px 0 0; }
 
+.legend-like { font-family: var(--body); font-size: 17px; font-weight: 700; letter-spacing: 0; margin: 0 0 10px; }
+.exam-facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.exam-facts span {
+  padding: 10px 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+}
+.exam-facts strong { font-family: var(--display); font-size: 20px; color: var(--ink); margin-right: 2px; }
+.time-up { font-weight: 700; color: var(--bad); margin: 12px 0 0; }
+
 .home-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 36px; }
 .home-actions [data-action=share] { margin-left: auto; }
 
@@ -226,6 +238,8 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 .topbar .cert-tag { font-family: var(--display); font-weight: 700; font-size: 18px; }
 .topbar .right { display: flex; align-items: center; gap: 6px; }
 .timer { font-variant-numeric: tabular-nums; color: var(--muted); }
+.timer[data-timer] { font-family: var(--display); font-weight: 700; color: var(--ink); min-width: 4.2ch; text-align: right; }
+.timer.urgent { color: var(--bad); }
 
 .track {
   display: flex;

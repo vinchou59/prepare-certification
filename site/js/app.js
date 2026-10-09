@@ -1,6 +1,6 @@
 import {
   seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, questionView,
-  historyEntry, recordResult, questionsToRework, recentResults
+  historyEntry, recordResult, questionsToRework, recentResults, examFormat
 } from "./quiz-core.js";
 
 (() => {
@@ -10,7 +10,7 @@ import {
   const SIZES = [5, 10, 20, 0]; // 0 = toutes
   const MODES = {
     training: { label: "Entraînement", help: "La correction et les explications s'affichent après chaque question." },
-    exam: { label: "Examen", help: "Chronomètre, navigation libre entre les questions, correction à la fin." }
+    exam: { label: "Examen", help: "Format de l'examen officiel, compte à rebours, navigation libre, correction à la fin." }
   };
 
   const store = {
@@ -40,6 +40,8 @@ import {
     answers: {},     // questionId -> [labels]
     checked: {},     // questionId -> CheckResponse (training)
     flagged: {},     // questionId -> true (examen : à revoir)
+    deadline: null,  // examen : heure de fin (ms)
+    timeUp: false,
     startedAt: 0,
     confirmFinish: false,
     result: null,
@@ -157,14 +159,17 @@ import {
         questions = questions.filter((q) => wanted.has(q.id));
         if (!questions.length) throw new Error("Aucune question à retravailler pour cette certification.");
       }
+      const exam = mode === "exam" ? examFormat(cert.exam, questions.length) : null;
       quizModel = createQuiz({
-        certification: cert, questions, size: questionIds ? 0 : size, random, shuffle: state.settings.shuffle
+        certification: cert, questions, random, shuffle: state.settings.shuffle,
+        size: exam ? exam.questions : questionIds ? 0 : size
       });
       state.quiz = { certification: cert, questions: quizModel.questions.map(questionView) };
       Object.assign(state, {
         view: "quiz", index: 0, answers: {}, checked: {}, flagged: {}, result: null,
-        confirmFinish: false, reviewFilter: "mistakes", startedAt: Date.now()
+        confirmFinish: false, reviewFilter: "mistakes", startedAt: Date.now(), timeUp: false
       });
+      state.deadline = exam ? state.startedAt + exam.minutes * 60_000 : null;
       setError(null);
       startTimer();
     } catch (e) {
@@ -264,6 +269,8 @@ import {
 
   function leaveQuiz() {
     stopTimer();
+    state.deadline = null;
+    state.timeUp = false;
     quizModel = null;
     state.view = "home";
     state.quiz = null;
@@ -336,13 +343,34 @@ import {
     render();
   }
 
+  const remainingSeconds = () => Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
+
+  // Compte à rebours recalculé sur l'heure de fin : reste juste même après une mise en veille de l'onglet
+  function tick() {
+    if (state.view !== "quiz" || !state.deadline) return;
+    const left = remainingSeconds();
+    if (left <= 0) {
+      stopTimer();
+      state.timeUp = true;
+      state.busy = false;
+      finishQuiz(true);
+      return;
+    }
+    const el = document.querySelector("[data-timer]");
+    if (el) {
+      el.textContent = clock(left);
+      el.classList.toggle("urgent", left <= 60);
+      el.setAttribute("aria-label", `Temps restant : ${clock(left)}`);
+    }
+  }
+
   function startTimer() {
     stopTimer();
-    timerHandle = setInterval(() => {
-      const el = document.querySelector("[data-timer]");
-      if (el) el.textContent = clock((Date.now() - state.startedAt) / 1000);
-    }, 1000);
+    if (!state.deadline) return;
+    timerHandle = setInterval(tick, 1000);
   }
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
+
   function stopTimer() {
     if (timerHandle) clearInterval(timerHandle);
     timerHandle = null;
@@ -352,6 +380,21 @@ import {
 
   function errorBlock() {
     return state.error ? `<div class="error" role="alert">${esc(state.error)}</div>` : "";
+  }
+
+  function examFormatView(cert) {
+    if (!cert || !cert.questionCount || !cert.exam) return "";
+    const f = examFormat(cert.exam, cert.questionCount);
+    return `
+      <section class="field exam-format" aria-label="Format de l'examen">
+        <h2 class="legend-like">Format de l'examen</h2>
+        <div class="exam-facts">
+          <span><strong>${f.questions}</strong> questions</span>
+          <span><strong>${f.minutes}</strong> minutes</span>
+          ${cert.passMark != null ? `<span>seuil <strong>${cert.passMark}&nbsp;%</strong></span>` : ""}
+        </div>
+        ${f.prorated ? `<p class="mode-help">L'examen officiel compte ${cert.exam.questions} questions en ${cert.exam.minutes} minutes ; la banque en contient ${cert.questionCount}, la durée est donc ajustée au prorata.</p>` : ""}
+      </section>`;
   }
 
   function homeView() {
@@ -373,21 +416,22 @@ import {
 
     return `
       <h1>Sur quelle certification on s'entraîne&nbsp;?</h1>
-      <p class="lede">Choisissez la certification, le nombre de questions et votre façon de travailler.</p>
+      <p class="lede">Choisissez la certification et votre façon de travailler.</p>
       ${errorBlock()}
       <fieldset class="field">
         <legend>Certification</legend>
         <div class="cert-list" role="radiogroup" aria-label="Certification">${certs}</div>
       </fieldset>
       <fieldset class="field">
-        <legend>Nombre de questions</legend>
-        <div class="segmented" role="radiogroup" aria-label="Nombre de questions">${sizes}</div>
-      </fieldset>
-      <fieldset class="field">
         <legend>Mode</legend>
         <div class="segmented" role="radiogroup" aria-label="Mode">${modes}</div>
         <p class="mode-help">${MODES[s.mode].help}</p>
       </fieldset>
+      ${s.mode === "exam" ? examFormatView(cert) : `
+      <fieldset class="field">
+        <legend>Nombre de questions</legend>
+        <div class="segmented" role="radiogroup" aria-label="Nombre de questions">${sizes}</div>
+      </fieldset>`}
       <fieldset class="field">
         <legend>Ordre des réponses</legend>
         <div class="segmented" role="radiogroup" aria-label="Ordre des réponses">
@@ -397,7 +441,7 @@ import {
       </fieldset>
       <div class="home-actions">
         <button type="button" class="btn primary" data-action="start" ${state.busy || !s.certification ? "disabled" : ""}>
-          Commencer le quiz
+          ${s.mode === "exam" ? "Commencer l'examen" : "Commencer le quiz"}
         </button>
         ${rework.length ? `<button type="button" class="btn" data-action="rework-all" ${state.busy ? "disabled" : ""}>Retravailler mes erreurs (${rework.length})</button>` : ""}
         <button type="button" class="btn quiet" data-action="share">Partager</button>
@@ -505,7 +549,7 @@ import {
       <header class="topbar">
         <span class="cert-tag">${esc(state.quiz.certification.shortName)} <span class="timer">${MODES[state.settings.mode].label}</span></span>
         <span class="right">
-          ${training ? "" : `<span class="timer" data-timer aria-label="Temps écoulé">${clock((Date.now() - state.startedAt) / 1000)}</span>`}
+          ${training || !state.deadline ? "" : `<span class="timer${remainingSeconds() <= 60 ? " urgent" : ""}" data-timer aria-label="Temps restant : ${clock(remainingSeconds())}">${clock(remainingSeconds())}</span>`}
           <button type="button" class="btn quiet" data-action="leave">Abandonner</button>
         </span>
       </header>
@@ -602,6 +646,7 @@ import {
       ${errorBlock()}
       <div class="score-block pop">
         <div class="score" aria-label="Score ${r.score} sur ${r.total}">${r.score}<span class="total">/${r.total}</span></div>
+        ${state.timeUp ? `<p class="time-up">Temps écoulé : les questions sans réponse comptent comme fausses.</p>` : ""}
         <p class="score-line">${verdict}</p>
         <div class="bar" role="img" aria-label="${pct} % de bonnes réponses">
           <div class="fill ${fillCls}" style="width:${pct}%"></div>

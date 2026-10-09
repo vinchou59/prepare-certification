@@ -9,7 +9,15 @@ Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur té
 ## Fonctionnement
 
 - **Entraînement** : correction et explications après chaque question.
-- **Examen** : chronomètre, navigation libre entre les questions, correction complète à la fin.
+- **Examen** : format de l'examen officiel (nombre de questions et durée), compte à rebours et fin automatique quand le temps est écoulé, navigation libre, correction complète à la fin. Si la banque contient moins de questions que l'examen officiel, la durée est ajustée au prorata.
+
+| Certification | Examen officiel | Seuil |
+| --- | --- | --- |
+| PSM II | 30 questions, 90 min | 85 % |
+| PSPO I | 80 questions, 60 min | 85 % |
+| PSK I | 45 questions, 60 min | 85 % |
+| PSM-AI | 40 questions, 60 min | 85 % |
+| CCA Agile | 60 questions, 60 min | 85 % |
 - Raccourcis clavier : les lettres (A, B, C…) pour répondre, Entrée pour valider, flèches gauche et droite pour naviguer.
 - En mode Examen, **Marquer pour revoir** signale une question sur la barre de progression ; l'avertissement de fin rappelle les questions marquées.
 - L'ordre des réponses est **mélangé** à chaque quiz (réglage « Ordre des réponses » à l'accueil). Les réponses « All of the above » restent en dernier, les questions Vrai/Faux gardent leur ordre.
@@ -48,7 +56,7 @@ npm start    # sert le site sur http://localhost:8765/ (Python 3)
 ## Ajouter une certification
 
 1. Ajouter `site/data/questions_<certif>.json` (même format que les fichiers existants).
-2. Déclarer la certification dans `site/data/certifications.json` (identifiant, noms, fichier, seuil de réussite ou `null`).
+2. Déclarer la certification dans `site/data/certifications.json` (identifiant, noms, fichier, seuil de réussite ou `null`, format d'examen `exam` : nombre de questions et durée en minutes).
 3. Lancer `npm test` : le test de cohérence signale toute question incomplète.
 
 Un texte ou une explication ne doit jamais désigner une autre réponse par sa lettre (« option B ») : l'ordre des réponses est mélangé. Le test de cohérence le vérifie.

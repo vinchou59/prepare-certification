@@ -57,6 +57,16 @@ export function questionView(q) {
   };
 }
 
+/**
+ * Format d'un examen blanc : nombre de questions de l'examen officiel, plafonné aux questions disponibles,
+ * et durée au prorata (même temps par question que l'examen officiel, au moins une minute).
+ */
+export function examFormat(exam, available) {
+  const questions = Math.max(0, Math.min(exam.questions, available));
+  const minutes = Math.max(1, Math.round((exam.minutes * questions) / exam.questions));
+  return { questions, minutes, prorated: questions < exam.questions };
+}
+
 // Choix qui restent en dernière position quand on mélange : « All of the above », « None of the answers »…
 const ANCHORED = /^\s*(all|none)\s+of\s+the\s+(above|answers)\b|^\s*all\s+answers\s+apply\b/i;
 const TRUE_FALSE = new Set(["true", "false", "vrai", "faux"]);

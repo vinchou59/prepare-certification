@@ -1,7 +1,7 @@
 [
-  { "id": "PSM2", "shortName": "PSM II", "fullName": "Professional Scrum Master II", "file": "questions_psm2.json", "passMark": 85 },
-  { "id": "PSK", "shortName": "PSK I", "fullName": "Professional Scrum with Kanban", "file": "questions_psk.json", "passMark": 85 },
-  { "id": "CCAAGILE", "shortName": "CCA Agile", "fullName": "Certified Agile Coach", "file": "questions_cca_agile.json", "passMark": null },
-  { "id": "PSPO1", "shortName": "PSPO I", "fullName": "Professional Scrum Product Owner I", "file": "questions_pspo1.json", "passMark": 85 },
-  { "id": "PSMAI", "shortName": "PSM-AI", "fullName": "Professional Scrum Master with AI", "file": "questions_psmai.json", "passMark": null }
+  { "id": "PSM2", "shortName": "PSM II", "fullName": "Professional Scrum Master II", "file": "questions_psm2.json", "passMark": 85, "exam": { "questions": 30, "minutes": 90 } },
+  { "id": "PSK", "shortName": "PSK I", "fullName": "Professional Scrum with Kanban", "file": "questions_psk.json", "passMark": 85, "exam": { "questions": 45, "minutes": 60 } },
+  { "id": "CCAAGILE", "shortName": "CCA Agile", "fullName": "Certified Agile Coach", "file": "questions_cca_agile.json", "passMark": 85, "exam": { "questions": 60, "minutes": 60 } },
+  { "id": "PSPO1", "shortName": "PSPO I", "fullName": "Professional Scrum Product Owner I", "file": "questions_pspo1.json", "passMark": 85, "exam": { "questions": 80, "minutes": 60 } },
+  { "id": "PSMAI", "shortName": "PSM-AI", "fullName": "Professional Scrum Master with AI", "file": "questions_psmai.json", "passMark": 85, "exam": { "questions": 40, "minutes": 60 } }
 ]
