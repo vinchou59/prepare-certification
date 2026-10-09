@@ -2,6 +2,7 @@
   "questions": 	[
 	  {
 	    "id": 1,
+	    "theme": "valeurs",
 	    "question": "Comment simplifier les processus et réduire les validations inutiles ? Choisissez la meilleure réponse.",
 	    "expectedAnswers": 1,
 	    "choices": [
@@ -33,6 +34,7 @@
 	  },
 	  {
 	    "id": 2,
+	    "theme": "outils",
 	    "question": "En quoi une « définition de fini » partagée dans l’équipe pourrait-elle aider au quotidien ?",
 	    "expectedAnswers": 1,
 	    "choices": [
@@ -64,6 +66,7 @@
 	  },
 	  {
 	    "id": 3,
+	    "theme": "valeurs",
 	    "question": "La direction limite fortement les idées nouvelles pour respecter le planning. Quelle valeur agile est négligée ici ?",
 	    "expectedAnswers": 1,
 	    "choices": [
@@ -95,6 +98,7 @@
 	  },
 	  {
 	    "id": 4,
+	    "theme": "leadership",
 	    "question": "Vrai ou Faux : Quand chacun connaît son périmètre et les règles d’équipe, les décisions se prennent plus vite et avec moins de blocages.",
 	    "expectedAnswers": 1,
 	    "choices": [
@@ -114,6 +118,7 @@
 	  },
 	  {
 	    "id": 5,
+	    "theme": "vision",
 	    "question": "Comment le management peut-il transmettre et faire vivre la vision stratégique au jour le jour ? Choisissez la meilleure réponse.",
 	    "expectedAnswers": 1,
 	    "choices": [
@@ -145,6 +150,7 @@
 	  },
 	  {
 	      "id": 6,
+	      "theme": "vision",
 	      "question": "Quel est l'objectif principal de l’agilité dans un projet ?",
 	      "expectedAnswers": 1,
 	      "choices": [
@@ -176,6 +182,7 @@
 	    },
 	    {
 	      "id": 7,
+	      "theme": "amelioration",
 	      "question": "En quoi le coaching diffère-t-il du mentorat dans une démarche agile ? (Deux réponses exactes)",
 	      "expectedAnswers": 2,
 	      "choices": [
@@ -207,6 +214,7 @@
 	    },
 	    {
 	      "id": 8,
+	      "theme": "vision",
 	      "question": "Pour tester une nouvelle approche, l’organisation lance un projet sur 12 mois sans point d’évaluation intermédiaire. Que faire pour maximiser le retour sur investissement du projet ?",
 	      "expectedAnswers": 1,
 	      "choices": [
@@ -238,6 +246,7 @@
 	    },
 	    {
 	      "id": 9,
+	      "theme": "outils",
 	      "question": "Une entreprise souhaite stimuler l’innovation interne en permettant aux collaborateurs de proposer et développer rapidement et intensivement leurs propres idées sur une période très courte. Quel outil serait idéal ?",
 	      "expectedAnswers": 1,
 	      "choices": [
@@ -269,6 +278,7 @@
 	    },
 	    {
 	      "id": 10,
+	      "theme": "collaboration",
 	      "question": "Vrai ou Faux : La sécurité psychologique permet aux équipes d’oser signaler les problèmes ou erreurs sans crainte de sanction.",
 	      "expectedAnswers": 1,
 	      "choices": [
@@ -288,6 +298,7 @@
 	    },
 		{
 		  "id": 11,
+		  "theme": "valeurs",
 		  "question": "Vrai ou Faux : Simplifier les processus signifie supprimer tous les points de contrôle, même ceux qui sécurisent la qualité ou la conformité.",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -307,6 +318,7 @@
 		},
 		{
 		  "id": 12,
+		  "theme": "valeurs",
 		  "question": "Pourquoi est-il essentiel d’adopter un état d’esprit agile ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -338,6 +350,7 @@
 		},
 		{
 		  "id": 13,
+		  "theme": "amelioration",
 		  "question": "Quel bénéfice une communauté de pratique pourrait-elle apporter principalement à ses membres ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -369,6 +382,7 @@
 		},
 		{
 		  "id": 14,
+		  "theme": "leadership",
 		  "question": "Dans cette entreprise, les responsables valident tout, ce qui ralentit les décisions opérationnelles. Comment améliorer la situation ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -400,6 +414,7 @@
 		},
 		{
 		  "id": 15,
+		  "theme": "amelioration",
 		  "question": "Vrai ou Faux : L’apprentissage permanent signifie qu’on doit suivre au moins une formation officielle tous les mois.",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -419,6 +434,7 @@
 		},
 		{
 		  "id": 16,
+		  "theme": "outils",
 		  "question": "Une équipe souhaite comprendre en profondeur les causes racines d’un problème récurrent. Quel outil de résolution serait bien adapté à cette situation ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -450,6 +466,7 @@
 		},
 		{
 		  "id": 17,
+		  "theme": "valeurs",
 		  "question": "La multiplication des étapes et relectures freine les livraisons. Comment favoriser la fluidité ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -481,6 +498,7 @@
 		},
 		{
 		  "id": 18,
+		  "theme": "valeurs",
 		  "question": "Comment favoriser l’esprit critique en tant que compétence individuelle dans un contexte agile ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -512,6 +530,7 @@
 		},
 		{
 		  "id": 19,
+		  "theme": "leadership",
 		  "question": "Comment responsabiliser les équipes dans la prise de décisions opérationnelles ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -543,6 +562,7 @@
 		},
 		{
 		  "id": 20,
+		  "theme": "valeurs",
 		  "question": "Vrai ou Faux : Être pragmatique revient à ignorer toute forme de méthode ou de bonnes pratiques, en avançant « à l’instinct ».",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -562,6 +582,7 @@
 		},
 		{
 		  "id": 21,
+		  "theme": "outils",
 		  "question": "Dans quelle situation une « salle de pilotage » serait-elle particulièrement pertinente ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -593,6 +614,7 @@
 		},
 		{
 		  "id": 22,
+		  "theme": "valeurs",
 		  "question": "Vrai ou Faux : Être ouvert d’esprit consiste à adopter toutes les idées proposées, même si elles vont à l’encontre des objectifs de l’équipe.",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -612,6 +634,7 @@
 		},
 		{
 		  "id": 23,
+		  "theme": "vision",
 		  "question": "Choisissez les deux meilleures réponses pour renforcer la valeur « Sens » dans une organisation agile :",
 		  "expectedAnswers": 2,
 		  "choices": [
@@ -649,6 +672,7 @@
 		},
 		{
 		  "id": 24,
+		  "theme": "collaboration",
 		  "question": "En réunion, les échanges sont parfois tendus, et chacun reste campé sur ses arguments sans écouter l’autre. Comment améliorer la situation ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -680,6 +704,7 @@
 		},
 		{
 		  "id": 25,
+		  "theme": "amelioration",
 		  "question": "Quelle est la place de l’expérimentation dans une approche agile ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -711,6 +736,7 @@
 		},
 		{
 		  "id": 26,
+		  "theme": "collaboration",
 		  "question": "Comment définir l’empathie constructive en contexte agile ? (Choisissez la meilleure réponse)",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -742,6 +768,7 @@
 		},
 		{
 		  "id": 27,
+		  "theme": "outils",
 		  "question": "Pour aider un collaborateur à progresser rapidement sur des compétences spécifiques en profitant d’un accompagnement personnalisé, quel outil serait le plus adapté ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -773,6 +800,7 @@
 		},
 		{
 		  "id": 28,
+		  "theme": "vision",
 		  "question": "Vrai ou Faux : selon le guide agile, la valeur en continu implique nécessairement que chaque livraison produise immédiatement des bénéfices importants pour les clients.",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -792,6 +820,7 @@
 		},
 		{
 		  "id": 29,
+		  "theme": "valeurs",
 		  "question": "Quelle est la principale caractéristique de l’excellence dans une organisation agile ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -823,6 +852,7 @@
 		},
 		{
 		  "id": 30,
+		  "theme": "collaboration",
 		  "question": "Choisissez les deux meilleures pratiques pour renforcer la transparence :",
 		  "expectedAnswers": 2,
 		  "choices": [
@@ -860,6 +890,7 @@
 		},
 		{
 		  "id": 31,
+		  "theme": "amelioration",
 		  "question": "La dynamique d’amélioration continue s’appuie souvent sur… (Choisissez la meilleure réponse)",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -891,6 +922,7 @@
 		},
 		{
 		  "id": 32,
+		  "theme": "leadership",
 		  "question": "Sélectionnez les deux meilleures pratiques favorisant l'autonomie des équipes :",
 		  "expectedAnswers": 2,
 		  "choices": [
@@ -922,6 +954,7 @@
 		},
 		{
 		  "id": 33,
+		  "theme": "outils",
 		  "question": "Quelle est la finalité principale d’une salle de pilotage (Obeya) ? (Choisissez la meilleure réponse)",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -953,6 +986,7 @@
 		},
 		{
 		  "id": 34,
+		  "theme": "vision",
 		  "question": "Comment s’assurer que toutes les dimensions de l'agilité restent cohérentes dans l’entreprise ? (Choisissez la meilleure réponse)",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -984,6 +1018,7 @@
 		},
 		{
 		  "id": 35,
+		  "theme": "collaboration",
 		  "question": "Certains membres acceptent tout sans débattre, même s’ils perçoivent des incohérences puis rejettent les solutions par la suite. Comment mieux faire ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1015,6 +1050,7 @@
 		},
 		{
 		  "id": 36,
+		  "theme": "valeurs",
 		  "question": "Quelles sont les conséquences de ne pas viser l'excellence dans un projet agile ? (Choisir les trois meilleures réponses)",
 		  "expectedAnswers": 3,
 		  "choices": [
@@ -1052,6 +1088,7 @@
 		},
 		{
 		  "id": 37,
+		  "theme": "outils",
 		  "question": "Une entreprise veut fluidifier la création et la révision de documents par plusieurs équipes en parallèle. Quel type d’outil pourrait l’y aider ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1083,6 +1120,7 @@
 		},
 		{
 		  "id": 38,
+		  "theme": "valeurs",
 		  "question": "L’esprit critique, c’est avant tout… (Choisissez la meilleure réponse)",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1114,6 +1152,7 @@
 		},
 		{
 		  "id": 39,
+		  "theme": "collaboration",
 		  "question": "Un membre d’équipe estime que la transparence peut parfois ralentir les décisions en créant trop de discussions. Cette affirmation est :",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1145,6 +1184,7 @@
 		},
 		{
 		  "id": 40,
+		  "theme": "leadership",
 		  "question": "Quelles sont les conséquences d'un manque d'autonomie dans une organisation Agile ? (Choisissez les deux réponses les plus pertinentes)",
 		  "expectedAnswers": 2,
 		  "choices": [
@@ -1176,6 +1216,7 @@
 		},
 		{
 		  "id": 41,
+		  "theme": "amelioration",
 		  "question": "Les équipes répètent des erreurs passées, faute d’avoir tiré des leçons. Quelle approche mettre en place ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1207,6 +1248,7 @@
 		},
 		{
 		  "id": 42,
+		  "theme": "vision",
 		  "question": "Plusieurs équipes ne voient pas à quoi contribuent réellement leurs efforts. Choisissez la meilleure réponse pour résoudre ce manque de sens :",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1238,6 +1280,7 @@
 		},
 		{
 		  "id": 43,
+		  "theme": "leadership",
 		  "question": "Quelle est la principale caractéristique de l'autonomie dans une organisation agile ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1269,6 +1312,7 @@
 		},
 		{
 		  "id": 44,
+		  "theme": "leadership",
 		  "question": "Vrai ou Faux : Un leader agile doit toujours prendre les décisions à la place des équipes pour garantir la cohérence du projet.",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1288,6 +1332,7 @@
 		},
 		{
 		  "id": 45,
+		  "theme": "valeurs",
 		  "question": "Parmi ces affirmations, lesquelles soulignent un aspect clé du bénéfice d’un état d’esprit agile ?",
 		  "expectedAnswers": 2,
 		  "choices": [
@@ -1319,6 +1364,7 @@
 		},
 		{
 		  "id": 46,
+		  "theme": "outils",
 		  "question": "Afin de bien préciser les critères nécessaires pour considérer qu’une tâche est totalement achevée, quel outil pourrait être adopté par une équipe ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1350,6 +1396,7 @@
 		},
 		{
 		  "id": 47,
+		  "theme": "amelioration",
 		  "question": "En dehors de la fin d’une itération ou d’un projet, pourquoi programmer une rétrospective ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1381,6 +1428,7 @@
 		},
 		{
 		  "id": 48,
+		  "theme": "collaboration",
 		  "question": "Pourquoi formaliser une charte d’équipe dès le début d’un projet ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1412,6 +1460,7 @@
 		},
 		{
 		  "id": 49,
+		  "theme": "valeurs",
 		  "question": "Une équipe suit un processus rigoureux avec de nombreux formulaires. Elle n’a plus de temps pour les tâches à valeur ajoutée. Quelle valeur Agile n’est pas suffisamment prise en compte ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1443,6 +1492,7 @@
 		},
 		{
 		  "id": 50,
+		  "theme": "vision",
 		  "question": "Quelles sont les conséquences d’un manque de sens dans une organisation Agile ?",
 		  "expectedAnswers": 2,
 		  "choices": [
@@ -1474,6 +1524,7 @@
 		},
 		{
 		  "id": 51,
+		  "theme": "leadership",
 		  "question": "Quelle utilité apporte principalement une matrice de délégation à une équipe ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1505,6 +1556,7 @@
 		},
 		{
 		  "id": 52,
+		  "theme": "valeurs",
 		  "question": "Choisissez les deux affirmations vraies sur la valeur « Adaptabilité » :",
 		  "expectedAnswers": 2,
 		  "choices": [
@@ -1536,6 +1588,7 @@
 		},
 		{
 		  "id": 53,
+		  "theme": "outils",
 		  "question": "Dans quel contexte l’utilisation d’une messagerie instantanée serait-elle particulièrement efficace au sein d’une équipe agile ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1567,6 +1620,7 @@
 		},
 		{
 		  "id": 54,
+		  "theme": "valeurs",
 		  "question": "« L’agilité n’est adaptée qu’au développement logiciel. » Choisissez la réponse correcte :",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1586,6 +1640,7 @@
 		},
 		{
 		  "id": 55,
+		  "theme": "amelioration",
 		  "question": "Quelle est la principale caractéristique de l’émergence dans un environnement agile ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1617,6 +1672,7 @@
 		},
 		{
 		  "id": 56,
+		  "theme": "outils",
 		  "question": "Une équipe souhaite rendre visibles les tâches en cours, limiter le travail démarré en parallèle et fluidifier la circulation d’informations. Quel dispositif pourrait-elle utiliser ?",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1648,6 +1704,7 @@
 		},
 		{
 		  "id": 57,
+		  "theme": "vision",
 		  "question": "Vrai ou Faux : Livrer régulièrement signifie présenter des maquettes, même si elles sont totalement inutilisables pour le client.",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1667,6 +1724,7 @@
 		},
 		{
 		  "id": 58,
+		  "theme": "valeurs",
 		  "question": "Vrai ou Faux : Un rythme soutenable implique de pouvoir enchaîner les \"coups de collier\" sans jamais laisser d’espace à l’amélioration continue.",
 		  "expectedAnswers": 1,
 		  "choices": [
@@ -1686,6 +1744,7 @@
 		},
 		{
 		  "id": 59,
+		  "theme": "vision",
 		  "question": "Construire une vision stratégique claire sert principalement à ?",
 		  "expectedAnswers": 1,
 		  "choices": [

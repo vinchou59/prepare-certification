@@ -1,6 +1,7 @@
 import {
   seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, questionView,
-  historyEntry, recordResult, questionsToRework, recentResults, examFormat
+  historyEntry, recordResult, questionsToRework, recentResults, examFormat,
+  questionProgress, masterySummary, filterByTheme, themeStats, weakThemes
 } from "./quiz-core.js";
 
 (() => {
@@ -9,7 +10,7 @@ import {
   const app = document.getElementById("app");
   const SIZES = [5, 10, 20, 0]; // 0 = toutes
   const MODES = {
-    training: { label: "Entraînement", help: "La correction et les explications s'affichent après chaque question." },
+    training: { label: "Entraînement", help: "La correction et les explications s'affichent après chaque question. Vos erreurs à revoir et les questions jamais vues passent en priorité." },
     exam: { label: "Examen", help: "Format de l'examen officiel, compte à rebours, navigation libre, correction à la fin." }
   };
 
@@ -30,7 +31,8 @@ import {
       certification: store.get("certification", null),
       size: store.get("size", 10),
       mode: store.get("mode", "training"),
-      shuffle: store.get("shuffle", true)
+      shuffle: store.get("shuffle", true),
+      theme: store.get("theme", "") // "" = tous les thèmes
     },
     quiz: null,      // { certification, questions } : vues sans les réponses
     share: false,
@@ -105,6 +107,10 @@ import {
   const selectedOf = (q) => state.answers[q.id] || [];
   const isTraining = () => state.settings.mode === "training";
 
+  // Thème choisi, s'il existe pour cette certification
+  const activeTheme = (cert) => (cert?.themes || []).some((t) => t.id === state.settings.theme) ? state.settings.theme : "";
+  const themeLabel = (cert, id) => (cert?.themes || []).find((t) => t.id === id)?.label || "";
+
   // ---------- actions ----------
 
   async function loadCertifications() {
@@ -145,6 +151,7 @@ import {
   async function startQuiz(questionIds = null) {
     if (state.busy) return;
     const { certification, size, mode } = state.settings;
+    store.set("theme", state.settings.theme);
     store.set("certification", certification);
     store.set("size", size);
     store.set("mode", mode);
@@ -160,9 +167,14 @@ import {
         if (!questions.length) throw new Error("Aucune question à retravailler pour cette certification.");
       }
       const exam = mode === "exam" ? examFormat(cert.exam, questions.length) : null;
+      // Entraînement : filtre par thème et sélection par répétition espacée ; l'examen reste un tirage au hasard
+      const review = !exam && !questionIds;
+      if (review) questions = filterByTheme(questions, activeTheme(cert));
+      if (!questions.length) throw new Error("Aucune question pour ce thème.");
       quizModel = createQuiz({
         certification: cert, questions, random, shuffle: state.settings.shuffle,
-        size: exam ? exam.questions : questionIds ? 0 : size
+        size: exam ? exam.questions : questionIds ? 0 : size,
+        progress: review ? questionProgress(state.history, cert.id) : null
       });
       state.quiz = { certification: cert, questions: quizModel.questions.map(questionView) };
       Object.assign(state, {
@@ -282,10 +294,8 @@ import {
 
   // ---------- partage ----------
 
-  const QR_SOURCES = [
-    "https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"
-  ];
+  // Bibliothèque qrcode-generator (MIT) incluse dans le site, chargée seulement au premier partage
+  const QR_SOURCES = ["vendor/qrcode-generator-1.4.4.js"];
   let qrLoading = null;
 
   function loadScript(src) {
@@ -431,7 +441,8 @@ import {
       <fieldset class="field">
         <legend>Nombre de questions</legend>
         <div class="segmented" role="radiogroup" aria-label="Nombre de questions">${sizes}</div>
-      </fieldset>`}
+      </fieldset>
+      ${themePickerView(cert)}`}
       <fieldset class="field">
         <legend>Ordre des réponses</legend>
         <div class="segmented" role="radiogroup" aria-label="Ordre des réponses">
@@ -447,7 +458,65 @@ import {
         <button type="button" class="btn quiet" data-action="share">Partager</button>
       </div>
       ${shareView()}
+      ${progressView(cert)}
       ${historyView(cert)}`;
+  }
+
+  function themePickerView(cert) {
+    if (!cert?.themes?.length) return "";
+    const bank = banks.get(cert.file) || [];
+    const current = activeTheme(cert);
+    const chip = (id, label, n) => `
+      <button type="button" role="radio" class="chip" data-theme="${esc(id)}" aria-checked="${id === current}">${esc(label)} <span class="chip-count">${n}</span></button>`;
+    return `
+      <fieldset class="field">
+        <legend>Thème</legend>
+        <div class="chips" role="radiogroup" aria-label="Thème">
+          ${chip("", "Tous", bank.length)}
+          ${cert.themes.map((t) => chip(t.id, t.label, filterByTheme(bank, t.id).length)).join("")}
+        </div>
+      </fieldset>`;
+  }
+
+  // Maîtrise (répétition espacée) et points faibles par thème, calculés à partir de l'historique
+  function progressView(cert) {
+    if (!cert) return "";
+    const bank = banks.get(cert.file) || [];
+    const progress = questionProgress(state.history, cert.id);
+    const m = masterySummary(bank, progress);
+    if (!bank.length || m.unseen === m.total) return "";
+    const parts = [
+      ["mastered", "maîtrisées", m.mastered], ["learning", "en cours", m.learning],
+      ["errors", "à revoir", m.errors], ["unseen", "jamais vues", m.unseen]
+    ];
+    const bar = parts.filter(([, , n]) => n).map(([cls, , n]) =>
+      `<span class="seg ${cls}" style="flex-grow:${n}"></span>`).join("");
+    const legend = parts.map(([cls, label, n]) =>
+      `<li><span class="dot ${cls}" aria-hidden="true"></span><strong>${n}</strong> ${label}</li>`).join("");
+    const weak = weakThemes(themeStats(cert.themes, bank, progress));
+    const rows = weak.map((t) => {
+      const below = cert.passMark != null && t.percent < cert.passMark;
+      return `
+        <li class="theme-row">
+          <span class="theme-name">${esc(t.label)}<span class="theme-detail">${t.correct}/${t.seen} réussies · ${plural(t.total, "question", "questions")}</span></span>
+          <span class="theme-bar" role="img" aria-label="${t.percent} % de réussite"><span class="fill ${below ? "bad" : "good"}" style="width:${Math.max(t.percent, 2)}%"></span></span>
+          <span class="theme-pct ${below ? "bad" : "good"}">${t.percent}&nbsp;%</span>
+          <button type="button" class="btn quiet small" data-train-theme="${esc(t.id)}" ${state.busy ? "disabled" : ""} aria-label="S'entraîner sur ${esc(t.label)}">S'entraîner</button>
+        </li>`;
+    }).join("");
+    return `
+      <section class="progress" aria-label="Ma progression">
+        <div class="history-head">
+          <h2>Ma progression ${esc(cert.shortName)}</h2>
+          ${m.due ? `<span class="history-pass">${plural(m.due, "question à réviser", "questions à réviser")}</span>` : ""}
+        </div>
+        <div class="mastery" role="img" aria-label="${m.mastered} maîtrisées, ${m.learning} en cours, ${m.errors} à revoir, ${m.unseen} jamais vues sur ${m.total}">${bar}</div>
+        <ul class="mastery-legend">${legend}</ul>
+        <p class="history-note">Une question est maîtrisée après plusieurs bonnes réponses espacées dans le temps ; une erreur la renvoie à revoir.</p>
+        ${rows ? `
+        <h3>Points faibles par thème</h3>
+        <ol class="theme-list">${rows}</ol>` : ""}
+      </section>`;
   }
 
   function trackView() {
@@ -557,7 +626,7 @@ import {
       ${errorBlock()}
       <article>
         <div class="q-meta">
-          <span class="count">Question ${state.index + 1} sur ${qs.length}</span>
+          <span class="count">Question ${state.index + 1} sur ${qs.length}${themeTag(q)}</span>
           ${metaRight}
         </div>
         <p class="q-text">${esc(q.question)}</p>
@@ -578,6 +647,11 @@ import {
         ${primary}
       </div>
       <p class="hint-keys">Raccourcis : <kbd>${esc(q.choices[0]?.label)}</kbd>…<kbd>${esc(q.choices[q.choices.length - 1]?.label)}</kbd> pour répondre, <kbd>Entrée</kbd> pour valider, <kbd>←</kbd> <kbd>→</kbd> pour naviguer</p>`;
+  }
+
+  function themeTag(q) {
+    const label = themeLabel(state.quiz.certification, q.theme);
+    return label ? `<span class="q-theme">${esc(label)}</span>` : "";
   }
 
   // Lien vers une issue GitHub pré-remplie ; sans lettres, car l'ordre des réponses peut changer
@@ -608,7 +682,7 @@ import {
     return `
       <section class="review-item">
         <div class="q-meta">
-          <span class="count">Question ${number}</span>
+          <span class="count">Question ${number}${themeTag(item)}</span>
           <span class="badge ${item.correct ? "good" : "bad"}">${item.correct ? "Juste" : item.given.length ? "Fausse" : "Sans réponse"}</span>
         </div>
         <p class="q-text">${esc(item.question)}</p>
@@ -746,6 +820,12 @@ import {
     if (d.size !== undefined) { state.settings.size = Number(d.size); render(); return; }
     if (d.mode) { state.settings.mode = d.mode; render(); return; }
     if (d.shuffle) { state.settings.shuffle = d.shuffle === "on"; render(); return; }
+    if (d.theme !== undefined) { state.settings.theme = d.theme; render(); return; }
+    if (d.trainTheme) {
+      Object.assign(state.settings, { theme: d.trainTheme, mode: "training" });
+      startQuiz();
+      return;
+    }
     if (d.filter) { state.reviewFilter = d.filter; render(); return; }
     if (d.choice) { toggleChoice(d.choice); return; }
     if (d.goto !== undefined) { goTo(Number(d.goto)); return; }

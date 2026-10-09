@@ -1,7 +1,59 @@
 [
-  { "id": "PSM2", "shortName": "PSM II", "fullName": "Professional Scrum Master II", "file": "questions_psm2.json", "passMark": 85, "exam": { "questions": 30, "minutes": 90 } },
-  { "id": "PSK", "shortName": "PSK I", "fullName": "Professional Scrum with Kanban", "file": "questions_psk.json", "passMark": 85, "exam": { "questions": 45, "minutes": 60 } },
-  { "id": "CCAAGILE", "shortName": "CCA Agile", "fullName": "Certified Agile Coach", "file": "questions_cca_agile.json", "passMark": 85, "exam": { "questions": 60, "minutes": 60 } },
-  { "id": "PSPO1", "shortName": "PSPO I", "fullName": "Professional Scrum Product Owner I", "file": "questions_pspo1.json", "passMark": 85, "exam": { "questions": 80, "minutes": 60 } },
-  { "id": "PSMAI", "shortName": "PSM-AI", "fullName": "Professional Scrum Master with AI", "file": "questions_psmai.json", "passMark": 85, "exam": { "questions": 40, "minutes": 60 } }
+  {
+    "id": "PSM2", "shortName": "PSM II", "fullName": "Professional Scrum Master II", "file": "questions_psm2.json", "passMark": 85,
+    "exam": { "questions": 30, "minutes": 90 },
+    "themes": [
+      { "id": "theorie", "label": "Théorie et valeurs Scrum" },
+      { "id": "equipe", "label": "Équipe et responsabilités" },
+      { "id": "evenements", "label": "Événements" },
+      { "id": "artefacts", "label": "Artefacts et engagements" },
+      { "id": "produit", "label": "Product Owner et valeur produit" },
+      { "id": "organisation", "label": "Organisation et passage à l'échelle" },
+      { "id": "scrum-master", "label": "Posture du Scrum Master" }
+    ]
+  },
+  {
+    "id": "PSK", "shortName": "PSK I", "fullName": "Professional Scrum with Kanban", "file": "questions_psk.json", "passMark": 85,
+    "exam": { "questions": 45, "minutes": 60 },
+    "themes": [
+      { "id": "principes", "label": "Kanban et Scrum" },
+      { "id": "workflow", "label": "Definition of Workflow" },
+      { "id": "wip", "label": "Limites de WIP" },
+      { "id": "metriques", "label": "Métriques de flux et SLE" },
+      { "id": "evenements", "label": "Événements avec Kanban" }
+    ]
+  },
+  {
+    "id": "CCAAGILE", "shortName": "CCA Agile", "fullName": "Certified Agile Coach", "file": "questions_cca_agile.json", "passMark": 85,
+    "exam": { "questions": 60, "minutes": 60 },
+    "themes": [
+      { "id": "valeurs", "label": "Valeurs et état d'esprit" },
+      { "id": "vision", "label": "Vision, sens et valeur" },
+      { "id": "leadership", "label": "Leadership et autonomie" },
+      { "id": "collaboration", "label": "Collaboration et communication" },
+      { "id": "amelioration", "label": "Amélioration continue et apprentissage" },
+      { "id": "outils", "label": "Outils et pratiques" }
+    ]
+  },
+  {
+    "id": "PSPO1", "shortName": "PSPO I", "fullName": "Professional Scrum Product Owner I", "file": "questions_pspo1.json", "passMark": 85,
+    "exam": { "questions": 80, "minutes": 60 },
+    "themes": [
+      { "id": "theorie", "label": "Théorie et valeurs Scrum" },
+      { "id": "equipe", "label": "Équipe et responsabilités" },
+      { "id": "evenements", "label": "Événements" },
+      { "id": "artefacts", "label": "Artefacts et engagements" },
+      { "id": "produit", "label": "Product Owner et valeur produit" },
+      { "id": "organisation", "label": "Organisation et passage à l'échelle" }
+    ]
+  },
+  {
+    "id": "PSMAI", "shortName": "PSM-AI", "fullName": "Professional Scrum Master with AI", "file": "questions_psmai.json", "passMark": 85,
+    "exam": { "questions": 40, "minutes": 60 },
+    "themes": [
+      { "id": "ia-bases", "label": "Fondamentaux de l'IA" },
+      { "id": "ia-scrum", "label": "L'IA dans la pratique Scrum" },
+      { "id": "ia-responsable", "label": "IA responsable" }
+    ]
+  }
 ]

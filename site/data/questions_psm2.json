@@ -2,6 +2,7 @@
   "questions": [
     {
       "id": 1,
+      "theme": "artefacts",
       "question": "Which statements are true about the Sprint Goal?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -33,6 +34,7 @@
     },
     {
       "id": 2,
+      "theme": "scrum-master",
       "question": "A Developer from the Scrum Team is always missing the Daily Scrum. She feels that if she is doing her job well, it does not matter whether she attends or not. The other Developers on the team have not done anything about it. As the Scrum Master how should you respond to this situation?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -64,6 +66,7 @@
     },
     {
       "id": 3,
+      "theme": "evenements",
       "question": "Where should the Daily Scrum be held according to the Scrum Guide?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -101,6 +104,7 @@
     },
     {
       "id": 4,
+      "theme": "artefacts",
       "question": "What conditions are most likely occurring if you feel you need a \"Quality Assurance and Release Readiness Sprint\"?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -138,6 +142,7 @@
     },
     {
       "id": 5,
+      "theme": "artefacts",
       "question": "What does the Scrum Team commit to each Sprint?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -181,6 +186,7 @@
     },
     {
       "id": 6,
+      "theme": "scrum-master",
       "question": "You are the Scrum Master of a Scrum Team that has one Developer who disagrees with team decisions. Their disagreements are becoming disruptive and slowing progress. The Developer often returns to earlier team decisions and re-opens the issue. What are two ways to go about this problem?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -218,6 +224,7 @@
     },
     {
       "id": 7,
+      "theme": "evenements",
       "question": "During a Sprint Review, the Product Owner determines that she is going to release the current Increment to production. The stakeholders ask to stop the Sprint to react more quickly to the user feedback that is expected after this release. The Product Owner prefers to continue the Sprint to make progress with the next release. You facilitate a discussion on how to proceed. What are two acceptable results of this discussion?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -249,6 +256,7 @@
     },
     {
       "id": 8,
+      "theme": "evenements",
       "question": "A Scrum Master colleague of yours wants some guidance on what to do in the following situation. During the Daily Scrum, one Scrum Team member, who is a key central figure in the organization, drags on and on about things which actually are interesting but not relevant for the Daily Scrum, day after day. What are two suggestions you would offer to your colleague?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -286,6 +294,7 @@
     },
     {
       "id": 9,
+      "theme": "artefacts",
       "question": "A Scrum Team selected a Product Backlog item during Sprint Planning. However, at the end of the Sprint the work does not meet the Definition of Done. What two things should happen with this incomplete Product Backlog item?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -317,6 +326,7 @@
     },
     {
       "id": 10,
+      "theme": "organisation",
       "question": "You are a Scrum Master helping to establish five Scrum Teams that will be building a product. You discuss with them the high level of integration that the product Increment will require by the end of their first Sprint. It is a highly anticipated product, both by consumers and by the organization. Of the options raised by the future Scrum Team members, which option do you encourage?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -348,6 +358,7 @@
     },
     {
       "id": 11,
+      "theme": "scrum-master",
       "question": "What are acceptable ways a Scrum Master may work to ensure Scrum is understood and enacted?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -385,6 +396,7 @@
     },
     {
       "id": 12,
+      "theme": "organisation",
       "question": "You are a Scrum Master entering an organization that wants to “evolve” their product development to Scrum. The organization's teams are organized into component teams. This means that teams address one single application layer only (for example, front end, middle end, back end, and interfaces). You introduce the concept of feature teams, where teams have the skills to work on multiple layers throughout a Sprint and deliver working software every Sprint. What are two things you take into consideration when moving away from component teams toward feature teams?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -416,6 +428,7 @@
     },
     {
       "id": 13,
+      "theme": "organisation",
       "question": "Five new Scrum Teams have been created to build one product. A few of the Developers ask the Scrum Master who will coordinate the work between the different Scrum Teams. What should the Scrum Master do?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -453,6 +466,7 @@
     },
     {
       "id": 14,
+      "theme": "scrum-master",
       "question": "How does the Scrum Master serve the Scrum Team?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -484,6 +498,7 @@
     },
     {
       "id": 15,
+      "theme": "equipe",
       "question": "What are two signs that a Scrum Team is self-managing?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -515,6 +530,7 @@
     },
     {
       "id": 16,
+      "theme": "artefacts",
       "question": "In an environment where user acceptance testing is required before the Increment can be put into production, a development manager proposes to have user acceptance testing done every third Sprint, because the feedback from the user acceptance tests are disrupting work in Sprints. Is this a good idea?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -546,6 +562,7 @@
     },
     {
       "id": 17,
+      "theme": "evenements",
       "question": "A Scrum Team is struggling over the fact that not all Developers work full time and that other Developers regularly work from home. To solve the difficulties in aligning daily, at the Sprint Retrospective two Developers suggest having the Daily Scrum every three days, when everyone is in the office. What would be three key concems if the frequency of the Daily Scrum were to be lowered?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -583,6 +600,7 @@
     },
     {
       "id": 18,
+      "theme": "evenements",
       "question": "You are a Scrum Master employed by the IT department. The IT manager considers adopting Scrum for a new project. He wonders however, what the value is in having all team member attend this meeting called “Daily Scrum” every day. The organization already has its employ attending so many mandatory meetings. What are two outcomes of the Daily Scrum you inform him about, to express the importance the Daily Scrum?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -620,6 +638,7 @@
     },
     {
       "id": 19,
+      "theme": "equipe",
       "question": "You are the Scrum Master for four teams working from the same Product Backlog. Several of the Developers come to you complaining that work identified for the upcoming two Sprints will require full time commitment from Phil, an external specialist. As the Scrum Master what should you do to solve this upcoming problem?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -651,6 +670,7 @@
     },
     {
       "id": 20,
+      "theme": "scrum-master",
       "question": "Scrum Master is a management position because the Scrum Master is accountable for the following three management activities :\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -694,6 +714,7 @@
     },
     {
       "id": 21,
+      "theme": "evenements",
       "question": "A Scrum Team consists of Developers working from globally distributed locations. Organizing the Scrum events requires conferencing tools that are not easily available within the organization. The Developers propose doing a Daily Scrum only on Tuesdays. Which are the most appropriate responses for their Scrum Master?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -725,6 +746,7 @@
     },
     {
       "id": 22,
+      "theme": "scrum-master",
       "question": "The relationship between the Product Owner and the Developers has degraded over time. The Developers are growing increasingly angry with the Product Owner for changing the requirements all the time and not being available enough. The Product Owner is angry with the Developers for changing requirements during implementation. What guidance should the Scrum Master offer?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -756,6 +778,7 @@
     },
     {
       "id": 23,
+      "theme": "organisation",
       "question": "You are the Scrum Master for three Scrum Teams working on the same product. There is a single Product Backlog that all three Scrum Teams select from. Management is eager to improve the productivity of the teams and wants to standardize velocity across all three teams so that they can see how each team is delivering value. When responding to management, which two statements are appropriate?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -787,6 +810,7 @@
     },
     {
       "id": 24,
+      "theme": "organisation",
       "question": "Which two statements are true regarding the nature of large-scale product development with Scrum?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -818,6 +842,7 @@
     },
     {
       "id": 25,
+      "theme": "equipe",
       "question": "Which two of these situations best demonstrate that a Scrum Team is self-managing?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -855,6 +880,7 @@
     },
     {
       "id": 26,
+      "theme": "artefacts",
       "question": "Towards the end of Sprint Planning, the Product Owner and the Developers have not been able to reach a clear, mutual understanding about the highest order Product Backlog items. Because of this, the Developers could not figure out how many Product Backlog items they could forecast for the upcoming Sprint. The Product Owner did make it clear what business objective he is hoping to achieve with this Sprint. Which of the following two actions would you support?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -886,6 +912,7 @@
     },
     {
       "id": 27,
+      "theme": "organisation",
       "question": "A multi-national company is using Scrum for product development of their five major products. What alternatives should the company consider to decide how many Product Owners are needed for these five products?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -917,6 +944,7 @@
     },
     {
       "id": 28,
+      "theme": "organisation",
       "question": "One Scrum Team is developing a product. They track how much software they produce as velocity. Their current velocity is 18 units of done work. A second team will be added to work on the same product. What is the most likely impact on the velocity of the original team?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -942,6 +970,7 @@
     },
     {
       "id": 29,
+      "theme": "artefacts",
       "question": "Scrum requires a Definition of Done. Which phrases describe the purpose of the Definition of Done?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -985,6 +1014,7 @@
     },
     {
       "id": 30,
+      "theme": "organisation",
       "question": "Which two options describe how project budgeting and financial forecasting work in Scrum?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1016,6 +1046,7 @@
     },
     {
       "id": 31,
+      "theme": "produit",
       "question": "You have just been hired as a Scrum Master by a company new to Scrum. The company wants to use Scrum to build a new product that was conceived by the product management department. You will be the Scrum Master of two new teams that will build a first version of the product. The product management department assigns two new Product Owners, but wants more advice about the required participation with the new Scrum Teams. Which two suggestions would you offer?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1047,6 +1078,7 @@
     },
     {
       "id": 32,
+      "theme": "artefacts",
       "question": "Your organization has announced a release to its user base three Sprints from now. To be able to include all functionality in the release, work needs to accelerate. The Product Owner puts some testing from the Definition of Done on hold for the next three Sprints, while adding a generic item to the Product Backlog to resolve this in a future release. The Developers object that this will lead to technical debt. Select two ways that explain the impact of technical debt to the Product Owner.\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1078,6 +1110,7 @@
     },
     {
       "id": 33,
+      "theme": "evenements",
       "question": "You are the Scrum Master for a Scrum Team whose Daily Scrum is scheduled to start at 10:00 each day. Developers routinely turn up late, and once everyone has assembled, the Daily Scrum starts. By then it is typically 4 to 5 minutes later than scheduled. Other meetings in the organization typically allow 4 to 5 minutes for people to transport within the building. Some Developers complain that it is now hard to achieve the purpose of the Daily Scrum within the timebox, since there is only 10 or 11 minutes left after waiting for people to show up. The Developers ask for your advice.\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1116,6 +1149,7 @@
     
     {
       "id": 35,
+      "theme": "produit",
       "question": "A Scrum Team has been working together for nine Sprints. A new Product Owner comes in, unsure about his responsibilities. As the Scrum Master you have observed how the functional and business insights of the Developers have grown over the past Sprints. The Product Owner however is relatively new to the company and to the product. What are two activities you would direct the new Product Owner towards focusing on?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1147,6 +1181,7 @@
     },
     {
       "id": 36,
+      "theme": "theorie",
       "question": "An important aspect of Scrum are timeboxes. Select two ways in which timeboxing reinforces the creation of value.\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1178,6 +1213,7 @@
     },
     {
       "id": 37,
+      "theme": "produit",
       "question": "At the seventh Sprint Review, the stakeholders seem disappointed and angry. When asked about it,they say the product being built will not meet their needs and will cost more than they anticipated spending. What factors may have led to this?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -1221,6 +1257,7 @@
     },
     {
       "id": 38,
+      "theme": "organisation",
       "question": "You are the Scrum Master for four Scrum Teams working from the same Product Backlog Several of the Developers come to you complaining that work identified for the upcoming two Sprints will require full time commitment from Stella, an external specialist who is not a member of any of the four Scrum Teams. What would you consider acceptable solutions for the problem?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -1270,6 +1307,7 @@
     },
     {
       "id": 39,
+      "theme": "organisation",
       "question": "Your organization always stresses the importance of on-time delivery and reliability. A manager has detected that your team’s progress is too slow. They feel that your team’s velocity needs to be 10% higher. The organization expects you, as the Scrum Master, to make it happen. How do you respond?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1307,6 +1345,7 @@
     },
     {
       "id": 40,
+      "theme": "organisation",
       "question": "How should requirements be distributed when multiple Scrum Teams work on the same product?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1338,6 +1377,7 @@
     },
     {
       "id": 41,
+      "theme": "organisation",
       "question": "True or False: When scaling Scrum it is important to have multiple Scrum Teams working from one Product Backlog ?",
       "expectedAnswers": 1,
       "choices": [
@@ -1357,6 +1397,7 @@
     },
     {
       "id": 42,
+      "theme": "artefacts",
       "question": "During Sprint Planning, Developers work with the Product Owner to create a forecast for the Sprint. A forecast is a selection of Product Backlog items that the Developers believe are possible to get done by the end of the Sprint. Select two things that explain what done means.\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1394,6 +1435,7 @@
     },
     {
       "id": 43,
+      "theme": "artefacts",
       "question": "You are a Scrum Master and one of the Developers approaches you and says: Every Sprint we are not completing regression testing for all of the selected Product Backlog items in the Sprint, but regression testing is part of the Definition of Done. We have discussed with the Product Owner and during the Sprint we decided to change the Definition of Done to remove regression testing. Which two actions are appropriate in this situation?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1425,6 +1467,7 @@
     },
     {
       "id": 44,
+      "theme": "scrum-master",
       "question": "In the Sprint Review, one of the stakeholders highlights the money spent this year, and that due to market changes, the funding may run out. An argument follows this statement, with raised voices and strong emotional statements. As a Scrum Master, what are your two best options?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1462,6 +1505,7 @@
     },
     {
       "id": 45,
+      "theme": "scrum-master",
       "question": "A Scrum Team has been using the Daily Scrum to report Sprint progress to the Product Owner, because the Product Owner wants to track what every Developer is working on every day. What is the best thing for the Scrum Master to do?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1493,6 +1537,7 @@
     },
     {
       "id": 46,
+      "theme": "scrum-master",
       "question": "A few members of the Scrum Team discuss work that is not being done. Some say it is part of the Definition of Done, others say it is not. After an hour of angry discussion, someone starts making personal insults and anger levels rise. What is the best action for the Scrum Master to take?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1524,6 +1569,7 @@
     },
     {
       "id": 47,
+      "theme": "produit",
       "question": "After some small experiments with Scrum, your company decides to do a complete project with Scrum. As Scrum Master, you have been invited to the project kick-off meeting with IT and product management. The Product Owner asks how many Sprints IT will need to first figure out architecture and Infrastructure issues. What are two options to explain how such work is managed using Scrum?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1555,6 +1601,7 @@
     },
     {
       "id": 48,
+      "theme": "theorie",
       "question": "Which of the following affect the outcome of a Sprint?\n(choose all that apply)",
       "expectedAnswers": 3,
       "choices": [
@@ -1580,6 +1627,7 @@
     },
     {
       "id": 49,
+      "theme": "theorie",
       "question": "What can the Scrum Value of openness easily impact?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1624,6 +1672,7 @@
     
     {
       "id": 51,
+      "theme": "theorie",
       "question": "During the Sprint Retrospective, the newest developer says that his perspective and ideas have been ignored by the rest of the Developers throughout the Sprint. What Scrum values are touched here?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -1667,6 +1716,7 @@
     },
     {
       "id": 52,
+      "theme": "produit",
       "question": "Creating a forecast for a Sprint tends to run more smoothly when the Product Backlog items that are discussed are well understood and actionable. Which approach would you recommend to ensure well understood and actionable Product Backlog items at Sprint Planning?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1698,6 +1748,7 @@
     },
     {
       "id": 53,
+      "theme": "artefacts",
       "question": "In the Daily Scrum, the Product Owner applauds every Developer who moves a Sprint Backlog item to completion. The Product Owner wants to encourage the Developers to make progress visible on the burn-down chart. Select the two best options for the Scrum Master to take.\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1729,6 +1780,7 @@
     },
     {
       "id": 54,
+      "theme": "evenements",
       "question": "You are the Scrum Master of a Scrum Team that is new to Scrum. The Product Owner comes to you halfway through the Sprint and says, \"I do not feel like the Developers will be able to meet the forecast that they developed during Sprint Planning. What should you do in this situation?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1760,6 +1812,7 @@
     },
     {
       "id": 55,
+      "theme": "organisation",
       "question": "What is the primary concern when multiple Scrum Teams work from the same Product Backlog with the goal of creating a valuable and useful integrated Increment by the end of their Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1791,6 +1844,7 @@
     },
     {
       "id": 56,
+      "theme": "produit",
       "question": "Your Scrum Team has been working together for over a dozen Sprints. The Scrum Team consists of 10 members. Each Sprint takes four weeks. As a Scrum Master, you observe that the Developers are hardly collaborating: during the Sprint, members are primarily working on their own items. You also notice that the items on the Sprint Backlog are mostly unrelated. You suspect that the lack of a Sprint Goal might be the cause. Although you have encouraged the use of a Sprint Goal, both the Product Owner and the Developers have concluded that they are unable to create Sprint Goals based on the wide variety of items on their Product Backlog. What might explain why this Scrum Team is struggling to craft a Sprint Goal?\n(choose all that apply)",
       "expectedAnswers": 3,
       "choices": [
@@ -1828,6 +1882,7 @@
     },
     {
       "id": 57,
+      "theme": "produit",
       "question": "What is one way to determine if the Product Owner is interacting with the Developers enough throughout a Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1859,6 +1914,7 @@
     },
     {
       "id": 58,
+      "theme": "artefacts",
       "question": "Which statement about the Sprint Goal is incorrect?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1902,6 +1958,7 @@
     },
     {
       "id": 59,
+      "theme": "artefacts",
       "question": "User documentation is part of your Definition of Done. However, there are not enough technical writers for all teams. Your Scrum Team does not have a technical writer. What needs to be done?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1927,6 +1984,7 @@
     },
     {
       "id": 60,
+      "theme": "artefacts",
       "question": "During the Sprint Review the Product Owner introduces the functionality that is likely to be done over the next Sprints. The Chief Security Officer reminds everyone that through the envisioned functionality, sensitive personal user data will be stored. This might be the subject of external security audits. He reminds everyone of important non-functional requirements with regards to security. These were not applicable and not considered previously. What are two effective ways the Scrum Team can manage these high-security concerns?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1964,6 +2022,7 @@
     },
     {
       "id": 61,
+      "theme": "organisation",
       "question": "True or False: Using Scrum ensures that adding more resources to a project proportionally increases the value delivered.",
       "expectedAnswers": 1,
       "choices": [
@@ -1983,6 +2042,7 @@
     },
     {
       "id": 62,
+      "theme": "theorie",
       "question": "Which four of the following risks to product development are addressed by Scrum?\n(choose the best four answers)",
       "expectedAnswers": 4,
       "choices": [
@@ -2026,6 +2086,7 @@
     },
     {
       "id": 63,
+      "theme": "evenements",
       "question": "True or False: When multiple Scrum Teams work on the same product, they should employ a \"Definition of Ready\" to maximize their velocity. A \"Definition of Ready\" ensures that Sprint Planning can end within its timebox. This has a positive effect on the team's velocity, as the team will have more time for productive work.",
       "expectedAnswers": 1,
       "choices": [

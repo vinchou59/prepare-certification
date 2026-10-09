@@ -2,6 +2,7 @@
   "questions": [
     {
       "id": 1,
+      "theme": "principes",
       "question": "How does Kanban for Scrum Teams maximize value delivered?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -39,6 +40,7 @@
     },
     {
       "id": 2,
+      "theme": "wip",
       "question": "In which of these situations should the Scrum Team adjust their Work in Progress (WIP) Limits?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -70,6 +72,7 @@
     },
     {
       "id": 3,
+      "theme": "evenements",
       "question": "Which metric makes most sense to look at during Sprint Planning?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -101,6 +104,7 @@
     },
     {
       "id": 4,
+      "theme": "metriques",
       "question": "Little's Law states that:\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -132,6 +136,7 @@
     },
     {
       "id": 5,
+      "theme": "wip",
       "question": "When is the most appropriate time for Scrum Teams practicing professional Scrum with Kanban to inspect and adapt their Work in Progress (WIP) Limits?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -163,6 +168,7 @@
     },
     {
       "id": 6,
+      "theme": "evenements",
       "question": "A Scrum Team’s service level expectation (SLE) is an input into the various Scrum events. In which event will SLE provide the most benefit towards maintaining good flow?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -194,6 +200,7 @@
     },
     {
       "id": 7,
+      "theme": "principes",
       "question": "You still need a Scrum Master when applying Kanban practices in the Scrum framework.\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -219,6 +226,7 @@
     },
     {
       "id": 8,
+      "theme": "wip",
       "question": "What is the potential benefit of limiting Work in Progress (WIP)?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -256,6 +264,7 @@
     },
     {
       "id": 9,
+      "theme": "workflow",
       "question": "When using Kanban, it is useful to have explicit policies. What existing elements in the Scrum Guide might be used as explicit policies?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -287,6 +296,7 @@
     },
     {
       "id": 10,
+      "theme": "evenements",
       "question": "Which of the following metrics are likely to be reviewed during flow-based Daily Scrum?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -336,6 +346,7 @@
     },
     {
       "id": 11,
+      "theme": "wip",
       "question": "How do Work in Progress (WIP) Limits relate to self-management?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -367,6 +378,7 @@
     },
     {
       "id": 12,
+      "theme": "principes",
       "question": "True or False: The Scrum framework already contains elements that create a pull system.",
       "expectedAnswers": 1,
       "choices": [
@@ -386,6 +398,7 @@
     },
     {
       "id": 13,
+      "theme": "evenements",
       "question": "True or False: When the Developers add Kanban to Scrum, the way they use the Sprint Goal during their Daily Scrum changes.",
       "expectedAnswers": 1,
       "choices": [
@@ -405,6 +418,7 @@
     },
     {
       "id": 14,
+      "theme": "metriques",
       "question": "True or False: Little's Law is used to forecast a Scrum Team’s output.",
       "expectedAnswers": 1,
       "choices": [
@@ -424,6 +438,7 @@
     },
     {
       "id": 15,
+      "theme": "metriques",
       "question": "The Cycle Time metric for a certain Work Item cannot be used:\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -461,6 +476,7 @@
     },
     {
       "id": 16,
+      "theme": "metriques",
       "question": "What is the best use for the Work Item Aging metric?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -498,6 +514,7 @@
     },
     {
       "id": 17,
+      "theme": "wip",
       "question": "What should the Developers do if, during the Sprint, the Product Owner asks them to add an urgent unplanned work item that aligns to the Sprint Goal but does not fit into the current Work in Progress (WIP) Limits?\n(choose the two best answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -529,6 +546,7 @@
     },
     {
       "id": 18,
+      "theme": "workflow",
       "question": "What might a Scrum Team visualize with Kanban?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -560,6 +578,7 @@
     },
     {
       "id": 19,
+      "theme": "metriques",
       "question": "What qualitative information can you get from a Cycle Time Scatterplot?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -591,6 +610,7 @@
     },
     {
       "id": 20,
+      "theme": "metriques",
       "question": "Which of the following are leading indicator metrics?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -628,6 +648,7 @@
     },
     {
       "id": 21,
+      "theme": "wip",
       "question": "When can a Work in Progress (WIP) Limit change?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -671,6 +692,7 @@
     },
     {
       "id": 22,
+      "theme": "principes",
       "question": "True or False: If you reduce your batch size, your overall efficiency will always increase.",
       "expectedAnswers": 1,
       "choices": [
@@ -690,6 +712,7 @@
     },
     {
       "id": 23,
+      "theme": "workflow",
       "question": "Which statements best describe the purpose of a Scrum Team’s Definition of Workflow?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
@@ -733,6 +756,7 @@
     },
     {
       "id": 24,
+      "theme": "workflow",
       "question": "True or False: The Definition of Done still applies even if policies are explicitly stated at each column of your Workflow.",
       "expectedAnswers": 1,
       "choices": [
@@ -752,6 +776,7 @@
     },
     {
       "id": 25,
+      "theme": "metriques",
       "question": "A service level expectation (SLE) consists of which two items?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -783,6 +808,7 @@
     },
     {
       "id": 26,
+      "theme": "metriques",
       "question": "In the context of Scrum, which of the following statements about Cycle Time are true?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -808,6 +834,7 @@
     },
     {
       "id": 27,
+      "theme": "metriques",
       "question": "Within the same Kanban system, Work in Progress (WIP), is NOT a leading indicator for:\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -839,6 +866,7 @@
     },
     {
       "id": 28,
+      "theme": "metriques",
       "question": "What does it mean when a Scrum Team chooses to communicate an 85% 5-day service level expectation (SLE)?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -870,6 +898,7 @@
     },
     {
       "id": 29,
+      "theme": "principes",
       "question": "Some Kanban implementations prescribe the practice of implementing feedback loops. The Kanban Guide for Scrum Teams does not include that practice. Why?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -901,6 +930,7 @@
     },
     {
       "id": 30,
+      "theme": "metriques",
       "question": "What are the four key flow metrics in Scrum with Kanban?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -932,6 +962,7 @@
     },
     {
       "id": 31,
+      "theme": "metriques",
       "question": "Which of the following are flow metrics needed when doing Scrum with Kanban?\n(choose the best four answers)",
       "expectedAnswers": 4,
       "choices": [
@@ -975,6 +1006,7 @@
     },
     {
       "id": 32,
+      "theme": "principes",
       "question": "Which of these statements about Sprints and Kanban is NOT correct?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1006,6 +1038,7 @@
     },
     {
       "id": 33,
+      "theme": "principes",
       "question": "What are possible benefits of supplementing Scrum with Kanban practices?\n(choose the best four answers)",
       "expectedAnswers": 4,
       "choices": [
@@ -1055,6 +1088,7 @@
     },
     {
       "id": 34,
+      "theme": "wip",
       "question": "True or False: The primary effect of limiting Work in Progress (WIP) is that it creates a pull system.",
       "expectedAnswers": 1,
       "choices": [
@@ -1074,6 +1108,7 @@
     },
     {
       "id": 35,
+      "theme": "principes",
       "question": "Which of the following statements about supplementing Scrum with Kanban practices is true?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1105,6 +1140,7 @@
     },
     {
       "id": 36,
+      "theme": "principes",
       "question": "What is Kanban?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -1136,6 +1172,7 @@
     },
     {
       "id": 37,
+      "theme": "principes",
       "question": "Which of these statements are true about Kanban and the Scrum theory of empiricism?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
@@ -1167,6 +1204,7 @@
     },
     {
       "id": 38,
+      "theme": "workflow",
       "question": "Which of these are typically included in the Definition of Workflow policies?\n(choose the best six answers)",
       "expectedAnswers": 6,
       "choices": [
@@ -1228,6 +1266,7 @@
     },
     {
       "id": 39,
+      "theme": "wip",
       "question": "True or False: Limiting Work in Progress (WIP) will likely reduce the amount of collaboration in the Scrum Team.",
       "expectedAnswers": 1,
       "choices": [
@@ -1247,6 +1286,7 @@
     },
     {
       "id": 40,
+      "theme": "evenements",
       "question": "What might be considered during the Sprint Retrospective once a team decides to supplement their Scrum with Kanban?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [

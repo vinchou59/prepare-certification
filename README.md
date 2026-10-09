@@ -4,11 +4,13 @@ Quiz d'entraînement aux certifications agiles : PSM II, PSPO I, PSK I, PSM-AI e
 
 **Site : https://vinchou59.github.io/prepare-certification/**
 
-Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur téléphone, sans installation ni compte. Le bouton « Partager » de l'accueil affiche le lien et un QR code.
+Les questions proviennent d'examens réellement passés ou fait passer : aucune n'est générée.
+
+Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur téléphone, sans installation ni compte. Le bouton « Partager » de l'accueil affiche le lien et un QR code (bibliothèque [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator), MIT, incluse dans `site/vendor/`).
 
 ## Fonctionnement
 
-- **Entraînement** : correction et explications après chaque question.
+- **Entraînement** : correction et explications après chaque question. On peut choisir un **thème** (par exemple « Événements » ou « Métriques de flux »). Les questions sont choisies par **répétition espacée** : d'abord les erreurs à revoir, puis les questions jamais vues, puis celles dont la révision est arrivée à échéance.
 - **Examen** : format de l'examen officiel (nombre de questions et durée), compte à rebours et fin automatique quand le temps est écoulé, navigation libre, correction complète à la fin. Si la banque contient moins de questions que l'examen officiel, la durée est ajustée au prorata.
 
 | Certification | Examen officiel | Seuil |
@@ -18,6 +20,7 @@ Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur té
 | PSK I | 45 questions, 60 min | 85 % |
 | PSM-AI | 40 questions, 60 min | 85 % |
 | CCA Agile | 60 questions, 60 min | 85 % |
+
 - Raccourcis clavier : les lettres (A, B, C…) pour répondre, Entrée pour valider, flèches gauche et droite pour naviguer.
 - En mode Examen, **Marquer pour revoir** signale une question sur la barre de progression ; l'avertissement de fin rappelle les questions marquées.
 - L'ordre des réponses est **mélangé** à chaque quiz (réglage « Ordre des réponses » à l'accueil). Les réponses « All of the above » restent en dernier, les questions Vrai/Faux gardent leur ordre.
@@ -29,6 +32,8 @@ Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur té
 - Chaque quiz terminé est enregistré **dans le navigateur de l'appareil utilisé**, sans compte ni envoi de données.
 - L'accueil affiche les 10 derniers résultats de la certification choisie, par rapport au seuil de réussite.
 - Une question ratée devient « à retravailler » jusqu'à ce qu'elle soit réussie. Le bouton **Retravailler mes erreurs** de l'accueil lance un quiz avec ces questions ; **Retravailler ces erreurs** fait de même avec les erreurs du quiz qui vient de se terminer.
+- **Ma progression** répartit les questions entre maîtrisées, en cours, à revoir et jamais vues. Une bonne réponse fait monter la question d'une « boîte » (1 à 5), une erreur la renvoie en boîte 1 ; elle revient ensuite à réviser après 0, 1, 3, 7 ou 14 jours selon sa boîte. Maîtrisée = boîte 4 ou 5.
+- **Points faibles par thème** classe les thèmes du plus faible au plus solide (dernier résultat de chaque question vue) ; le bouton **S'entraîner** lance un entraînement sur ce thème.
 - **Effacer mon historique**, en bas de l'accueil, remet tout à zéro.
 
 Les réponses ne sont affichées qu'à la correction, mais elles font partie des données du site : c'est un outil d'entraînement, pas d'examen.
@@ -56,7 +61,8 @@ npm start    # sert le site sur http://localhost:8765/ (Python 3)
 ## Ajouter une certification
 
 1. Ajouter `site/data/questions_<certif>.json` (même format que les fichiers existants).
-2. Déclarer la certification dans `site/data/certifications.json` (identifiant, noms, fichier, seuil de réussite ou `null`, format d'examen `exam` : nombre de questions et durée en minutes).
+2. Déclarer la certification dans `site/data/certifications.json` (identifiant, noms, fichier, seuil de réussite ou `null`, format d'examen `exam` : nombre de questions et durée en minutes, liste des thèmes `themes` : identifiant et libellé).
+   Chaque question porte un champ `theme` parmi ces identifiants ; pour changer le thème d'une question, il suffit de modifier cette ligne.
 3. Lancer `npm test` : le test de cohérence signale toute question incomplète.
 
 Un texte ou une explication ne doit jamais désigner une autre réponse par sa lettre (« option B ») : l'ordre des réponses est mélangé. Le test de cohérence le vérifie.

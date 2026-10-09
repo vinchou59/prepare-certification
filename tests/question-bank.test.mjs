@@ -20,6 +20,10 @@ test("certifications.json : identifiants uniques et fichiers existants", () => {
     assert.ok(c.passMark === null || (c.passMark > 0 && c.passMark <= 100), `seuil invalide : ${c.id}`);
     assert.ok(c.exam && Number.isInteger(c.exam.questions) && c.exam.questions > 0
       && Number.isInteger(c.exam.minutes) && c.exam.minutes > 0, `format d'examen invalide : ${c.id}`);
+    assert.ok(Array.isArray(c.themes) && c.themes.length > 0, `aucun thème déclaré : ${c.id}`);
+    const themeIds = c.themes.map((t) => t.id);
+    assert.equal(new Set(themeIds).size, themeIds.length, `thème en double : ${c.id}`);
+    for (const t of c.themes) assert.ok(t.id && t.label && t.label.trim(), `thème sans identifiant ou libellé : ${c.id}`);
   }
 });
 
@@ -37,6 +41,8 @@ for (const cert of certifications) {
     assert.ok(Array.isArray(questions) && questions.length > 0, "aucune question");
     const ids = new Set();
     const texts = new Set();
+    const themes = new Set(cert.themes.map((t) => t.id));
+    const used = new Set();
     for (const q of questions) {
       const where = `#${q.id}`;
       if (!Number.isInteger(q.id) || ids.has(q.id)) problems.push(`${where} : id absent ou en double`);
@@ -45,6 +51,8 @@ for (const cert of certifications) {
       if (!key) problems.push(`${where} : texte vide`);
       else if (texts.has(key)) problems.push(`${where} : question en double`);
       texts.add(key);
+      if (!themes.has(q.theme)) problems.push(`${where} : thème « ${q.theme ?? ""} » absent de certifications.json`);
+      used.add(q.theme);
       if (!Array.isArray(q.choices) || q.choices.length < 2) { problems.push(`${where} : moins de 2 choix`); continue; }
       const correct = q.choices.filter((c) => c.isCorrect === true).length;
       if (correct === 0) problems.push(`${where} : aucune bonne réponse`);
@@ -60,6 +68,7 @@ for (const cert of certifications) {
         }
       });
     }
+    for (const t of themes) if (!used.has(t)) problems.push(`thème « ${t} » sans aucune question`);
     assert.deepEqual(problems, [], `Incohérences :\n${problems.join("\n")}`);
   });
 }

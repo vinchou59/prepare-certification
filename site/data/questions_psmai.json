@@ -2,6 +2,7 @@
   "questions": [
     {
       "id": 1,
+      "theme": "ia-responsable",
       "question": "A city’s public chatbot is found to be providing inaccurate compliance advice to small business owners. To restore trust with the public and mitigate legal risk, how should you resolve the concern about inaccurate responses?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -33,6 +34,7 @@
     },
     {
       "id": 2,
+      "theme": "ia-scrum",
       "question": "As the Developers begin integrating AI into their workflow, they seek to ensure that the Increment remains transparent and high-quality according to the Scrum Framework. They ask how to capture the use of AI in the Definition of Done. What should the Scrum Team consider?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -64,6 +66,7 @@
     },
     {
       "id": 3,
+      "theme": "ia-scrum",
       "question": "As Scrum Teams begin to responsibly integrate AI into their daily work, which statement reflects how AI should impact the Scrum accountabilities?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -95,6 +98,7 @@
     },
     {
       "id": 4,
+      "theme": "ia-bases",
       "question": "Why does Deep Learning generally outperform classic Machine Learning for complex multimodal tasks like image and text analysis?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -126,6 +130,7 @@
     },
     {
       "id": 5,
+      "theme": "ia-scrum",
       "question": "During a brainstorming session, the Scrum Team struggles with generating ideas and organizing their thoughts. How can AI best support the effectiveness of this brainstorming process?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -157,6 +162,7 @@
     },
     {
       "id": 6,
+      "theme": "ia-scrum",
       "question": "The Developers want to improve the effectiveness of their Daily Scrum by experimenting with a new format. According to the Scrum values of Focus and Openness, how can AI best support this improvement?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -188,6 +194,7 @@
     },
     {
       "id": 7,
+      "theme": "ia-bases",
       "question": "Using the exact same prompt multiple times can still create different outputs from a generative AI model. What is the reason for the different outputs?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -219,6 +226,7 @@
     },
     {
       "id": 8,
+      "theme": "ia-scrum",
       "question": "As a Product Owner, how can you most effectively use AI-transcribed customer interviews to improve your product?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -250,6 +258,7 @@
     },
     {
       "id": 9,
+      "theme": "ia-responsable",
       "question": "A vendor demonstrates an autonomous AI agent capable of deploying production changes without human involvement. To ensure system stability and accountability, which prerequisite is minimally required?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
@@ -281,6 +290,7 @@
     },
     {
       "id": 10,
+      "theme": "ia-bases",
       "question": "How is Machine Learning best characterized within the broader hierarchy of Artificial Intelligence?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [

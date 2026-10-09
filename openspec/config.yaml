@@ -11,6 +11,8 @@ context: |
   Architecture : site/js/quiz-core.js contient la logique métier pure (tirage, correction, score), sans accès au DOM ;
   site/js/app.js gère l'interface ; site/data/ contient certifications.json et les banques questions_*.json.
   L'interface ne doit jamais afficher les bonnes réponses ni les explications avant la correction.
+  Les questions proviennent d'examens réellement passés ou fait passer par l'auteur : ne jamais générer ni inventer de question ;
+  on peut corriger une question existante (réponse, explication, forme) avec la validation de l'auteur.
   Les questions sont dans la langue de l'examen officiel (anglais pour Scrum.org, français pour CCA Agile) ; l'interface est en français.
   Tests : lanceur intégré de Node.js (npm test), à faire évoluer avec chaque changement de comportement ;
   la publication GitHub Actions est bloquée si un test échoue.
