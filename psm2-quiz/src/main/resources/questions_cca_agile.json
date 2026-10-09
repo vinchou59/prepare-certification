@@ -9,25 +9,25 @@
 	        "label": "A",
 	        "text": "Documenter dans le détail chaque sous-étape et créer des modules de validation plus formels pour aider à faire le tri.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Documenter davantage et ajouter des validations formelles alourdit le processus au lieu de le simplifier."
 	      },
 	      {
 	        "label": "B",
 	        "text": "Examiner régulièrement les chaînes de validation, conserver celles qui apportent un réel contrôle de qualité et supprimer les autres.",
 	        "isCorrect": true,
-	        "explanation": ""
+	        "explanation": "Revoir régulièrement les validations permet de garder celles qui sécurisent vraiment la qualité et de supprimer celles qui ne font que ralentir."
 	      },
 	      {
 	        "label": "C",
 	        "text": "Laisser chaque service décider seul de ses propres règles, pour qu’ils éliminent le plus de choses.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Laisser chaque service décider seul crée des règles incohérentes ; la simplification se fait en regardant la chaîne de valeur dans son ensemble."
 	      },
 	      {
 	        "label": "D",
 	        "text": "Instaurer un contrôle a priori sur toutes les décisions pour éviter leur prolifération.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Contrôler a priori toutes les décisions ajoute une validation de plus, ce qui va à l’inverse de l’objectif."
 	      }
 	    ]
 	  },
@@ -40,25 +40,25 @@
 	        "label": "A",
 	        "text": "À forcer l’équipe à travailler sans avoir à valider la qualité au quotidien.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Une définition de fini sert justement à vérifier la qualité au quotidien, pas à s’en dispenser."
 	      },
 	      {
 	        "label": "B",
 	        "text": "À documenter régulièrement le niveau d’avancement budgétaire d’un projet.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Le suivi budgétaire n’a rien à voir avec la définition de fini, qui porte sur la qualité attendue d’un livrable."
 	      },
 	      {
 	        "label": "C",
 	        "text": "À recenser toutes les idées de sujets d’innovation dans un bac à idées.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Recenser des idées relève d’un bac à idées ou d’un backlog, pas de la définition de fini."
 	      },
 	      {
 	        "label": "D",
 	        "text": "À clarifier précisément les critères à remplir pour déclarer un livrable entièrement terminé et exploitable chez le client.",
 	        "isCorrect": true,
-	        "explanation": ""
+	        "explanation": "La définition de fini partage des critères clairs pour dire qu’un livrable est réellement terminé et utilisable, ce qui évite les malentendus sur l’avancement."
 	      }
 	    ]
 	  },
@@ -71,25 +71,25 @@
 	        "label": "A",
 	        "text": "La Simplicité : car les procédures sont trop lourdes.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "La Simplicité concerne la lourdeur des procédures ; ici, le problème est l’absence d’espace pour les idées nouvelles."
 	      },
 	      {
 	        "label": "B",
 	        "text": "La Durabilité : car les équipes sont trop sollicitées.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "La Durabilité concerne le rythme soutenable des équipes, pas la place laissée à l’innovation."
 	      },
 	      {
 	        "label": "C",
 	        "text": "La Transparence : car les informations ne sont pas partagées.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "La Transparence porte sur le partage de l’information, qui n’est pas en cause dans cette situation."
 	      },
 	      {
 	        "label": "D",
 	        "text": "L’Émergence : car il n’y a pas d’espace suffisant pour l’innovation et l’expérimentation.",
 	        "isCorrect": true,
-	        "explanation": ""
+	        "explanation": "L’Émergence suppose de laisser de la place à l’expérimentation et aux idées nouvelles ; les brider pour tenir le planning la néglige."
 	      }
 	    ]
 	  },
@@ -102,13 +102,13 @@
 	        "label": "A",
 	        "text": "Vrai",
 	        "isCorrect": true,
-	        "explanation": ""
+	        "explanation": "Des rôles et des règles clairs évitent les zones grises et les allers-retours : chacun sait ce qu’il peut décider, ce qui accélère les décisions."
 	      },
 	      {
 	        "label": "B",
 	        "text": "Faux",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Au contraire, le flou sur les périmètres multiplie les validations et les blocages."
 	      }
 	    ]
 	  },
@@ -121,25 +121,25 @@
 	        "label": "A",
 	        "text": "Confier l’appropriation de la vision à un département expert qui forme périodiquement le personnel.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Confier la vision à un département expert l’éloigne du quotidien : elle doit être portée régulièrement par le management lui-même."
 	      },
 	      {
 	        "label": "B",
 	        "text": "Afficher un poster récapitulant les grandes lignes, pour que les équipes s’y réfèrent en cas de doute.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Un poster informe une fois mais ne fait pas vivre la vision ; il faut la relier régulièrement au travail concret."
 	      },
 	      {
 	        "label": "C",
 	        "text": "Réserver l’exposé de la vision aux seules réunions stratégiques pour ne pas alourdir les comités opérationnels.",
 	        "isCorrect": false,
-	        "explanation": ""
+	        "explanation": "Réserver la vision aux réunions stratégiques coupe les équipes opérationnelles du sens de leur travail."
 	      },
 	      {
 	        "label": "D",
 	        "text": "Relier fréquemment les missions courantes aux objectifs stratégiques, en expliquant comment chaque contribution s’articule dans la vision globale.",
 	        "isCorrect": true,
-	        "explanation": ""
+	        "explanation": "Relier régulièrement les missions courantes aux objectifs stratégiques permet à chacun de comprendre comment il contribue à la vision."
 	      }
 	    ]
 	  },
@@ -152,25 +152,25 @@
 	          "label": "A",
 	          "text": "Adopter un processus rigide pour garantir une livraison rapide.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "L’agilité repose sur l’adaptation, pas sur un processus rigide ; la rapidité de livraison n’est pas une fin en soi."
 	        },
 	        {
 	          "label": "B",
 	          "text": "Maximiser la valeur pour le client tout en permettant une flexibilité et une réactivité face aux changements.",
 	          "isCorrect": true,
-	          "explanation": ""
+	          "explanation": "L’agilité vise à maximiser la valeur pour le client, en s’adaptant aux changements plutôt qu’en suivant un plan figé."
 	        },
 	        {
 	          "label": "C",
 	          "text": "Limiter les interactions avec les clients pour éviter des changements fréquents.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "L’agilité recherche au contraire des échanges fréquents avec les clients pour ajuster le produit."
 	        },
 	        {
 	          "label": "D",
 	          "text": "Atteindre une performance maximale dès la première itération, sans ajustement.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "L’agilité mise sur l’amélioration itérative : on ajuste à chaque itération au lieu de viser la perfection d’emblée."
 	        }
 	      ]
 	    },
@@ -183,25 +183,25 @@
 	          "label": "A",
 	          "text": "Le coaching s’appuie souvent sur l’écoute active et le questionnement, sans imposer de directive technique.",
 	          "isCorrect": true,
-	          "explanation": ""
+	          "explanation": "Le coach pose des questions et écoute activement pour faire émerger la réflexion, sans imposer de solution technique."
 	        },
 	        {
 	          "label": "B",
 	          "text": "Le coaching vise avant tout à vérifier la qualité du travail et noter les erreurs.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "Vérifier la qualité du travail et noter les erreurs relève du contrôle, pas du coaching."
 	        },
 	        {
 	          "label": "C",
 	          "text": "Le coaching se résume à une formation descendante sur un domaine précis.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "Une formation descendante transmet un savoir ; c’est le rôle de la formation, voire du mentorat, pas du coaching."
 	        },
 	        {
 	          "label": "D",
 	          "text": "Le coach accompagne l’individu ou l’équipe à trouver ses propres solutions, plutôt que de transmettre un savoir déjà acquis.",
 	          "isCorrect": true,
-	          "explanation": ""
+	          "explanation": "Le coach aide la personne ou l’équipe à trouver ses propres solutions, alors que le mentor partage son expérience et son savoir."
 	        }
 	      ]
 	    },
@@ -214,56 +214,56 @@
 	          "label": "A",
 	          "text": "Opter pour un plan détaillé et s’y tenir strictement, en comptant sur le tableau de bord final pour décider d’une éventuelle reconduction.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "S’en tenir strictement à un plan détaillé pendant 12 mois empêche d’apprendre et de corriger la trajectoire en cours de route."
 	        },
 	        {
 	          "label": "B",
 	          "text": "Consolider toutes les données marketing et financières pendant 6 mois avant de lancer la moindre expérimentation.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "Attendre six mois avant toute expérimentation retarde l’apprentissage et la création de valeur."
 	        },
 	        {
 	          "label": "C",
 	          "text": "Laisser le projet se dérouler jusqu’à son terme, puis étudier les chiffres finaux et envisager une autre version pour l’année suivante.",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "Attendre la fin du projet pour analyser les résultats, c’est découvrir trop tard ce qui ne fonctionne pas."
 	        },
 	        {
 	          "label": "D",
 	          "text": "Procéder à de courts essais chiffrés, mesurer l’impact réel à chaque étape et ajuster rapidement la trajectoire suivant les résultats obtenus.",
 	          "isCorrect": true,
-	          "explanation": ""
+	          "explanation": "Des essais courts et mesurés permettent de vérifier l’impact réel à chaque étape et d’ajuster vite, ce qui maximise le retour sur investissement."
 	        }
 	      ]
 	    },
 	    {
 	      "id": 9,
-	      "question": "Une entreprise souhaite stimuler l’innovation interne en permettant aux collaborateurs de proposer et développer rapet intensividement leurs propres idées sur une période très courte. Quel outil serait idéal ?",
+	      "question": "Une entreprise souhaite stimuler l’innovation interne en permettant aux collaborateurs de proposer et développer rapidement et intensivement leurs propres idées sur une période très courte. Quel outil serait idéal ?",
 	      "expectedAnswers": 1,
 	      "choices": [
 	        {
 	          "label": "A",
 	          "text": "Un carnet de produit des innovations",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "Un carnet de produit recense et ordonne les idées, mais ne permet pas de les développer intensivement en peu de temps."
 	        },
 	        {
 	          "label": "B",
 	          "text": "Un forum ouvert d’innovation",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "Un forum ouvert favorise l’échange et l’émergence de sujets, pas le développement rapide de solutions."
 	        },
 	        {
 	          "label": "C",
 	          "text": "Un produit minimum viable (MVP) innovant",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "Un MVP est le résultat d’une démarche de développement, pas un format pour stimuler l’innovation collective sur une courte période."
 	        },
 	        {
 	          "label": "D",
 	          "text": "Un marathon d’innovation programmé sur 1 ou 2 jours.",
 	          "isCorrect": true,
-	          "explanation": ""
+	          "explanation": "Un marathon d’innovation (hackathon) concentre sur un ou deux jours la proposition et le développement rapide d’idées par les collaborateurs."
 	        }
 	      ]
 	    },
@@ -276,13 +276,13 @@
 	          "label": "A",
 	          "text": "Faux",
 	          "isCorrect": false,
-	          "explanation": ""
+	          "explanation": "C’est justement le rôle de la sécurité psychologique : sans elle, les erreurs sont cachées par peur des sanctions."
 	        },
 	        {
 	          "label": "B",
 	          "text": "Vrai",
 	          "isCorrect": true,
-	          "explanation": ""
+	          "explanation": "La sécurité psychologique permet de signaler problèmes et erreurs sans crainte, donc de les corriger tôt et d’en tirer des leçons."
 	        }
 	      ]
 	    },
@@ -295,13 +295,13 @@
 		      "label": "A",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Simplifier consiste à supprimer les contrôles inutiles, en conservant ceux qui garantissent la qualité ou la conformité."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Supprimer tous les contrôles ferait courir des risques sur la qualité et la conformité ; simplifier n’est pas tout supprimer."
 		    }
 		  ]
 		},
@@ -312,27 +312,27 @@
 		  "choices": [
 		    {
 		      "label": "A",
-		      "text": "Parce qu'elle impose de ne jamais modifier les priorités une fois fixées.",
+		      "text": "Parce que l’agilité impose de ne jamais modifier les priorités une fois fixées.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "L’agilité invite au contraire à revoir les priorités au fil des apprentissages."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Parce que l'agilité se limite à un changement de terminologie dans les projets.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "L’agilité change la façon de travailler et de penser ; ce n’est pas un simple changement de vocabulaire."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Pour permettre une adaptation rapide aux évolutions du marché, tout en encourageant la collaboration et l’expérimentation.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Un état d’esprit agile permet de s’adapter rapidement aux évolutions du marché, en s’appuyant sur la collaboration et l’expérimentation."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Parce que l'agilité repose uniquement sur des outils spécifiques et des méthodes strictes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Les outils et méthodes ne suffisent pas : sans état d’esprit agile, ils sont appliqués mécaniquement."
 		    }
 		  ]
 		},
@@ -345,25 +345,25 @@
 		      "label": "A",
 		      "text": "Permettre un échange régulier et ciblé d'expériences pour monter en compétence collectivement.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une communauté de pratique réunit des personnes d’un même métier ou intérêt pour partager régulièrement leurs expériences et progresser ensemble."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Évaluer individuellement les membres pour des promotions futures.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Ce n’est pas un outil d’évaluation individuelle ; un tel usage nuirait à la confiance et au partage."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Documenter strictement les décisions prises par la direction.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Documenter les décisions de la direction n’est pas son objet ; elle sert l’apprentissage entre pairs."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Coordonner les tâches opérationnelles de l’équipe.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La coordination des tâches opérationnelles relève de l’équipe elle-même, pas d’une communauté de pratique."
 		    }
 		  ]
 		},
@@ -376,25 +376,25 @@
 		      "label": "A",
 		      "text": "Instaurer un comité de pilotage mensuel qui applique un contrôle rapide avant toute action jugée significative.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un comité mensuel ajoute une étape de validation et ralentit encore les décisions."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Créer un poste intermédiaire de coordinateur, chargé de filtrer toutes les requêtes avant de les transmettre en haut lieu.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un coordinateur qui filtre les demandes ajoute un intermédiaire sans réduire la centralisation."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Insister sur l’importance de la chaîne hiérarchique en maintenant une validation formelle et s’équiper d’un outil pour gérer et accélérer le traitement des demandes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un outil peut accélérer le traitement, mais maintenir la validation hiérarchique sur tout ne règle pas le problème de fond."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Définir un périmètre d’autonomie clair pour les équipes et leur faire confiance sur les décisions usuelles, tout en soutenant l’initiative de chacun.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Un périmètre d’autonomie clair permet aux équipes de prendre elles-mêmes les décisions courantes, ce qui accélère l’action tout en gardant un cadre."
 		    }
 		  ]
 		},
@@ -407,13 +407,13 @@
 		      "label": "A",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "L’apprentissage permanent ne se résume pas à des formations officielles à une fréquence imposée."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’apprentissage permanent passe aussi par l’expérimentation, les retours d’expérience et l’échange entre pairs, pas par un quota de formations."
 		    }
 		  ]
 		},
@@ -426,25 +426,25 @@
 		      "label": "A",
 		      "text": "Un Métaplan",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Le Métaplan aide à recueillir et organiser les idées d’un groupe, mais n’est pas centré sur l’analyse des causes."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Une feuille de route produit",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une feuille de route produit planifie les évolutions ; elle ne sert pas à analyser un problème."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Un remue-méninges",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un remue-méninges génère des idées sans structurer l’analyse des causes racines."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Le diagramme d’Ishikawa (arête de poisson)",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Le diagramme d’Ishikawa classe les causes possibles d’un problème par familles, ce qui aide à remonter aux causes racines."
 		    }
 		  ]
 		},
@@ -455,27 +455,27 @@
 		  "choices": [
 		    {
 		      "label": "A",
-		      "text": "Étalier les étapes de validation sur de longues périodes pour laisser aux équipes le temps de bien se coordonner.",
+		      "text": "Étaler les étapes de validation sur de longues périodes pour laisser aux équipes le temps de bien se coordonner.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Étaler les validations dans le temps rallonge les délais au lieu de fluidifier les livraisons."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Analyser la chaîne de valeur, supprimer les validations qui n’apportent pas réellement de contrôle ou de plus-value, et ne conserver que l’essentiel.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Analyser la chaîne de valeur permet de repérer et de supprimer les validations sans valeur ajoutée, pour ne garder que l’essentiel."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Compter sur l’outil informatique pour automatiser les relectures, sans remettre en question la pertinence de toutes ces étapes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Automatiser des étapes inutiles les rend plus rapides, mais ne remet pas en question leur pertinence."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Renforcer et accélérer chaque étape de vérification en demandant davantage d’implication des parties prenantes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Renforcer chaque vérification ajoute de la charge et des délais, à l’inverse de l’objectif."
 		    }
 		  ]
 		},
@@ -488,56 +488,56 @@
 		      "label": "A",
 		      "text": "Exiger la stricte application des méthodes définies, pour garantir la cohérence et la rigueur.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Exiger l’application stricte des méthodes décourage la remise en question, donc l’esprit critique."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Encourager la contestation systématique même sans proposition constructive, pour dynamiser les débats.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La contestation systématique sans proposition crée des tensions sans faire avancer la réflexion."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Confier aux managers la capacité de critiquer, pour ne pas disperser les équipes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Réserver la critique aux managers prive l’équipe du regard de chacun."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Inviter chaque personne à challenger les hypothèses, à proposer des améliorations et à écouter les objections.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Inviter chacun à questionner les hypothèses, à proposer des améliorations et à écouter les objections développe un esprit critique constructif."
 		    }
 		  ]
 		},
 		{
 		  "id": 19,
-		  "question": "Comment responsabiliser les équipes dans la prise de décision opérationnelles ?",
+		  "question": "Comment responsabiliser les équipes dans la prise de décisions opérationnelles ?",
 		  "expectedAnswers": 1,
 		  "choices": [
 		    {
 		      "label": "A",
 		      "text": "Exiger une validation hiérarchique pour toute modification opérationnelle importante, laisser le choix sur les éléments non importants pour les équipes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Exiger une validation hiérarchique pour tout ce qui est important limite fortement la responsabilisation des équipes."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Définir un cadre d’autonomie, en explicitant les limites et les attendus, puis faire confiance aux équipes pour décider localement.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Un cadre d’autonomie explicite, avec ses limites et ses attendus, permet aux équipes de décider localement en confiance."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Répartir les responsabilités selon les compétences recensées par le management.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Répartir les responsabilités depuis le management ne donne pas aux équipes le pouvoir de décider."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Maintenir la centralisation des décisions, tout en écoutant les suggestions d’en bas.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Écouter les suggestions tout en gardant les décisions centralisées ne responsabilise pas les équipes."
 		    }
 		  ]
 		},
@@ -550,13 +550,13 @@
 		      "label": "A",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Le pragmatisme ne consiste pas à ignorer les méthodes, mais à choisir ce qui fonctionne dans le contexte."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Être pragmatique, c’est adapter les bonnes pratiques à la situation réelle en s’appuyant sur les faits, pas avancer à l’instinct."
 		    }
 		  ]
 		},
@@ -569,25 +569,25 @@
 		      "label": "A",
 		      "text": "Quand on veut gérer à huis clos un projet secret, sans que l’équipe ne voie les informations.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une salle de pilotage vise au contraire la transparence : l’information y est visible par tous."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Pour organiser exclusivement les rétrospectives quotidiennes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Elle n’est pas réservée aux rétrospectives ; elle sert à suivre en continu la stratégie et les indicateurs."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Si l’on désire remplacer toutes les réunions par un unique panneau de contrôle en ligne.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Elle ne remplace pas toutes les réunions ; c’est un lieu de partage d’information et de décision collective."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Lorsqu’on souhaite suivre la stratégie et les indicateurs clés dans un lieu centralisé où tous peuvent venir s’informer.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une salle de pilotage rassemble la stratégie et les indicateurs clés dans un lieu commun, où chacun peut venir s’informer."
 		    }
 		  ]
 		},
@@ -600,13 +600,13 @@
 		      "label": "A",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’ouverture d’esprit consiste à écouter et considérer toutes les idées, puis à retenir celles qui servent les objectifs, pas à toutes les adopter."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Adopter toutes les idées, même contraires aux objectifs, ferait perdre sa cohérence à l’équipe."
 		    }
 		  ]
 		},
@@ -619,31 +619,31 @@
 		      "label": "A",
 		      "text": "Faire définir et garder les objectifs stratégiques du côté du comité de direction pour garantir une cohérence totale.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Garder la stratégie au seul comité de direction coupe les équipes du sens de leur travail."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Expliquer régulièrement aux équipes comment leurs activités contribuent à la stratégie globale.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Expliquer comment chaque activité contribue à la stratégie donne du sens au travail des équipes."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Partager fréquemment la raison d’être de l’organisation de manière claire et accessible à tous.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Partager souvent et clairement la raison d’être de l’organisation permet à tous de s’y référer."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Centraliser toutes les décisions pour assurer une uniformité parfaite des actions.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Centraliser toutes les décisions réduit l’autonomie sans renforcer le sens."
 		    },
 		    {
 		      "label": "E",
 		      "text": "Déléguer entièrement aux équipes la construction de la vision stratégique pour favoriser leur engagement.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La vision stratégique est portée par la direction avec les équipes ; la leur déléguer entièrement ferait perdre le cap commun."
 		    }
 		  ]
 		},
@@ -656,25 +656,25 @@
 		      "label": "A",
 		      "text": "Alterner un tour de parole strict où chacun parle sans interaction, afin de limiter les éventuelles confrontations trop directes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un tour de parole sans interaction limite les confrontations, mais n’aide pas à se comprendre."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Prendre en compte les émotions et les attentes de chacun, reformuler pour valider la compréhension et rechercher des solutions mutuellement acceptables.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Prendre en compte émotions et attentes, reformuler et chercher des solutions acceptables par tous permet de sortir des positions figées."
 		    },
 		    {
 		      "label": "C",
 		      "text": "S’en tenir à la présentation de ses propres arguments en essayant de convaincre par la force des chiffres.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Chercher à convaincre par la force des chiffres sans écouter entretient l’opposition."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Renvoyer systématiquement la responsabilité d’écoute à l’autre, en continuant son monologue tant qu’on ne se sent pas compris.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Renvoyer à l’autre la responsabilité de l’écoute bloque le dialogue."
 		    }
 		  ]
 		},
@@ -687,25 +687,25 @@
 		      "label": "A",
 		      "text": "Elle ne concerne que la direction, qui est la seule à pouvoir évaluer les idées innovantes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "L’expérimentation concerne toutes les équipes, pas seulement la direction."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Elle doit rester très limitée pour éviter que l’équipe ne s’éparpille.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Limiter fortement l’expérimentation prive l’équipe de l’apprentissage, qui est au cœur de l’agilité."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Elle se cantonne aux phases finales afin de ne pas gêner les plannings initiaux.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "N’expérimenter qu’en fin de projet, c’est apprendre trop tard pour s’adapter."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Elle est centrale, car on apprend en testant des hypothèses via de petits cycles de validation.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’expérimentation est centrale : on teste des hypothèses par petits cycles pour apprendre vite et ajuster."
 		    }
 		  ]
 		},
@@ -718,25 +718,25 @@
 		      "label": "A",
 		      "text": "S’imposer par la force en ignorant les ressentis des autres.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "S’imposer en ignorant les ressentis des autres est l’opposé de l’empathie."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Faire preuve de compassion en prenant en charge les tâches de chacun.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Prendre en charge les tâches des autres n’est pas de l’empathie ; cela peut même les déresponsabiliser."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Éviter toute confrontation en approuvant systématiquement le point de vue d’autrui.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Approuver systématiquement pour éviter la confrontation n’est pas constructif : les désaccords ne sont pas traités."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Écouter activement, reformuler pour comprendre et adapter sa communication afin de co‑construire une solution satisfaisante.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’empathie constructive consiste à écouter, reformuler pour comprendre, puis adapter sa communication pour construire une solution ensemble."
 		    }
 		  ]
 		},
@@ -749,44 +749,44 @@
 		      "label": "A",
 		      "text": "Du mentoring individuel",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Le mentoring individuel offre un accompagnement personnalisé par une personne expérimentée, idéal pour progresser vite sur des compétences précises."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Une communauté de pratique",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une communauté de pratique favorise l’échange collectif, mais n’offre pas d’accompagnement personnalisé."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Un forum ouvert",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un forum ouvert fait émerger des sujets en groupe ; il ne sert pas à accompagner une personne."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Une Définition de fini",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une définition de fini précise quand un travail est terminé ; ce n’est pas un outil de montée en compétence."
 		    }
 		  ]
 		},
 		{
 		  "id": 28,
-		  "question": "Selon le guide agile, la valeur en continu implique‑t‑elle nécessairement que chaque livraison produise immédiatement des bénéfices importants pour les clients ?",
+		  "question": "Vrai ou Faux : selon le guide agile, la valeur en continu implique nécessairement que chaque livraison produise immédiatement des bénéfices importants pour les clients.",
 		  "expectedAnswers": 1,
 		  "choices": [
 		    {
 		      "label": "A",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Toutes les livraisons n’apportent pas immédiatement des bénéfices importants ; certaines servent surtout à apprendre ou à préparer la suite."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "La valeur en continu vise à livrer régulièrement de la valeur et à apprendre, sans exiger que chaque livraison ait un impact majeur immédiat."
 		    }
 		  ]
 		},
@@ -799,25 +799,25 @@
 		      "label": "A",
 		      "text": "Se concentrer sur la productivité pour augmenter la quantité des livrables.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Augmenter la quantité de livrables ne garantit ni la qualité ni la valeur."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Viser une amélioration continue des processus tout en maintenant un haut niveau de qualité dans les livrables.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’excellence agile combine amélioration continue des processus et haut niveau de qualité des livrables."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Exiger des résultats parfaits dès la première tentative.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Exiger la perfection dès la première tentative va contre l’apprentissage itératif."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Imposer une pression constante sur les équipes pour atteindre des objectifs sans échouer.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une pression constante sans droit à l’erreur épuise les équipes et freine l’apprentissage."
 		    }
 		  ]
 		},
@@ -830,31 +830,31 @@
 		      "label": "A",
 		      "text": "Partager clairement les risques et priorités avec toutes les équipes.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Partager clairement les risques et les priorités avec toutes les équipes permet à chacun de décider en connaissance de cause."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Trier à l’excès les informations à communiquer pour éviter l’éparpillement.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Trop filtrer l’information réduit la transparence."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Diffuser régulièrement l’état d’avancement opérationnel.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Diffuser régulièrement l’état d’avancement rend la situation visible par tous."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Maintenir les décisions stratégiques côté management pour éviter la confusion.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Garder les décisions stratégiques côté management limite la transparence au lieu de la renforcer."
 		    },
 		    {
 		      "label": "E",
 		      "text": "Communiquer uniquement en cas de problèmes majeurs pour aller à l’essentiel.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Ne communiquer qu’en cas de problème majeur prive les équipes d’informations utiles au quotidien."
 		    }
 		  ]
 		},
@@ -867,25 +867,25 @@
 		      "label": "A",
 		      "text": "Un contrôle vertical imposé par la direction, garant d’aucun changement en cours de route.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un contrôle vertical qui interdit les changements bloque l’amélioration continue."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Des retours d’expérience réguliers (rétrospectives, bilans, échanges de pratiques) et des ajustements immédiats.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’amélioration continue repose sur des retours d’expérience réguliers, suivis d’ajustements concrets et rapides."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Le simple fait de repérer des erreurs, sans chercher à comprendre leur cause.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Repérer les erreurs sans chercher leurs causes empêche de les corriger durablement."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Un audit qualité final, sans mise en pratique avant la prochaine saison.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un audit final appliqué tardivement ne permet pas de s’améliorer en continu."
 		    }
 		  ]
 		},
@@ -898,25 +898,25 @@
 		      "label": "A",
 		      "text": "Clarifier explicitement les rôles et responsabilités pour éviter les zones grises.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Des rôles et responsabilités explicites évitent les zones grises et permettent aux équipes d’agir sans attendre."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Maintenir un contrôle de l'avancement pour prévenir tout écart.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Contrôler l’avancement pour prévenir tout écart relève du pilotage hiérarchique, pas de l’autonomie."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Donner aux équipes un cadre clair et sécurisé de prise de décision.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Un cadre de décision clair et sécurisé permet aux équipes de décider elles-mêmes, en confiance."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Faire valider chaque décision importante par un manager expert pour garantir la qualité.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Faire valider chaque décision importante par un manager limite l’autonomie."
 		    }
 		  ]
 		},
@@ -929,25 +929,25 @@
 		      "label": "A",
 		      "text": "Servir exclusivement à des réunions informelles ponctuelles.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une Obeya n’est pas un lieu de réunions informelles ponctuelles ; elle sert au pilotage collectif."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Rassembler toutes les informations clés pour accélérer la prise de décisions collectives.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’Obeya rassemble visuellement les informations clés pour que les acteurs décident ensemble plus vite."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Définir individuellement les objectifs personnels des collaborateurs.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Les objectifs individuels ne relèvent pas d’une salle de pilotage collective."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Stocker uniquement les archives administratives des projets terminés.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une Obeya montre une information vivante et à jour, pas des archives."
 		    }
 		  ]
 		},
@@ -960,25 +960,25 @@
 		      "label": "A",
 		      "text": "Ne traiter que l’aspect culturel ou seulement l’aspect organisationnel dans un premier temps, pour éviter la dispersion.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Ne traiter qu’une dimension à la fois crée des décalages entre la culture et l’organisation."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Mettre en place une démarche d’amélioration partagée où chaque niveau (direction, managers, équipes, individus) revisite régulièrement ses pratiques.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une démarche d’amélioration partagée à tous les niveaux permet de garder la culture, l’organisation et les pratiques cohérentes."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Focus sur l’opérationnel : si les équipes sont autonomes, la culture globale finira par s’aligner toute seule.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "L’autonomie des équipes ne suffit pas : sans implication de la direction et des managers, la culture ne s’aligne pas d’elle-même."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Attribuer la coordination de la transformation culturelle à une cellule dédiée.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Confier la transformation culturelle à une cellule dédiée la déconnecte du reste de l’organisation."
 		    }
 		  ]
 		},
@@ -991,62 +991,62 @@
 		      "label": "A",
 		      "text": "Autoriser les critiques mais demander en contrepartie des solutions exhaustives, pour filtrer les objections de principes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Exiger des solutions exhaustives en échange des critiques décourage les objections, même utiles."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Exposer les doutes uniquement après coup, dans des discussions informelles, pour ne pas sembler gêner le consensus.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "N’exprimer ses doutes qu’après coup empêche d’en tenir compte au moment de décider."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Faire confiance aux décideurs, en partant du principe qu’ils ont forcément une vision plus juste de la situation et qu’ils pourront trancher.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "S’en remettre aux décideurs sans questionner prive la décision du regard de l’équipe."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Oser questionner les hypothèses et formuler des objections constructives, afin de contribuer à des décisions plus avisées.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Oser questionner et formuler des objections constructives au moment de la décision mène à de meilleures décisions, auxquelles on adhère ensuite."
 		    }
 		  ]
 		},
 		{
 		  "id": 36,
-		  "question": "Quelle est la conséquence de ne pas viser l'excellence dans un projet agile ? (Choisir les trois meilleures réponses)",
+		  "question": "Quelles sont les conséquences de ne pas viser l'excellence dans un projet agile ? (Choisir les trois meilleures réponses)",
 		  "expectedAnswers": 3,
 		  "choices": [
 		    {
 		      "label": "A",
 		      "text": "Des livrables de meilleure qualité, mais qui ne répondent pas aux attentes des parties prenantes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Ne pas viser l’excellence ne produit pas des livrables de meilleure qualité ; cette réponse se contredit."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Une perte de confiance au sein de l'équipe et vis-à-vis des parties prenantes.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une qualité insuffisante entame la confiance au sein de l’équipe et celle des parties prenantes."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Une difficulté à s'adapter aux changements du marché ou aux retours des utilisateurs.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Sans exigence de qualité, la dette s’accumule et il devient difficile de s’adapter aux changements et aux retours."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Une productivité élevée à court terme, sans conséquences sur la qualité ou la réputation.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Négliger l’excellence a des conséquences sur la qualité et la réputation ; un gain de productivité à court terme ne les annule pas."
 		    },
 		    {
 		      "label": "E",
 		      "text": "Des processus inefficaces, qui ralentissent l'équipe et augmentent les risques d'erreurs.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Des pratiques peu exigeantes rendent les processus inefficaces, ralentissent l’équipe et augmentent les erreurs."
 		    }
 		  ]
 		},
@@ -1059,25 +1059,25 @@
 		      "label": "A",
 		      "text": "Des points de synchronisation quotidiens, sans aucun document partagé.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Des points de synchronisation sans document partagé ne permettent pas de co-éditer des documents."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Une série de validations automatisées priorisant la qualité des livrables.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Des validations automatisées contrôlent la qualité, mais ne facilitent pas la rédaction à plusieurs."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Une charte d’équipe strictement orientée sur la culture managériale.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une charte d’équipe porte sur les règles de collaboration, pas sur l’édition de documents."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Des suites d’outils collaboratifs (co-édition de fichiers, partages instantanés, commentaires).",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Les outils collaboratifs (co-édition, partage instantané, commentaires) permettent à plusieurs équipes de créer et réviser des documents en parallèle."
 		    }
 		  ]
 		},
@@ -1090,25 +1090,25 @@
 		      "label": "A",
 		      "text": "Un scepticisme général refusant tout accord dans l’équipe.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un scepticisme qui refuse tout accord bloque l’équipe sans éclairer les décisions."
 		    },
 		    {
 		      "label": "B",
 		      "text": "La volonté de démolir toute proposition concurrente pour s’imposer.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Démolir les propositions des autres relève de la compétition, pas de l’esprit critique."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Le respect absolu de l’expertise d’autrui sans se poser de questions.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Accepter l’expertise d’autrui sans se poser de questions est l’inverse de l’esprit critique."
 		    },
 		    {
 		      "label": "D",
 		      "text": "La capacité à questionner constructivement les idées et hypothèses, pour éclairer les décisions.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’esprit critique consiste à questionner de façon constructive les idées et les hypothèses pour éclairer les décisions."
 		    }
 		  ]
 		},
@@ -1145,32 +1145,32 @@
 		},
 		{
 		  "id": 40,
-		  "question": "Quels sont les conséquences d'un manque d'autonomie dans une organisation Agile ? (Choisissez les deux réponses les plus pertinentes)",
+		  "question": "Quelles sont les conséquences d'un manque d'autonomie dans une organisation Agile ? (Choisissez les deux réponses les plus pertinentes)",
 		  "expectedAnswers": 2,
 		  "choices": [
 		    {
 		      "label": "A",
 		      "text": "Les décisions locales sont systématiquement retardées car on attend la validation hiérarchique.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Sans autonomie, les décisions locales attendent la validation hiérarchique et sont retardées."
 		    },
 		    {
 		      "label": "B",
 		      "text": "La communication entre services est complexifiée car tous les choix passent par un seul point de contrôle.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Quand tous les choix passent par un point de contrôle unique, la communication entre services s’alourdit."
 		    },
 		    {
 		      "label": "C",
 		      "text": "L'engagement de l'équipe baisse, voyant son pouvoir d'action limité.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La baisse d’engagement est une conséquence possible mais plus indirecte ; les deux conséquences les plus directes sont les décisions retardées et la communication alourdie."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Les erreurs sont non tracées puisque toutes les approbations sont décentralisées.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Cette réponse se contredit : un manque d’autonomie centralise les approbations, il ne les décentralise pas."
 		    }
 		  ]
 		},
@@ -1183,25 +1183,25 @@
 		      "label": "A",
 		      "text": "Tenir des retours d’expérience à intervalles réguliers, identifier concrètement les points à améliorer et suivre l’avancement des actions correctives.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Des retours d’expérience réguliers, avec des actions concrètes dont on suit l’avancement, permettent de tirer les leçons au fil de l’eau."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Inviter un consultant pour auditer la situation, consigner et faire appliquer ses recommandations.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un audit externe ponctuel ne remplace pas l’apprentissage régulier de l’équipe elle-même."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Consacrer une réunion de bilan en fin de projet et consigner de manière exhaustive les problèmes et leurs solutions pour le prochain projet.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un bilan en fin de projet arrive trop tard pour corriger les erreurs en cours."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Demander à l'expert de l'équipe de publier un guide complet sur les erreurs communes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un guide rédigé par un expert ne garantit pas que l’équipe s’approprie les leçons."
 		    }
 		  ]
 		},
@@ -1214,25 +1214,25 @@
 		      "label": "A",
 		      "text": "Expliquer régulièrement comment chaque tâche et chaque objectif local s’inscrit dans la finalité globale, afin de maintenir la motivation et la cohérence.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Expliquer régulièrement comment chaque tâche s’inscrit dans la finalité globale redonne du sens et de la cohérence."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Conserver côté management des tableaux de bord chiffrés et suivis mensuellement pour protéger les équipes du trop plein d'informations.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Garder les indicateurs côté management prive les équipes de la compréhension de leur contribution."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Faire circuler un mail à chaque trimestre récapitulant les objectifs financiers détaillés par métiers, en renvoyant les équipes à ce document pour toute question.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un mail trimestriel d’objectifs financiers ne relie pas le travail quotidien à la finalité."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Laisser chaque pôle définir ses priorités internes, pour coller aux résultats financiers souhaités.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Laisser chaque pôle définir ses priorités isolément fragmente l’organisation au lieu de donner du sens."
 		    }
 		  ]
 		},
@@ -1245,25 +1245,25 @@
 		      "label": "A",
 		      "text": "L'autonomie implique que les équipes doivent travailler sans être gênées par les parties prenantes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "L’autonomie n’isole pas les équipes des parties prenantes ; elle s’exerce en collaboration avec elles."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Les équipes sont responsabilisées et peuvent prendre certaines décisions au plus près de l'action, sans dépendre systématiquement du management.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’autonomie permet à des équipes responsabilisées de décider au plus près de l’action, sans dépendre systématiquement du management."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Les équipes doivent se conformer à des comités au lieu d'un chef pour garantir des décisions cohérentes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Remplacer un chef par des comités ne rend pas les équipes autonomes."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Les équipes doivent quand même attendre des directives avant de prendre des décisions importantes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Attendre des directives pour les décisions importantes est le contraire de l’autonomie."
 		    }
 		  ]
 		},
@@ -1276,13 +1276,13 @@
 		      "label": "A",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un leader agile ne décide pas à la place des équipes ; il crée un cadre pour qu’elles décident elles-mêmes."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Le leader agile donne une direction et un cadre clair ; la cohérence vient de ce cadre partagé, pas de la centralisation des décisions."
 		    }
 		  ]
 		},
@@ -1295,25 +1295,25 @@
 		      "label": "A",
 		      "text": "Un environnement de travail plus flexible, où les erreurs sont perçues comme des opportunités d’apprentissage.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Un état d’esprit agile voit les erreurs comme des occasions d’apprendre, dans un environnement plus flexible."
 		    },
 		    {
 		      "label": "B",
 		      "text": "La stabilité absolue des priorités jusqu'à la livraison finale.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La stabilité absolue des priorités va contre l’agilité, qui accueille le changement."
 		    },
 		    {
 		      "label": "C",
 		      "text": "L'obligation de produire un cahier des charges exhaustif avant tout développement.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un cahier des charges exhaustif préalable relève d’une approche prédictive, pas agile."
 		    },
 		    {
 		      "label": "D",
 		      "text": "La capacité à livrer plus tôt des éléments concrets et à valider leur utilité auprès des clients.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Livrer tôt des éléments concrets permet de vérifier rapidement leur utilité auprès des clients."
 		    }
 		  ]
 		},
@@ -1326,25 +1326,25 @@
 		      "label": "A",
 		      "text": "Un radiateur d'information dans la salle commune",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un radiateur d’information rend l’avancement visible, mais ne définit pas quand une tâche est terminée."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Une Définition de Fini commune et partagée",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une définition de fini partagée précise les critères à remplir pour considérer une tâche comme totalement achevée."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Un marathon d'innovation quotidien",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un marathon d’innovation sert à générer des idées, pas à définir des critères d’achèvement."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Une matrice de priorisation accessible par tous",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une matrice de priorisation aide à ordonner le travail, pas à dire quand il est fini."
 		    }
 		  ]
 		},
@@ -1357,25 +1357,25 @@
 		      "label": "A",
 		      "text": "Pour cumuler toutes les leçons apprises et les partager en fin d’année.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Accumuler les leçons pour les partager en fin d’année retarde les améliorations."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Pour réorienter la stratégie globale sans se laisser perturber par des actions concrètes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une rétrospective porte sur les pratiques de l’équipe et débouche sur des actions concrètes, pas sur la stratégie globale."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Pour analyser le budget dépensé jusqu’à présent.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "L’analyse budgétaire n’est pas l’objet d’une rétrospective."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Pour traiter rapidement des irritants et ajuster les pratiques quand un besoin d’amélioration se fait sentir.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une rétrospective ponctuelle permet de traiter rapidement un irritant ou un besoin d’amélioration, sans attendre la fin de l’itération."
 		    }
 		  ]
 		},
@@ -1388,25 +1388,25 @@
 		      "label": "A",
 		      "text": "Pour définir les livrables techniques à réaliser.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Les livrables techniques relèvent du backlog, pas de la charte d’équipe."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Pour documenter uniquement les décisions de la direction.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La charte d’équipe porte sur le fonctionnement de l’équipe, pas sur les décisions de la direction."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Pour fixer les objectifs financiers de l’année.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Les objectifs financiers ne font pas partie d’une charte d’équipe."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Pour clarifier ensemble les valeurs et principes de collaboration au sein de l’équipe.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "La charte d’équipe permet de clarifier ensemble, dès le départ, les valeurs et les règles de collaboration."
 		    }
 		  ]
 		},
@@ -1419,56 +1419,56 @@
 		      "label": "A",
 		      "text": "La Simplicité : l’excès de procédures complexes détourne les équipes de l’essentiel, réduisant leur efficacité.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "La Simplicité est en cause : l’excès de procédures et de formulaires détourne l’équipe des tâches à valeur ajoutée."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Le Leadership Agile : le manque de soutien de la hiérarchie freine les équipes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Rien n’indique un manque de soutien de la hiérarchie ; le problème vient de la lourdeur du processus."
 		    },
 		    {
 		      "label": "C",
 		      "text": "L’Adaptabilité : les équipes ont du mal à réagir face aux imprévus.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La situation ne parle pas d’imprévus, mais du temps perdu en procédures."
 		    },
 		    {
 		      "label": "D",
 		      "text": "La Transparence : les équipes ne voient pas clairement le résultat de leur travail.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Le problème n’est pas la visibilité du résultat, mais le temps consommé par les formulaires."
 		    }
 		  ]
 		},
 		{
 		  "id": 50,
-		  "question": "Quels sont les conséquences d’un manque de sens dans une organisation Agile ?",
+		  "question": "Quelles sont les conséquences d’un manque de sens dans une organisation Agile ?",
 		  "expectedAnswers": 2,
 		  "choices": [
 		    {
 		      "label": "A",
 		      "text": "Les équipes se concentrent plus sur leurs tâches en augmentant drastiquement la collaboration pour compenser.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un manque de sens ne renforce pas la collaboration ; il tend plutôt à désengager les équipes."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Les équipes se désengagent car elles ne comprennent pas la finalité de leur travail.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Sans comprendre la finalité de leur travail, les équipes se désengagent."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Les processus remplacent les référentiels stratégiques sans perte d’efficacité.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Remplacer le sens par des processus fait perdre de l’efficacité, car on ne sait plus pourquoi on agit."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Les priorités deviennent arbitraires et incohérentes pour les acteurs de terrain.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Sans sens partagé, les priorités paraissent arbitraires et incohérentes sur le terrain."
 		    }
 		  ]
 		},
@@ -1481,25 +1481,25 @@
 		      "label": "A",
 		      "text": "Clarifier précisément qui décide quoi pour améliorer l’autonomie et la réactivité.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une matrice de délégation précise qui décide quoi, ce qui renforce l’autonomie et la réactivité."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Limiter strictement les décisions au niveau managérial.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Elle sert au contraire à déléguer des décisions, pas à les réserver au management."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Créer une hiérarchie stricte de validation obligatoire.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Elle clarifie les niveaux de décision pour alléger les validations, pas pour imposer une hiérarchie stricte."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Établir des procédures détaillées pour toutes les tâches.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Elle porte sur les décisions, pas sur des procédures détaillées pour chaque tâche."
 		    }
 		  ]
 		},
@@ -1512,25 +1512,25 @@
 		      "label": "A",
 		      "text": "Elle consiste à ajuster régulièrement les priorités selon les retours du terrain.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’adaptabilité consiste à ajuster régulièrement les priorités à partir des retours du terrain."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Elle suppose avant tout une anticipation de tous les risques pour une adaptation à moindre coût.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Vouloir anticiper tous les risques relève d’une approche prédictive ; l’adaptabilité accepte l’imprévu."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Elle accueille positivement les imprévus et les changements.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’adaptabilité accueille positivement les changements et les imprévus."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Elle demande de bien délimiter le périmètre en amont pour minimiser le nombre et l’impact des changements.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Figer le périmètre pour limiter les changements est l’inverse de l’adaptabilité."
 		    }
 		  ]
 		},
@@ -1543,25 +1543,25 @@
 		      "label": "A",
 		      "text": "Lorsque des questions ou blocages urgents nécessitent une réponse rapide et que la transparence profite à tous.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "La messagerie instantanée aide à débloquer rapidement des questions urgentes, en rendant l’échange visible par toute l’équipe."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Pour limiter les échanges à un unique canal asynchrone toutes les deux semaines.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Limiter les échanges à un canal toutes les deux semaines va à l’encontre de la réactivité qu’offre la messagerie instantanée."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Pour remplacer toutes les réunions d’amélioration continue par des points rapides.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La messagerie ne remplace pas les temps d’amélioration continue, qui demandent un échange approfondi."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Afin de générer des documents officiels servant de référence contractuelle.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La messagerie instantanée n’est pas faite pour produire des documents contractuels."
 		    }
 		  ]
 		},
@@ -1574,13 +1574,13 @@
 		      "label": "A",
 		      "text": "Non, elle s’applique à toute organisation devant faire face à l’incertitude et au changement, y compris hors de l’informatique.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’agilité s’applique à toute organisation confrontée à l’incertitude et au changement, bien au-delà du logiciel."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Oui, son domaine de prédilection est forcément la conception de produits numériques.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Née dans le logiciel, l’agilité s’est étendue à de nombreux domaines : marketing, ressources humaines, industrie…"
 		    }
 		  ]
 		},
@@ -1593,25 +1593,25 @@
 		      "label": "A",
 		      "text": "Permettre aux solutions de se révéler progressivement, à travers des expérimentations et des retours continus.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "L’émergence laisse les solutions se révéler progressivement, grâce aux expérimentations et aux retours continus."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Concentrer l’effort uniquement sur la définition initiale de la vision et laisser le reste se faire.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Définir une vision puis laisser faire, sans retours ni ajustements, ne permet pas aux solutions d’émerger."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Suivre un plan rigide pour garantir un contrôle absolu à chaque étape du projet.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un plan rigide empêche par définition l’émergence."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Garder une direction précise avec ou sans retours de la part des équipes.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Garder une direction sans tenir compte des retours empêche de meilleures solutions d’émerger."
 		    }
 		  ]
 		},
@@ -1624,25 +1624,25 @@
 		      "label": "A",
 		      "text": "Un tableau Kanban pour visualiser et limiter le travail en cours.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Un tableau Kanban rend visible le travail en cours et permet de limiter ce qui est démarré en parallèle."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Des validations automatisées pour vérifier la qualité des livrables.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Des validations automatisées contrôlent la qualité, mais ne visualisent ni ne limitent le travail en cours."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Un forum ouvert pour libérer la parole sur tous les sujets.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un forum ouvert libère la parole, mais ne sert pas à suivre le flux de travail."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Un marathon d'innovation pour générer rapidement de nouvelles idées.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un marathon d’innovation génère des idées ; il ne pilote pas le travail en cours."
 		    }
 		  ]
 		},
@@ -1655,13 +1655,13 @@
 		      "label": "A",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Livrer régulièrement, c’est fournir des éléments utilisables qui apportent de la valeur ou permettent d’apprendre, pas des maquettes inutilisables."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Des maquettes inutilisables n’apportent pas de valeur au client ; ce n’est pas le sens de la livraison régulière."
 		    }
 		  ]
 		},
@@ -1674,13 +1674,13 @@
 		      "label": "A",
 		      "text": "Vrai",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Un rythme soutenable évite justement d’enchaîner les « coups de collier » et laisse du temps pour s’améliorer."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Faux",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Un rythme soutenable se maintient dans la durée, avec du temps pour l’amélioration continue, au lieu d’enchaîner les efforts ponctuels."
 		    }
 		  ]
 		},
@@ -1693,25 +1693,25 @@
 		      "label": "A",
 		      "text": "Maximiser la production en déconnectant les équipes du sens global.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une vision stratégique sert au contraire à relier les équipes au sens global."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Donner un cap inspirant et aligner les initiatives sur la raison d’être de l’organisation.",
 		      "isCorrect": true,
-		      "explanation": ""
+		      "explanation": "Une vision claire donne un cap inspirant et aligne les initiatives sur la raison d’être de l’organisation."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Créer un document stratégique confidentiel réservé à la direction.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une vision réservée à la direction ne peut pas aligner les équipes."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Diffuser un plan détaillé et figé pour tous les projets à venir.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "Une vision n’est pas un plan détaillé et figé ; elle donne une direction qui laisse place à l’adaptation."
 		    }
 		  ]
 		}

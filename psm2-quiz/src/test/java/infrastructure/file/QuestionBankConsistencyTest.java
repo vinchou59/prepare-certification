@@ -13,7 +13,9 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Vérifie la cohérence de toutes les banques de questions (spec openspec/specs/question-bank).
+ * Vérifie la cohérence de toutes les banques de questions (spec openspec/specs/question-bank) :
+ * ids uniques, pas de doublon, lettres dans l'ordre, nombre de bonnes réponses,
+ * texte des choix sur une ligne et explication pour chaque choix.
  * Une question incohérente ne peut jamais être réussie : ce test empêche d'en livrer une.
  */
 class QuestionBankConsistencyTest {
@@ -29,10 +31,15 @@ class QuestionBankConsistencyTest {
                 continue;
             }
             Set<Integer> ids = new HashSet<>();
+            Set<String> texts = new HashSet<>();
             for (Question q : questions) {
                 String where = file + " #" + q.getId();
                 if (!ids.add(q.getId())) problems.add(where + " : id en double");
-                if (q.getQuestion() == null || q.getQuestion().isBlank()) problems.add(where + " : texte vide");
+                if (q.getQuestion() == null || q.getQuestion().isBlank()) {
+                    problems.add(where + " : texte vide");
+                } else if (!texts.add(q.getQuestion().replaceAll("\\s+", " ").trim().toLowerCase())) {
+                    problems.add(where + " : question en double");
+                }
                 List<Choice> choices = q.getChoices();
                 if (choices == null || choices.size() < 2) {
                     problems.add(where + " : moins de 2 choix");
@@ -52,6 +59,11 @@ class QuestionBankConsistencyTest {
                     }
                     if (c.getText() == null || c.getText().isBlank()) {
                         problems.add(where + " : choix " + c.getLabel() + " sans texte");
+                    } else if (c.getText().contains("\n")) {
+                        problems.add(where + " : choix " + c.getLabel() + " sur plusieurs lignes");
+                    }
+                    if (c.getExplanation() == null || c.getExplanation().isBlank()) {
+                        problems.add(where + " : choix " + c.getLabel() + " sans explication");
                     }
                 }
             }

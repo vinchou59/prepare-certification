@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": 1,
-      "question": "How much time must a Product Owner spend with the Developers?\n\n(choose the best answer)",
+      "question": "How much time must a Product Owner spend with the Developers?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -33,7 +33,7 @@
     },
     {
       "id": 2,
-      "question": "Who is accountable for creating a valuable and usable Increment each Sprint?\n\n(choose the best answer)",
+      "question": "Who is accountable for creating a valuable and usable Increment each Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -70,7 +70,7 @@
     },
     {
       "id": 3,
-      "question": "What does it mean for a Scrum Team to be cross-functional?\n\n(choose the best answer)",
+      "question": "What does it mean for a Scrum Team to be cross-functional?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -101,7 +101,7 @@
     },
     {
       "id": 4,
-      "question": "The Daily Scrum is an event that happens every day. What would be three key concerns if the frequency were to be lowered to every two or three days?\n\n(choose the best three answers)",
+      "question": "The Daily Scrum is an event that happens every day. What would be three key concerns if the frequency were to be lowered to every two or three days?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
         {
@@ -144,7 +144,7 @@
     },
     {
       "id": 5,
-      "question": "In accordance with Scrum theory, how should a group of 100 people be divided into multiple Scrum Teams?\n\n(choose the best answer)",
+      "question": "In accordance with Scrum theory, how should a group of 100 people be divided into multiple Scrum Teams?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -194,7 +194,7 @@
     },
     {
       "id": 7,
-      "question": "A Product Owner is accountable for maximizing the value of the product that is the result of the work of the Scrum Team. Which of the following can be delegated to others, while the Product Owner remains accountable for the work?\n\n(choose the best two answers)",
+      "question": "A Product Owner is accountable for maximizing the value of the product that is the result of the work of the Scrum Team. Which of the following can be delegated to others, while the Product Owner remains accountable for the work?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -225,7 +225,7 @@
     },
     {
       "id": 8,
-      "question": "In the middle of the Sprint, the customer decides that there are two new features she wants.\nThe Product Owner could:\n\n(choose the best two answers)",
+      "question": "In the middle of the Sprint, the customer decides that there are two new features she wants. The Product Owner could:\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -256,7 +256,7 @@
     },
     {
       "id": 9,
-      "question": "Who determines how many Product Backlog items the Developers select for a Sprint?\n\n(choose the best answer)",
+      "question": "Who determines how many Product Backlog items the Developers select for a Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -293,7 +293,7 @@
     },
     {
       "id": 10,
-      "question": "The job of a Product Owner focuses on the following:\n\n(choose the best two answers)",
+      "question": "The job of a Product Owner focuses on the following:\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -324,7 +324,7 @@
     },
     {
       "id": 11,
-      "question": "Scrum requires that the Product Owner must use which of the following techniques?\n\n(choose the best answer)",
+      "question": "Scrum requires that the Product Owner must use which of the following techniques?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -727,7 +727,7 @@
     },
     {
       "id": 25,
-      "question": "Your management has asked you to take the lead in the development of a new product. Six teams new to Scrum will build this product.\n\nYou have gathered a number of requirements and ideas into an early form of a Product Backlog. How would you minimize dependencies between the Scrum Teams?",
+      "question": "Your management has asked you to take the lead in the development of a new product. Six teams new to Scrum will build this product. You have gathered a number of requirements and ideas into an early form of a Product Backlog. How would you minimize dependencies between the Scrum Teams?",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -769,7 +769,7 @@
       "choices": [
         {
           "label": "A",
-          "text": "Tell the Product Owner to re-order he Product Backlog so the work involving the external component can be planned in a separate sprint.",
+          "text": "Tell the Product Owner to re-order the Product Backlog so the work involving the external component can be planned in a separate sprint.",
           "isCorrect": false,
           "explanation": "This focuses on scheduling around the supplier component rather than advising on ordering for value delivery."
         },
@@ -789,7 +789,7 @@
     },
     {
       "id": 27,
-      "question": "A new Developer is having continuing conflicts with existing members of the Scrum Team,\nwhich is impacting the delivery of the Increment. If necessary, who is responsible for removing\nthe Developer from the Scrum Team?",
+      "question": "A new Developer is having continuing conflicts with existing members of the Scrum Team, which is impacting the delivery of the Increment. If necessary, who is responsible for removing the Developer from the Scrum Team?",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -876,7 +876,7 @@
           "label": "B",
           "text": "False",
           "isCorrect": false,
-          "explanation": "The Scrum Guide defines the Sprint Review as an event to collect stakeholder feedback."
+          "explanation": "The Sprint Review is precisely where the Scrum Team presents the results of its work to key stakeholders and gathers their feedback, so the statement is true."
         }
       ]
     },
@@ -895,7 +895,7 @@
           "label": "B",
           "text": "False",
           "isCorrect": false,
-          "explanation": "The Scrum Guide states that Scrum only requires the three accountabilities to start."
+          "explanation": "Scrum needs nothing more than these three accountabilities to get started; no upfront requirements document, detailed plan or additional role is required."
         }
       ]
     },
@@ -1211,7 +1211,7 @@
     },
     {
       "id": 42,
-      "question": "Which of the following are the Developers accountable for?\n\n(choose the best two answers)",
+      "question": "Which of the following are the Developers accountable for?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -1242,7 +1242,7 @@
     },
     {
       "id": 43,
-      "question": "Who starts the Daily Scrum?\n\n(choose the best answer)",
+      "question": "Who starts the Daily Scrum?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1279,7 +1279,7 @@
     },
     {
       "id": 44,
-      "question": "True or False: A Product Owner with multiple teams working on one product should maintain\nseparate Product Backlogs for each team.",
+      "question": "True or False: A Product Owner with multiple teams working on one product should maintain separate Product Backlogs for each team.",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1298,7 +1298,7 @@
     },
     {
       "id": 45,
-      "question": "True or False: Product Owners must create clear and unambiguous acceptance criteria for\n each Product Backlog item before it may be selected in Sprint Planning.",
+      "question": "True or False: Product Owners must create clear and unambiguous acceptance criteria for each Product Backlog item before it may be selected in Sprint Planning.",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1317,7 +1317,7 @@
     },
     {
       "id": 46,
-      "question": "How often should customer satisfaction be measured?\n\n(choose the best answer)",
+      "question": "How often should customer satisfaction be measured?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1367,7 +1367,7 @@
     },
     {
       "id": 48,
-      "question": "What happens if the Scrum Team cannot complete its work by the end of the Sprint?\n\n(choose the best answer)",
+      "question": "What happens if the Scrum Team cannot complete its work by the end of the Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1392,7 +1392,7 @@
     },
     {
       "id": 49,
-      "question": "The IT manager asks a Scrum Team for a status report describing the progress throughout the\nSprint. The Scrum Team asks the Scrum Master for advice. The Scrum Master should\n\n(choose the best answer)",
+      "question": "The IT manager asks a Scrum Team for a status report describing the progress throughout the Sprint. The Scrum Team asks the Scrum Master for advice. The Scrum Master should\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1429,7 +1429,7 @@
     },
     {
       "id": 50,
-      "question": "The \"cone of uncertainty\" can be used to do what?\n\n(choose the best answer)",
+      "question": "The \"cone of uncertainty\" can be used to do what?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1460,7 +1460,7 @@
     },
     {
       "id": 51,
-      "question": "True or False: During the Sprint Review the stakeholder's role is to reorder the Product\nBacklog.",
+      "question": "True or False: During the Sprint Review the stakeholder's role is to reorder the Product Backlog.",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1479,7 +1479,7 @@
     },
     {
       "id": 52,
-      "question": "True or False: The Product Owner makes sure the correct stakeholders are invited to the\nSprint Retrospective. They might have important instructions for team improvements.",
+      "question": "True or False: The Product Owner makes sure the correct stakeholders are invited to the Sprint Retrospective. They might have important instructions for team improvements.",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1492,13 +1492,13 @@
           "label": "B",
           "text": "False",
           "isCorrect": true,
-          "explanation": "Only the Scrum Team participates in the Sprint Retrospective, and stakeholders are not invited."
+          "explanation": "The Sprint Retrospective is the Scrum Team's event for inspecting how it works; improvements come from the team itself, not from instructions given by stakeholders."
         }
       ]
     },
     {
       "id": 53,
-      "question": "When can Developers cancel a Sprint?\n\n(choose the best answer)",
+      "question": "When can Developers cancel a Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1535,7 +1535,7 @@
     },
     {
       "id": 54,
-      "question": "What are three advantages of a Product Owner sharing a clearly defined Product Goal with the\nScrum Team?\n\n(choose the best three answers)",
+      "question": "What are three advantages of a Product Owner sharing a clearly defined Product Goal with the Scrum Team?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
         {
@@ -1591,7 +1591,7 @@
     },
     {
       "id": 56,
-      "question": "Why does the Product Owner want the Developers to adhere to its Definition of Done?\n\n(choose the best answer)",
+      "question": "Why does the Product Owner want the Developers to adhere to its Definition of Done?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1622,7 +1622,7 @@
     },
     {
       "id": 57,
-      "question": "Who is accountable for tracking the remaining work toward the Sprint Goal?\n\n(choose the best answer)",
+      "question": "Who is accountable for tracking the remaining work toward the Sprint Goal?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1653,7 +1653,7 @@
     },
     {
       "id": 58,
-      "question": "A Project Manager working with your Scrum Team has raised concerns about progress and\nmoney spent. What are the two best responses?\n\n(choose the best two answers)",
+      "question": "A Project Manager working with your Scrum Team has raised concerns about progress and money spent. What are the two best responses?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -1709,7 +1709,7 @@
     },
     {
       "id": 60,
-      "question": "Which output from Sprint Planning provides the Scrum Team with a target and overarching\ndirection for the Sprint?\n\n(choose the best answer)",
+      "question": "Which output from Sprint Planning provides the Scrum Team with a target and overarching direction for the Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1740,7 +1740,7 @@
     },
     {
       "id": 61,
-      "question": "How is management that is external to the Scrum Team involved in the Daily Scrum?\n\n(choose the best answer)",
+      "question": "How is management that is external to the Scrum Team involved in the Daily Scrum?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1771,7 +1771,7 @@
     },
     {
       "id": 62,
-      "question": "Which of the following is an example of an Increment?\n\n(choose the best answer)",
+      "question": "Which of the following is an example of an Increment?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1814,7 +1814,7 @@
     },
     {
       "id": 63,
-      "question": "Why is it important that there is only one Product Owner per product?\n\n(choose the best three answers)",
+      "question": "Why is it important that there is only one Product Owner per product?\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
         {
@@ -1837,7 +1837,7 @@
         },
         {
           "label": "D",
-          "text": "The Scrum Team always knows who determines the order of the Product\nBacklog.",
+          "text": "The Scrum Team always knows who determines the order of the Product Backlog.",
           "isCorrect": true,
           "explanation": "Scrum makes the Product Owner accountable for ordering the Product Backlog. A single Product Owner avoids competing priorities and inconsistent ordering."
         },
@@ -1851,7 +1851,7 @@
     },
     {
       "id": 64,
-      "question": "True or False: Product Owners must specify complete acceptance criteria for a Product\nBacklog item before the Developers can select the item in Sprint Planning",
+      "question": "True or False: Product Owners must specify complete acceptance criteria for a Product Backlog item before the Developers can select the item in Sprint Planning",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1870,7 +1870,7 @@
     },
     {
       "id": 65,
-      "question": "Who is responsible for the sizing of Product Backlog items?\n\n(choose the best answer)",
+      "question": "Who is responsible for the sizing of Product Backlog items?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -1907,18 +1907,18 @@
     },
     {
       "id": 66,
-      "question": "A Scrum Team has been working on a product for 9 Sprints. A new Product Owner who is new\nto Scrum joins the team and understands she is accountable for the Product Backlog. However,\nshe is unsure about the purpose of the Product Backlog. She has read that the Product Backlog\nshould be a list of all user features for the product. She goes to the Scrum Master asking where\nto put the other types of requirements that are going to be taken into account. Are all of the\nfollowing types of requirements acceptable on a Product Backlog?\n• Stability requirements\n• Performance requirements\n• Product Functionality\n• Documentation\n• Fixes\n\n(choose the best answer)",
+      "question": "A Scrum Team has been working on a product for 9 Sprints. A new Product Owner who is new to Scrum joins the team and understands she is accountable for the Product Backlog. However, she is unsure about the purpose of the Product Backlog. She has read that the Product Backlog should be a list of all user features for the product. She goes to the Scrum Master asking where to put the other types of requirements that are going to be taken into account. Are all of the following types of requirements acceptable on a Product Backlog? • Stability requirements • Performance requirements • Product Functionality • Documentation • Fixes\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
           "label": "A",
-          "text": "Yes, they all belong on the Product Backlog. The Product Backlog is supposed to be\nthe \"single source of truth\" for all the work for the product.",
+          "text": "Yes, they all belong on the Product Backlog. The Product Backlog is supposed to be the \"single source of truth\" for all the work for the product.",
           "isCorrect": true,
           "explanation": "The Product Backlog contains all work needed to improve the product, not just user features. Any requirement type can be represented as Product Backlog Items if it contributes to the Product Goal/value."
         },
         {
           "label": "B",
-          "text": "No. Product Backlog is a tool for the Product Owner. The Product Owner represents\nthe users and stakeholders. Other types of requirements should be managed\nseparately by the Developers. They are not the Product Owner's concern.",
+          "text": "No. Product Backlog is a tool for the Product Owner. The Product Owner represents the users and stakeholders. Other types of requirements should be managed separately by the Developers. They are not the Product Owner's concern.",
           "isCorrect": false,
           "explanation": "Scrum expects transparency via a single Product Backlog for the product; splitting work into separate lists reduces clarity and ordering. The Product Owner is accountable for ordering all Product Backlog items, including quality, fixes, and documentation work."
         }
@@ -1926,7 +1926,7 @@
     },
     {
       "id": 67,
-      "question": "If Product Backlog refinement is needed, when is the ideal time for refinement to take place and\nwho should participate?\n\n(choose the best two answers)",
+      "question": "If Product Backlog refinement is needed, when is the ideal time for refinement to take place and who should participate?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -1937,13 +1937,13 @@
         },
         {
           "label": "B",
-          "text": "The Scrum Team on an ongoing basis, defining Product Backlog items into\nsmaller more precise items that are ready for selection.",
+          "text": "The Scrum Team on an ongoing basis, defining Product Backlog items into smaller more precise items that are ready for selection.",
           "isCorrect": true,
           "explanation": "Refinement is an ongoing activity in Scrum to add clarity and break down items. It is collaborative work involving the Scrum Team."
         },
         {
           "label": "C",
-          "text": "The Product Owner takes the time between the end of one Sprint and the start of\nthe next Sprint to complete refinement.",
+          "text": "The Product Owner takes the time between the end of one Sprint and the start of the next Sprint to complete refinement.",
           "isCorrect": false,
           "explanation": "Scrum does not define a gap between Sprints, and refinement is not something to be “completed” only at Sprint boundaries. It should happen as needed throughout the Sprint."
         },
@@ -1955,7 +1955,7 @@
         },
         {
           "label": "E",
-          "text": "The Scrum Team during the current Sprint, if they have been unable during\npreceding Sprints to define Product Backlog items with enough precision to\nbegin work.",
+          "text": "The Scrum Team during the current Sprint, if they have been unable during preceding Sprints to define Product Backlog items with enough precision to begin work.",
           "isCorrect": true,
           "explanation": "Refinement can occur during the current Sprint whenever needed to prepare upcoming work. The Scrum Team participates to ensure items are clear enough for selection and implementation."
         }
@@ -1963,18 +1963,18 @@
     },
     {
       "id": 68,
-      "question": "The Product Owner is the person who will be held accountable if a product does not achieve its\ngoals or deliver value. Does this mean that the Product Owner has final say over the Definition\nof Done?\n\n(choose the best answer)",
+      "question": "The Product Owner is the person who will be held accountable if a product does not achieve its goals or deliver value. Does this mean that the Product Owner has final say over the Definition of Done?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
           "label": "A",
-          "text": "Yes, the Product Owner decides the Definition of Done. The Developers may be\nconsulted.",
+          "text": "Yes, the Product Owner decides the Definition of Done. The Developers may be consulted.",
           "isCorrect": false,
           "explanation": "The Definition of Done is owned by the Scrum Team (or set by organizational standards), not by the Product Owner alone. Accountability for value does not grant authority to unilaterally set quality standards."
         },
         {
           "label": "B",
-          "text": "No, the Scrum Team decides the Definition of Done, if it is not a standard of the\norganization. The Product Owner is just one member of the Scrum Team.",
+          "text": "No, the Scrum Team decides the Definition of Done, if it is not a standard of the organization. The Product Owner is just one member of the Scrum Team.",
           "isCorrect": true,
           "explanation": "If the organization doesn’t provide a Definition of Done, the Scrum Team establishes it and must adhere to it. The Product Owner contributes as part of the Scrum Team but does not have unilateral control over it."
         }
@@ -2001,7 +2001,7 @@
     },
     {
       "id": 70,
-      "question": "All Scrum artifacts must be transparent to ensure sufficient accuracy of inspection. Which two\nmeasures ensure that the Product Backlog is transparent?\n\n(choose the best two answers)",
+      "question": "All Scrum artifacts must be transparent to ensure sufficient accuracy of inspection. Which two measures ensure that the Product Backlog is transparent?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -2038,7 +2038,7 @@
     },
     {
       "id": 71,
-      "question": "What is the responsibility of the Product Owner in crafting the Sprint Goal?\n\n(choose the best answer)",
+      "question": "What is the responsibility of the Product Owner in crafting the Sprint Goal?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -2055,19 +2055,19 @@
         },
         {
           "label": "C",
-          "text": "The Product Owner should come to Sprint Planning with a business objective in mind\nand work with the Developers to craft the Sprint Goal.",
+          "text": "The Product Owner should come to Sprint Planning with a business objective in mind and work with the Developers to craft the Sprint Goal.",
           "isCorrect": true,
           "explanation": "The Product Owner brings the product/business objective and explains the most valuable outcomes to pursue. The Scrum Team then collaborates in Sprint Planning to craft a single Sprint Goal."
         },
         {
           "label": "D",
-          "text": "The Product Owner has no responsibility for the Sprint Goal. It is the sole\nresponsibility of the Developers.",
+          "text": "The Product Owner has no responsibility for the Sprint Goal. It is the sole responsibility of the Developers.",
           "isCorrect": false,
           "explanation": "The Sprint Goal is owned by the whole Scrum Team and created in Sprint Planning. Developers contribute feasibility and plan, but the Product Owner is accountable for maximizing value and therefore participates."
         },
         {
           "label": "E",
-          "text": "The Product Owner cannot attend Sprint Planning without having documented the\nSprint Goal in advance.",
+          "text": "The Product Owner cannot attend Sprint Planning without having documented the Sprint Goal in advance.",
           "isCorrect": false,
           "explanation": "There is no requirement to document the Sprint Goal before Sprint Planning. The Sprint Goal is created as part of Sprint Planning based on discussion and negotiation."
         }
@@ -2075,12 +2075,12 @@
     },
     {
       "id": 72,
-      "question": "When does a Sprint conclude?\n\n(choose the best answer)",
+      "question": "When does a Sprint conclude?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
           "label": "A",
-          "text": "When the Product Owner decides enough has been delivered to meet the Sprint\nGoal.",
+          "text": "When the Product Owner decides enough has been delivered to meet the Sprint Goal.",
           "isCorrect": false,
           "explanation": "The Sprint has a fixed timebox and does not end based on a decision by the Product Owner. Scope may be adjusted, but the Sprint end date remains unchanged."
         },
@@ -2106,7 +2106,7 @@
     },
     {
       "id": 73,
-      "question": "A product's success is measured by:\n\n(choose the best three answers)",
+      "question": "A product's success is measured by:\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
         {
@@ -2149,44 +2149,44 @@
     },
     {
       "id": 74,
-      "question": "A Product Backlog is:\n\n(choose the best three answers)",
+      "question": "A Product Backlog is:\n(choose the best three answers)",
       "expectedAnswers": 3,
       "choices": [
         {
           "label": "A",
           "text": "Ordered based on priority, value, dependencies, and risk.",
           "isCorrect": true,
-          "explanation": "Le Product Backlog est un artefact ordonné, et l’ordre tient compte de la valeur, des risques et des dépendances. Cet ordre est ajusté en continu selon le contexte."
+          "explanation": "The Product Backlog is ordered, and that order takes value, risk and dependencies into account; it is adjusted continuously as the context evolves."
         },
         {
           "label": "B",
           "text": "Only visible to the Product Owner and stakeholders",
           "isCorrect": false,
-          "explanation": "Le Product Backlog doit être transparent et accessible aux parties prenantes concernées, y compris la Scrum Team. Le restreindre à quelques rôles contredit la transparence Scrum."
+          "explanation": "The Product Backlog must be transparent and accessible to the Scrum Team and relevant stakeholders; restricting it to a few roles contradicts transparency."
         },
         {
           "label": "C",
           "text": "An inventory of things to be done for the Product.",
           "isCorrect": true,
-          "explanation": "C’est la liste unique et émergente de tout ce qui est nécessaire pour améliorer le produit. Elle regroupe les éléments de travail à réaliser."
+          "explanation": "The Product Backlog is the single, emergent list of everything needed to improve the product."
         },
         {
           "label": "D",
           "text": "An exhaustive list of upfront approved requirements to be implemented.",
           "isCorrect": false,
-          "explanation": "Le Product Backlog n’est pas figé ni exhaustif dès le départ : il évolue au fil des apprentissages. Scrum n’exige pas d’approbation complète upfront de toutes les exigences."
+          "explanation": "The Product Backlog is neither fixed nor exhaustive up front: it evolves with learning, and Scrum does not require all requirements to be approved in advance."
         },
         {
           "label": "E",
           "text": "Managed by the Product Owner.",
           "isCorrect": true,
-          "explanation": "Le Product Owner est responsable de la gestion du Product Backlog (contenu, disponibilité et ordre). Cette responsabilité ne peut pas être déléguée, même si des contributions sont possibles."
+          "explanation": "The Product Owner is accountable for managing the Product Backlog; the work can be delegated to others, but the accountability stays with the Product Owner."
         }
       ]
     },
     {
       "id": 75,
-      "question": "Which is NOT a valid consideration when ordering a Product Backlog?\n\n(choose the best answer)",
+      "question": "Which is NOT a valid consideration when ordering a Product Backlog?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -2223,7 +2223,7 @@
     },
     {
       "id": 76,
-      "question": "Which metrics will help a Product Owner determine if a product is delivering value?\n\n(choose the best two answers)",
+      "question": "Which metrics will help a Product Owner determine if a product is delivering value?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
@@ -2260,18 +2260,18 @@
     },
     {
       "id": 77,
-      "question": "Why would you expect a Product Owner to care that the Scrum Team adheres to its Definition\nof Done?\n\n(choose the best two answers)",
+      "question": "Why would you expect a Product Owner to care that the Scrum Team adheres to its Definition of Done?\n(choose the best two answers)",
       "expectedAnswers": 2,
       "choices": [
         {
           "label": "A",
-          "text": "The Product Owner should not concern themselves with meeting the Definition\nof Done, it is the Developer's responsibility.",
+          "text": "The Product Owner should not concern themselves with meeting the Definition of Done, it is the Developer's responsibility.",
           "isCorrect": false,
           "explanation": "The Product Owner is accountable for maximizing value and needs a shared understanding of quality to make sound decisions. Adherence to the Definition of Done directly impacts what can be considered usable and releasable."
         },
         {
           "label": "B",
-          "text": "To be able to punish the team when they do not meet their velocity goal for the\nSprint.",
+          "text": "To be able to punish the team when they do not meet their velocity goal for the Sprint.",
           "isCorrect": false,
           "explanation": "Scrum does not use punishment or velocity targets as a control mechanism. The Definition of Done is about transparency and quality, not enforcing performance through sanctions."
         },
@@ -2283,7 +2283,7 @@
         },
         {
           "label": "D",
-          "text": "To have complete transparency into what has been done at the end of each\nSprint.",
+          "text": "To have complete transparency into what has been done at the end of each Sprint.",
           "isCorrect": true,
           "explanation": "The Definition of Done makes the state of the Increment transparent by setting a clear, shared standard for what “done” means. This allows the Product Owner to know what is truly complete at the end of the Sprint."
         },
@@ -2297,7 +2297,7 @@
     },
     {
       "id": 78,
-      "question": "When does the next Sprint begin?\n\n(choose the best answer)",
+      "question": "When does the next Sprint begin?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -2328,7 +2328,7 @@
     },
     {
       "id": 79,
-      "question": "Who can cancel a Sprint?\n\n(choose the best answer)",
+      "question": "Who can cancel a Sprint?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -2359,7 +2359,7 @@
     },
     {
       "id": 80,
-      "question": "Every Scrum Team should have:\n\n(choose the best answer)",
+      "question": "Every Scrum Team should have:\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {

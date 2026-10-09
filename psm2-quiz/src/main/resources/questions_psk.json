@@ -15,7 +15,7 @@
           "label": "B",
           "text": "By minimizing transaction costs.",
           "isCorrect": false,
-          "explanation": "Transaction costs are not mentioned in the question and are not the primary value mechanism in Kanban."
+          "explanation": "Lower transaction costs can help, but they are not how Kanban for Scrum Teams maximizes value; it does so by optimizing the flow of value and shortening feedback loops."
         },
         {
           "label": "C",
@@ -83,7 +83,7 @@
           "label": "B",
           "text": "Work in Progress.",
           "isCorrect": false,
-          "explanation": "Current WIP does not indicate future delivery capacity."
+          "explanation": "WIP is managed day to day to keep flow healthy; to decide how much work to take into the Sprint, historical Throughput is the most useful input."
         },
         {
           "label": "C",
@@ -226,25 +226,25 @@
           "label": "A",
           "text": "Shorter feedback cycles.",
           "isCorrect": false,
-          "explanation": "Limiting WIP shortens feedback loops by finishing work sooner."
+          "explanation": "Limiting WIP does shorten feedback cycles, but this is only one of its benefits; 'All of the answers' is the best choice."
         },
         {
           "label": "B",
           "text": "More sustainable pace of work.",
           "isCorrect": false,
-          "explanation": "Lower WIP reduces overloading and supports sustainable pace."
+          "explanation": "Limiting WIP does support a more sustainable pace, but this is only one of its benefits; 'All of the answers' is the best choice."
         },
         {
           "label": "C",
           "text": "Faster realization of value.",
           "isCorrect": false,
-          "explanation": "Completing fewer items at once accelerates value realization."
+          "explanation": "Limiting WIP does speed up the realization of value, but this is only one of its benefits; 'All of the answers' is the best choice."
         },
         {
           "label": "D",
           "text": "Improved collaboration.",
           "isCorrect": false,
-          "explanation": "WIP limits encourage collaboration to finish work together."
+          "explanation": "Limiting WIP does improve collaboration, but this is only one of its benefits; 'All of the answers' is the best choice."
         },
         {
           "label": "E",
@@ -957,7 +957,7 @@
           "label": "D",
           "text": "Lead Time.",
           "isCorrect": false,
-          "explanation": "Lead Time is useful, but it is not one of the required flow metrics in Scrum with Kanban for this question."
+          "explanation": "Lead Time can be useful, but it is not one of the four flow metrics defined by the Kanban Guide for Scrum Teams: WIP, Throughput, Work Item Age and Cycle Time."
         },
         {
           "label": "E",
@@ -1254,25 +1254,25 @@
           "label": "A",
           "text": "Workflow.",
           "isCorrect": false,
-          "explanation": "Workflow is a key topic because the team may need to adjust workflow states and handoffs after adopting Kanban practices."
+          "explanation": "The workflow can indeed be inspected in the Sprint Retrospective, but it is only one of the topics; 'All of the answers' is the best choice."
         },
         {
           "label": "B",
           "text": "Current policies.",
           "isCorrect": false,
-          "explanation": "Current policies matter because explicit policies (like pull rules) may need inspection and adaptation in the Retrospective."
+          "explanation": "Current policies can indeed be inspected in the Sprint Retrospective, but they are only one of the topics; 'All of the answers' is the best choice."
         },
         {
           "label": "C",
           "text": "WIP Limit.",
           "isCorrect": false,
-          "explanation": "WIP Limit is considered because it directly affects flow and may need tuning based on what the team learned."
+          "explanation": "WIP Limits can indeed be inspected in the Sprint Retrospective, but they are only one of the topics; 'All of the answers' is the best choice."
         },
         {
           "label": "D",
           "text": "Metrics and charts such as Cumulative Flow Diagram, Cycle Time Scatterplot, and Work Item Aging.",
           "isCorrect": false,
-          "explanation": "Metrics and charts (CFD, Cycle Time Scatterplot, Work Item Aging) are reviewed to understand flow behavior and improvement opportunities."
+          "explanation": "Flow metrics and charts can indeed be inspected in the Sprint Retrospective, but they are only one of the topics; 'All of the answers' is the best choice."
         },
         {
           "label": "E",

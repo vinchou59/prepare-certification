@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": 1,
-      "question": "A city’s public chatbot is found to be providing inaccurate compliance advice to small business owners. To restore trust with the public and mitigate legal risk, how should you resolve the concern about inaccurate responses?\n\n(choose the best answer)",
+      "question": "A city’s public chatbot is found to be providing inaccurate compliance advice to small business owners. To restore trust with the public and mitigate legal risk, how should you resolve the concern about inaccurate responses?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -33,7 +33,7 @@
     },
     {
       "id": 2,
-      "question": "As the Developers begin integrating AI into their workflow, they seek to ensure that the Increment remains transparent and high-quality according to the Scrum Framework. They ask how to capture the use of AI in the Definition of Done. What should the Scrum Team consider?\n\n(choose the best answer)",
+      "question": "As the Developers begin integrating AI into their workflow, they seek to ensure that the Increment remains transparent and high-quality according to the Scrum Framework. They ask how to capture the use of AI in the Definition of Done. What should the Scrum Team consider?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -64,30 +64,30 @@
     },
     {
       "id": 3,
-      "question": "As Scrum Teams begin to responsibly integrate AI into their daily work, which statement reflects\nhow AI should impact the Scrum accountabilities?\n\n(choose the best answer)",
+      "question": "As Scrum Teams begin to responsibly integrate AI into their daily work, which statement reflects how AI should impact the Scrum accountabilities?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
           "label": "A",
-          "text": "The Scrum Guide requires that AI generated contributions be documented, so that\nthe Scrum Master maintains all legal accountability.",
+          "text": "The Scrum Guide requires that AI generated contributions be documented, so that the Scrum Master maintains all legal accountability.",
           "isCorrect": false,
           "explanation": "The Scrum Guide does not include requirements about documenting AI-generated work or assigning legal accountability to the Scrum Master. Scrum accountabilities are not about transferring legal responsibility to one person."
         },
         {
           "label": "B",
-          "text": "AI changes how accountabilities are fulfilled, some activities become AI-augmented\nor AI-assisted, while others remain purely human.",
+          "text": "AI changes how accountabilities are fulfilled, some activities become AI-augmented or AI-assisted, while others remain purely human.",
           "isCorrect": true,
           "explanation": "Accountabilities remain with the Scrum Team, but tools like AI can support how the work is done. Responsible use means humans still make key decisions and remain accountable for outcomes."
         },
         {
           "label": "C",
-          "text": "AI shifts accountability for quality from the Scrum Team to the automated verification\ntools and algorithms.",
+          "text": "AI shifts accountability for quality from the Scrum Team to the automated verification tools and algorithms.",
           "isCorrect": false,
           "explanation": "In Scrum, the Scrum Team remains accountable for quality and the Definition of Done, regardless of which tools are used. Tools can help verify quality but cannot hold accountability."
         },
         {
           "label": "D",
-          "text": "AI replaces several Scrum accountabilities, by automating the conversion of\nstakeholder input into code, making most Scrum Team roles unnecessary.",
+          "text": "AI replaces several Scrum accountabilities, by automating the conversion of stakeholder input into code, making most Scrum Team roles unnecessary.",
           "isCorrect": false,
           "explanation": "Scrum accountabilities (Product Owner, Scrum Master, Developers) remain necessary to maximize value, facilitate Scrum, and create a usable Increment. Automation does not remove the need for these human accountabilities and decisions."
         }
@@ -95,7 +95,7 @@
     },
     {
       "id": 4,
-      "question": "Why does Deep Learning generally outperform classic Machine Learning for complex\nmultimodal tasks like image and text analysis?\n\n(choose the best answer)",
+      "question": "Why does Deep Learning generally outperform classic Machine Learning for complex multimodal tasks like image and text analysis?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -112,13 +112,13 @@
         },
         {
           "label": "C",
-          "text": "Deep Learning uses shallower architectures and reduced parameter counts for\n  efficiency.",
+          "text": "Deep Learning uses shallower architectures and reduced parameter counts for efficiency.",
           "isCorrect": false,
           "explanation": "Deep Learning commonly leverages deeper models with many parameters to capture complex relationships. Efficiency is not the main reason it outperforms classic ML on multimodal tasks."
         },
         {
           "label": "D",
-          "text": "Classic Machine Learning scales better when processing unstructured multi-\n  dimensional data.",
+          "text": "Classic Machine Learning scales better when processing unstructured multi- dimensional data.",
           "isCorrect": false,
           "explanation": "Classic ML often depends on engineered features and can degrade on raw unstructured inputs at scale. Deep Learning tends to handle high-dimensional unstructured data better by learning representations directly."
         }
@@ -126,30 +126,30 @@
     },
     {
       "id": 5,
-      "question": "During a brainstorming session, the Scrum Team struggles with generating ideas and\norganizing their thoughts. How can AI best support the effectiveness of this brainstorming\nprocess?\n\n(choose the best answer)",
+      "question": "During a brainstorming session, the Scrum Team struggles with generating ideas and organizing their thoughts. How can AI best support the effectiveness of this brainstorming process?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
           "label": "A",
-          "text": "Cancel the brainstorming and use AI to synthesize the initial problem statement into\na solution for the Scrum Team to implement.",
+          "text": "Cancel the brainstorming and use AI to synthesize the initial problem statement into a solution for the Scrum Team to implement.",
           "isCorrect": false,
           "explanation": "This bypasses collaboration and critical thinking, which are central to effective Scrum Team discovery. AI can support ideation, but it should not replace the team’s sense-making and decision-making."
         },
         {
           "label": "B",
-          "text": "Use AI to help guard the structure, suggest ideas using different personas, cluster\noutput, analyze patterns, and rapidly prototype concepts.",
+          "text": "Use AI to help guard the structure, suggest ideas using different personas, cluster output, analyze patterns, and rapidly prototype concepts.",
           "isCorrect": true,
           "explanation": "This uses AI as a facilitator to expand divergent thinking and improve convergence by organizing and synthesizing outputs. It enhances speed and structure while keeping ownership of decisions with the Scrum Team."
         },
         {
           "label": "C",
-          "text": "Restrict AI to capturing meeting transcripts and applying grammar correction to\nensure human ideas are not influenced by AI.",
+          "text": "Restrict AI to capturing meeting transcripts and applying grammar correction to ensure human ideas are not influenced by AI.",
           "isCorrect": false,
           "explanation": "This limits AI to administrative tasks and doesn’t address the team’s main challenge of generating and organizing ideas. Scrum benefits from tools that improve outcomes, not from avoiding influence at all costs."
         },
         {
           "label": "D",
-          "text": "Rely on AI to rank ideas based on objective data to eliminate the need for team\nvoting.",
+          "text": "Rely on AI to rank ideas based on objective data to eliminate the need for team voting.",
           "isCorrect": false,
           "explanation": "Selecting ideas requires context, trade-offs, and alignment to the Product Goal, which cannot be reduced to “objective” scoring alone. Removing team choice undermines transparency and shared commitment."
         }
@@ -157,30 +157,30 @@
     },
     {
       "id": 6,
-      "question": "The Developers want to improve the effectiveness of their Daily Scrum by experimenting with a\nnew format. According to the Scrum values of Focus and Openness, how can AI best support\nthis improvement?\n\n(choose the best answer)",
+      "question": "The Developers want to improve the effectiveness of their Daily Scrum by experimenting with a new format. According to the Scrum values of Focus and Openness, how can AI best support this improvement?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
           "label": "A",
-          "text": "Use AI to monitor individual speaking time and ensure every Scrum Team member\nspeaks in order.",
+          "text": "Use AI to monitor individual speaking time and ensure every Scrum Team member speaks in order.",
           "isCorrect": false,
           "explanation": "This optimizes compliance and equal airtime rather than focusing on progress toward the Sprint Goal. It can also reduce openness by making the event feel policed instead of collaborative."
         },
         {
           "label": "B",
-          "text": "Replace the Daily Scrum with a bot that provides AI-driven status updates,\ndistributed to leadership via email.",
+          "text": "Replace the Daily Scrum with a bot that provides AI-driven status updates, distributed to leadership via email.",
           "isCorrect": false,
           "explanation": "The Daily Scrum is for the Developers to inspect progress and adapt their plan, not to report to leadership. Replacing it undermines focus on the Sprint Goal and reduces openness within the team."
         },
         {
           "label": "C",
-          "text": "Co-create with AI a safe-to-try experiment, define success criteria, and review the\nresults together.",
+          "text": "Co-create with AI a safe-to-try experiment, define success criteria, and review the results together.",
           "isCorrect": true,
           "explanation": "This supports focus by setting clear goals and measures for improving the Daily Scrum. It supports openness by making assumptions, outcomes, and learnings transparent to the team."
         },
         {
           "label": "D",
-          "text": "Use AI to generate Daily Scrum updates based on the movement of tickets,\neliminating the need to discuss impediments.",
+          "text": "Use AI to generate Daily Scrum updates based on the movement of tickets, eliminating the need to discuss impediments.",
           "isCorrect": false,
           "explanation": "Ticket movement alone doesn’t reveal impediments or coordination needs that affect achieving the Sprint Goal. Skipping impediment discussion reduces openness and weakens adaptation."
         }
@@ -188,30 +188,30 @@
     },
     {
       "id": 7,
-      "question": "Using the exact same prompt multiple times can still create different outputs from a generative\nAI model. What is the reason for the different outputs?\n\n(choose the best answer)",
+      "question": "Using the exact same prompt multiple times can still create different outputs from a generative AI model. What is the reason for the different outputs?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
           "label": "A",
-          "text": "This occurs because the model automatically updates its training data after every\nuser interaction.",
+          "text": "This occurs because the model automatically updates its training data after every user interaction.",
           "isCorrect": false,
           "explanation": "Most deployed models do not retrain or update their weights after each individual user interaction. Any variation you see is not due to the training data changing in real time."
         },
         {
           "label": "B",
-          "text": "This is caused by hallucination when the model reinforces incorrect answers as it\nlearns from each prompt.",
+          "text": "This is caused by hallucination when the model reinforces incorrect answers as it learns from each prompt.",
           "isCorrect": false,
           "explanation": "Hallucinations are incorrect outputs, not the underlying reason outputs vary with the same input. The model does not inherently “learn from each prompt” during normal use."
         },
         {
           "label": "C",
-          "text": "This happens because generative AI often uses probabilistic sampling (non-\ndeterministic generation).",
+          "text": "This happens because generative AI often uses probabilistic sampling (non- deterministic generation).",
           "isCorrect": true,
           "explanation": "Token selection is often sampled from a probability distribution, so different valid next tokens can be chosen across runs. Randomness (e.g., temperature/seed) can therefore produce different completions."
         },
         {
           "label": "D",
-          "text": "This happens because the model adjusts its logic based on the user's physical\nlocation and time zone.",
+          "text": "This happens because the model adjusts its logic based on the user's physical location and time zone.",
           "isCorrect": false,
           "explanation": "Location and time zone are not fundamental inputs to the model’s reasoning unless explicitly provided or used by an external system. Output differences are primarily explained by stochastic generation settings."
         }
@@ -219,7 +219,7 @@
     },
     {
       "id": 8,
-      "question": "As a Product Owner, how can you most effectively use AI-transcribed customer interviews to improve your product?\n\n(choose the best answer)",
+      "question": "As a Product Owner, how can you most effectively use AI-transcribed customer interviews to improve your product?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -250,7 +250,7 @@
     },
     {
       "id": 9,
-      "question": "A vendor demonstrates an autonomous AI agent capable of deploying production changes without human involvement. To ensure system stability and accountability, which prerequisite is minimally required?\n\n(choose the best answer)",
+      "question": "A vendor demonstrates an autonomous AI agent capable of deploying production changes without human involvement. To ensure system stability and accountability, which prerequisite is minimally required?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
@@ -281,7 +281,7 @@
     },
     {
       "id": 10,
-      "question": "How is Machine Learning best characterized within the broader hierarchy of Artificial Intelligence?\n\n(choose the best answer)",
+      "question": "How is Machine Learning best characterized within the broader hierarchy of Artificial Intelligence?\n(choose the best answer)",
       "expectedAnswers": 1,
       "choices": [
         {
