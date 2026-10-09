@@ -1,13 +1,18 @@
 schema: spec-driven
 
-# Project context (optional)
-# Add only constraints that should guide OpenSpec artifacts and workflows.
-# Include constraints an agent cannot infer by reading the code.
-# Keep general project documentation and discoverable codebase facts out.
-# Example:
-#   context: |
-#     Designs and tasks must cover Windows, macOS, and Linux
-#     Write all artifacts in Spanish
+# Project context: constraints an agent cannot infer from the code.
+context: |
+  Rédiger tous les artefacts OpenSpec (proposal, design, specs, tasks) en français.
+  Application personnelle d'entraînement aux certifications agiles (Scrum.org PSM II, PSPO I, PSK I, PSM-AI, CCA Agile).
+  Utilisateur unique, sur macOS ; lancée via psm2-quiz/launch_quiz.command qui démarre un serveur web local
+  (127.0.0.1 uniquement) et ouvre le navigateur. Pas de déploiement, pas de comptes, pas de réseau externe requis.
+  Stack : Java 25 (Maven, pas de framework), Jackson pour le JSON, serveur HTTP du JDK (com.sun.net.httpserver),
+  front-end en HTML/CSS/JS vanilla sans build (src/main/resources/web). Éviter d'ajouter des dépendances.
+  Architecture en couches : domain (modèle + QuizService, sans dépendance technique), infrastructure (lecture JSON),
+  application/web (serveur, API, session de quiz). La logique métier reste dans domain.
+  Les bonnes réponses et explications ne doivent jamais être envoyées au navigateur avant la correction.
+  Les questions (src/main/resources/questions_*.json) sont en anglais, comme les examens officiels ; l'interface est en français.
+  Tests : JUnit 5, à faire évoluer avec chaque changement de comportement.
 
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
