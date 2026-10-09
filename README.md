@@ -13,6 +13,13 @@ Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur té
 - Raccourcis clavier : les lettres (A, B, C…) pour répondre, Entrée pour valider, flèches gauche et droite pour naviguer.
 - `?seed=42` à la fin de l'adresse rend le tirage des questions reproductible.
 
+## Suivre sa progression
+
+- Chaque quiz terminé est enregistré **dans le navigateur de l'appareil utilisé**, sans compte ni envoi de données.
+- L'accueil affiche les 10 derniers résultats de la certification choisie, par rapport au seuil de réussite.
+- Une question ratée devient « à retravailler » jusqu'à ce qu'elle soit réussie. Le bouton **Retravailler mes erreurs** de l'accueil lance un quiz avec ces questions ; **Retravailler ces erreurs** fait de même avec les erreurs du quiz qui vient de se terminer.
+- **Effacer mon historique**, en bas de l'accueil, remet tout à zéro.
+
 Les réponses ne sont affichées qu'à la correction, mais elles font partie des données du site : c'est un outil d'entraînement, pas d'examen.
 
 ## Organisation du dépôt

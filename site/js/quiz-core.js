@@ -89,3 +89,42 @@ export function finishQuiz(quiz, answers = {}, now = Date.now()) {
   };
   return quiz.result;
 }
+
+// ---------- Suivi de progression (openspec/specs/progress-tracking) ----------
+
+export const HISTORY_LIMIT = 200;
+
+/** Entrée d'historique à partir du résultat d'un quiz terminé. */
+export function historyEntry(result, { certificationId, mode, date = new Date().toISOString() }) {
+  return {
+    date, certification: certificationId, mode,
+    score: result.score, total: result.total, percent: result.percent,
+    durationSeconds: result.durationSeconds,
+    results: Object.fromEntries(result.review.map((r) => [String(r.id), r.correct]))
+  };
+}
+
+/** Ajoute une entrée en tête de l'historique (le plus récent d'abord), dans la limite donnée. */
+export function recordResult(history, entry, limit = HISTORY_LIMIT) {
+  const list = Array.isArray(history) ? history : [];
+  return [entry, ...list].slice(0, limit);
+}
+
+/** Identifiants des questions dont le dernier résultat enregistré est faux, pour une certification. */
+export function questionsToRework(history, certificationId) {
+  const latest = new Map();
+  for (const entry of Array.isArray(history) ? history : []) {
+    if (!entry || entry.certification !== certificationId || !entry.results) continue;
+    for (const [id, ok] of Object.entries(entry.results)) {
+      if (!latest.has(id)) latest.set(id, ok === true);
+    }
+  }
+  return [...latest].filter(([, ok]) => !ok).map(([id]) => Number(id));
+}
+
+/** Derniers quiz d'une certification, du plus récent au plus ancien. */
+export function recentResults(history, certificationId, limit = 10) {
+  return (Array.isArray(history) ? history : [])
+    .filter((e) => e && e.certification === certificationId)
+    .slice(0, limit);
+}

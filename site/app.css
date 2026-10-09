@@ -147,7 +147,35 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 
 .mode-help { color: var(--muted); font-size: 15px; margin: 8px 0 0; }
 
-.home-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 36px; }
+.home-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 36px; }
+.home-actions [data-action=share] { margin-left: auto; }
+
+/* ---------- Historique ---------- */
+
+.history { margin-top: 44px; }
+.history-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.history-head h2 { margin: 0; }
+.history-pass { color: var(--muted); font-size: 14px; }
+.history-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.history-item {
+  display: grid;
+  grid-template-columns: 1fr auto 4.5em;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+}
+.history-when { color: var(--muted); }
+.history-mode { margin-left: 10px; color: var(--ink); }
+.history-score { font-variant-numeric: tabular-nums; }
+.history-pct { font-family: var(--display); font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.history-pct.good { color: var(--good); }
+.history-pct.bad { color: var(--bad); }
+.history-note { color: var(--muted); font-size: 14px; margin: 10px 0 0; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.btn.link { min-height: 32px; padding: 0 6px; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- Partage ---------- */
 

@@ -1,4 +1,7 @@
-import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, questionView } from "./quiz-core.js";
+import {
+  seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, questionView,
+  historyEntry, recordResult, questionsToRework, recentResults
+} from "./quiz-core.js";
 
 (() => {
   "use strict";
@@ -30,6 +33,8 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
     },
     quiz: null,      // { certification, questions } : vues sans les réponses
     share: false,
+    history: (() => { const h = store.get("history", []); return Array.isArray(h) ? h : []; })(),
+    confirmClear: false,
     index: 0,
     answers: {},     // questionId -> [labels]
     checked: {},     // questionId -> CheckResponse (training)
@@ -120,7 +125,20 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
     render();
   }
 
-  async function startQuiz() {
+  // Questions à retravailler de la certification choisie, limitées à celles qui existent encore
+  function reworkIds(cert) {
+    if (!cert) return [];
+    const bank = banks.get(cert.file) || [];
+    const known = new Set(bank.map((q) => q.id));
+    return questionsToRework(state.history, cert.id).filter((id) => known.has(id));
+  }
+
+  function saveHistory(history) {
+    state.history = history;
+    store.set("history", history); // sans effet si le stockage local est indisponible
+  }
+
+  async function startQuiz(questionIds = null) {
     if (state.busy) return;
     const { certification, size, mode } = state.settings;
     store.set("certification", certification);
@@ -130,8 +148,13 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
     render();
     try {
       const cert = state.certifications.find((c) => c.id === certification);
-      const questions = await loadBank(cert.file);
-      quizModel = createQuiz({ certification: cert, questions, size, random });
+      let questions = await loadBank(cert.file);
+      if (questionIds) {
+        const wanted = new Set(questionIds);
+        questions = questions.filter((q) => wanted.has(q.id));
+        if (!questions.length) throw new Error("Aucune question à retravailler pour cette certification.");
+      }
+      quizModel = createQuiz({ certification: cert, questions, size: questionIds ? 0 : size, random });
       state.quiz = { certification: cert, questions: quizModel.questions.map(questionView) };
       Object.assign(state, {
         view: "quiz", index: 0, answers: {}, checked: {}, result: null,
@@ -204,6 +227,12 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
     state.busy = true;
     try {
       state.result = computeResult(quizModel, state.answers);
+      if (!quizModel.recorded) {
+        quizModel.recorded = true;
+        saveHistory(recordResult(state.history, historyEntry(state.result, {
+          certificationId: state.quiz.certification.id, mode: state.settings.mode
+        })));
+      }
       state.view = "result";
       state.reviewFilter = state.result.score === state.result.total ? "all" : "mistakes";
       setError(null);
@@ -311,6 +340,8 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
 
   function homeView() {
     const s = state.settings;
+    const cert = state.certifications.find((c) => c.id === s.certification);
+    const rework = reworkIds(cert);
     const certs = state.certifications.map((c) => `
       <button type="button" role="radio" class="cert" data-cert="${esc(c.id)}" aria-checked="${c.id === s.certification}" ${c.questionCount ? "" : "disabled"}>
         <span class="cert-name">${esc(c.shortName)}</span>
@@ -345,9 +376,11 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
         <button type="button" class="btn primary" data-action="start" ${state.busy || !s.certification ? "disabled" : ""}>
           Commencer le quiz
         </button>
+        ${rework.length ? `<button type="button" class="btn" data-action="rework-all" ${state.busy ? "disabled" : ""}>Retravailler mes erreurs (${rework.length})</button>` : ""}
         <button type="button" class="btn quiet" data-action="share">Partager</button>
       </div>
-      ${shareView()}`;
+      ${shareView()}
+      ${historyView(cert)}`;
   }
 
   function trackView() {
@@ -520,6 +553,7 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
       </div>
       <div class="results-actions">
         <button type="button" class="btn primary" data-action="start">Nouveau quiz ${esc(state.quiz.certification.shortName)}</button>
+        ${mistakes.length ? `<button type="button" class="btn" data-action="rework-quiz">Retravailler ces erreurs (${mistakes.length})</button>` : ""}
         <button type="button" class="btn" data-action="leave">Changer de réglages</button>
       </div>
       <div class="review-head">
@@ -530,6 +564,46 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
         </div>
       </div>
       ${list}`;
+  }
+
+  const dateFormat = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+  function historyView(cert) {
+    if (!cert) return "";
+    const recent = recentResults(state.history, cert.id);
+    if (!recent.length) return "";
+    const items = recent.map((e) => {
+      const passed = cert.passMark != null ? e.percent >= cert.passMark : null;
+      const cls = passed === null ? "" : passed ? "good" : "bad";
+      let when = "";
+      try { when = dateFormat.format(new Date(e.date)); } catch { /* date invalide */ }
+      return `
+        <li class="history-item">
+          <span class="history-when">${esc(when)}<span class="history-mode">${esc(MODES[e.mode]?.label || "")}</span></span>
+          <span class="history-score">${e.score}/${e.total}</span>
+          <span class="history-pct ${cls}">${e.percent}&nbsp;%</span>
+        </li>`;
+    }).join("");
+    const confirm = state.confirmClear ? `
+        <div class="notice pop" role="alert">
+          <span>Effacer tout l'historique et les questions à retravailler, pour toutes les certifications ?</span>
+          <span class="actions">
+            <button type="button" class="btn" data-action="clear-cancel">Annuler</button>
+            <button type="button" class="btn primary" data-action="clear-confirm">Effacer</button>
+          </span>
+        </div>` : "";
+    return `
+      <section class="history" aria-label="Derniers résultats">
+        <div class="history-head">
+          <h2>Mes derniers résultats ${esc(cert.shortName)}</h2>
+          ${cert.passMark != null ? `<span class="history-pass">seuil ${cert.passMark}&nbsp;%</span>` : ""}
+        </div>
+        <ol class="history-list">${items}</ol>
+        <p class="history-note">Enregistré sur cet appareil uniquement.
+          <button type="button" class="btn quiet link" data-action="clear-history">Effacer mon historique</button>
+        </p>
+        ${confirm}
+      </section>`;
   }
 
   function shareView() {
@@ -573,6 +647,11 @@ import { seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, q
     if (d.goto !== undefined) { goTo(Number(d.goto)); return; }
     switch (d.action) {
       case "start": startQuiz(); break;
+      case "rework-all": startQuiz(reworkIds(state.certifications.find((c) => c.id === state.settings.certification))); break;
+      case "rework-quiz": startQuiz(state.result.review.filter((r) => !r.correct).map((r) => r.id)); break;
+      case "clear-history": state.confirmClear = true; render(); break;
+      case "clear-cancel": state.confirmClear = false; render(); break;
+      case "clear-confirm": state.confirmClear = false; saveHistory([]); render(); break;
       case "check": checkCurrent(); break;
       case "next": goTo(state.index + 1); break;
       case "prev": goTo(state.index - 1); break;
