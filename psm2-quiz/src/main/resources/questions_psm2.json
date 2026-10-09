@@ -150,8 +150,8 @@
         {
           "label": "B",
           "text": "Seeking stakeholder feedback",
-          "isCorrect": false,
-          "explanation": "Seeking stakeholder feedback is encouraged but not defined as a formal commitment in Scrum."
+          "isCorrect": true,
+          "explanation": "Seeking stakeholder feedback, notably at the Sprint Review, is how the Scrum Team inspects the Increment and adapts what it builds next."
         },
         {
           "label": "C",
@@ -174,8 +174,8 @@
         {
           "label": "F",
           "text": "Getting all the forecast work in the Sprint Plan done.",
-          "isCorrect": true,
-          "explanation": "Delivering the forecasted work supports achieving the Sprint Goal, which is the Sprint commitment."
+          "isCorrect": false,
+          "explanation": "The selected work is a forecast, not a commitment. The Scrum Team commits to the Sprint Goal; the Sprint Backlog can change as more is learned during the Sprint."
         }
       ]
     },
@@ -873,14 +873,14 @@
         {
           "label": "C",
           "text": "Ifall agree, they can continue the Sprint Planning meeting as a team past its timebox, until an adequate number of Product Backlog items are well enough understood for the Developers to make a complete forecast. Then start the Sprint.",
-          "isCorrect": true,
-          "explanation": "Extending the Sprint Planning timebox ensures a mutual understanding and an adequate number of well-understood Product Backlog items."
+          "isCorrect": false,
+          "explanation": "A timebox is a maximum duration. Extending Sprint Planning beyond it, even if everyone agrees, breaks the Scrum framework; the plan can instead keep emerging during the Sprint."
         },
         {
           "label": "D",
           "text": "They discuss in the upcoming Sprint Retrospective why this happened and what changes will make it less likely to recur.",
-          "isCorrect": false,
-          "explanation": "Discussing the issue in the Sprint Retrospective does not solve the immediate problem of starting the Sprint."
+          "isCorrect": true,
+          "explanation": "Inspecting why Sprint Planning could not reach a shared understanding, and adapting how the Scrum Team refines the Product Backlog, is exactly what the Sprint Retrospective is for."
         }
       ]
     },
@@ -991,14 +991,14 @@
         {
           "label": "A",
           "text": "Several Sprints may be funded as a single release, with the result of each Sprint being releasable product.",
-          "isCorrect": false,
-          "explanation": "It\u2019s common in Scrum to fund several Sprints at once and still ensure a releasable Increment after each Sprint."
+          "isCorrect": true,
+          "explanation": "Funding several Sprints together as a release, while every Sprint still produces a usable Increment, is a common and valid way to budget with Scrum."
         },
         {
           "label": "B",
           "text": "Scrum does not align with traditional accounting practices. The financial department needs to be given a fixed cost per Sprint per team.",
-          "isCorrect": true,
-          "explanation": "Providing a fixed cost per team per Sprint helps align with traditional financial controls."
+          "isCorrect": false,
+          "explanation": "Scrum does not claim to be incompatible with accounting practices, nor does it require a fixed cost per Sprint per team; how funding is organized is up to the organization."
         },
         {
           "label": "C",

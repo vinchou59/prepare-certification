@@ -22,7 +22,7 @@ Pour chaque question, `expectedAnswers` MUST être égal au nombre de choix marq
 - **THEN** la question est signalée comme incohérente
 
 ### Requirement: Langue et mise en forme des questions
-Les textes des questions et des choix SHALL rester en anglais, comme les examens officiels. Les retours à la ligne (`\n`) dans les textes SHALL être conservés à l'affichage.
+Les textes des questions et des choix SHALL rester dans la langue de l'examen officiel : en anglais pour les certifications Scrum.org (PSM II, PSPO I, PSK I, PSM-AI), en français pour CCA Agile. Les retours à la ligne (`\n`) dans les textes SHALL être conservés à l'affichage.
 
 #### Scenario: Consigne sur une seconde ligne
 - **GIVEN** une question dont le texte se termine par `\n(choose the best two answers)`

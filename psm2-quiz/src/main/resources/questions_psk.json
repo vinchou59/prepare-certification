@@ -411,14 +411,14 @@
         {
           "label": "A",
           "text": "True",
-          "isCorrect": true,
-          "explanation": "Explicit policies describe how work is handled, which matches the question."
+          "isCorrect": false,
+          "explanation": "Little's Law describes the relationship between past averages of Work in Progress, Cycle Time and Throughput; it helps understand the system but is not a forecasting tool."
         },
         {
           "label": "B",
           "text": "False",
-          "isCorrect": false,
-          "explanation": "Technical design decisions are not workflow policies."
+          "isCorrect": true,
+          "explanation": "Forecasting in Scrum with Kanban relies on Throughput data and techniques such as Monte Carlo simulation; Little's Law is used to understand and improve flow, not to forecast."
         }
       ]
     },
@@ -1012,8 +1012,8 @@
         {
           "label": "A",
           "text": "Allows teams to release multiple times a Sprint.",
-          "isCorrect": true,
-          "explanation": "Releasing multiple times a Sprint is enabled by focusing on flow and finishing work in smaller slices instead of batching until the end."
+          "isCorrect": false,
+          "explanation": "Scrum already allows releasing multiple times within a Sprint; this is not a benefit brought by Kanban practices."
         },
         {
           "label": "B",
@@ -1024,8 +1024,8 @@
         {
           "label": "C",
           "text": "May result in greater collaboration within the Scrum Team.",
-          "isCorrect": false,
-          "explanation": "Greater collaboration can happen because teams often swarm to finish work and respect WIP limits instead of working in isolation."
+          "isCorrect": true,
+          "explanation": "Limiting Work in Progress encourages the Developers to swarm and help each other finish work, which increases collaboration within the Scrum Team."
         },
         {
           "label": "D",

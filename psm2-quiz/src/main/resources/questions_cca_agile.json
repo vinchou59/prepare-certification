@@ -1120,26 +1120,26 @@
 		    {
 		      "label": "A",
 		      "text": "Partiellement vraie, mais une information claire et pertinente accélère généralement les décisions malgré les débats.",
-		      "isCorrect": false,
-		      "explanation": ""
+		      "isCorrect": true,
+		      "explanation": "La transparence peut susciter davantage d’échanges sur le moment, mais une information claire et partagée évite les malentendus et accélère globalement les décisions."
 		    },
 		    {
 		      "label": "B",
 		      "text": "Vraie, mais la transparence est surtout utile à long terme et non dans l'immédiat.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La transparence est utile dès maintenant : elle permet d’inspecter et d’adapter rapidement, pas seulement à long terme."
 		    },
 		    {
 		      "label": "C",
 		      "text": "Complètement fausse, la transparence accélère les décisions.",
-		      "isCorrect": true,
-		      "explanation": ""
+		      "isCorrect": false,
+		      "explanation": "Réponse trop absolue : la transparence peut ponctuellement susciter plus de débats, même si elle accélère les décisions dans l’ensemble."
 		    },
 		    {
 		      "label": "D",
 		      "text": "Vraie, la transparence impose de tout discuter en détail avant de décider.",
 		      "isCorrect": false,
-		      "explanation": ""
+		      "explanation": "La transparence consiste à rendre l’information visible et accessible, pas à imposer de tout discuter en détail avant chaque décision."
 		    }
 		  ]
 		},

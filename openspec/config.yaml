@@ -11,7 +11,7 @@ context: |
   Architecture en couches : domain (modèle + QuizService, sans dépendance technique), infrastructure (lecture JSON),
   application/web (serveur, API, session de quiz). La logique métier reste dans domain.
   Les bonnes réponses et explications ne doivent jamais être envoyées au navigateur avant la correction.
-  Les questions (src/main/resources/questions_*.json) sont en anglais, comme les examens officiels ; l'interface est en français.
+  Les questions (src/main/resources/questions_*.json) sont dans la langue de l'examen officiel (anglais pour Scrum.org, français pour CCA Agile) ; l'interface est en français.
   Tests : JUnit 5, à faire évoluer avec chaque changement de comportement.
 
 # Per-artifact rules (optional)
