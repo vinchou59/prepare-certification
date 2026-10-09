@@ -505,25 +505,25 @@
           "label": "A",
           "text": "Reject the urgent item since the WIP Limits do not allow it. Tell the Product Owner to wait until the next Sprint.",
           "isCorrect": false,
-          "explanation": "Limiting WIP forces finishing work before starting new items."
+          "explanation": "Rejecting an urgent item that supports the Sprint Goal is not the best option; WIP Limits guide when work starts, they don't forbid adding it to the Sprint Backlog."
         },
         {
           "label": "B",
           "text": "Add the urgent item to their Sprint Backlog but only start working on it when their WIP Limits allow it.",
           "isCorrect": true,
-          "explanation": "WIP limits do not increase multitasking."
+          "explanation": "The item is accepted into the Sprint Backlog but only pulled into progress when capacity frees up, so WIP Limits are respected."
         },
         {
           "label": "C",
           "text": "Take on the urgent item as an exception to the WIP Limits and visualize that they are above their WIP Limit.",
-          "isCorrect": false,
-          "explanation": "The intent is smoother flow, not higher individual utilization."
+          "isCorrect": true,
+          "explanation": "Exceeding a WIP Limit can be acceptable as a visible, explicit exception, so the team can inspect its impact on flow."
         },
         {
           "label": "D",
           "text": "Adjust the WIP Limits to allow for taking on the extra item and record it as part of their Definition of Workflow.",
           "isCorrect": false,
-          "explanation": "Quality improves as a consequence, not the direct mechanism."
+          "explanation": "WIP Limits should not be changed mid-Sprint to accommodate a single item; they are adjusted deliberately, typically at the Sprint Retrospective."
         }
       ]
     },
