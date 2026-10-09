@@ -6,8 +6,8 @@
 
 ## 2. Explications PSK
 
-- [ ] 2.1 Réécrire les explications des questions PSK 11 à 16, chacune propre à son choix. Vérification : relecture utilisateur.
-- [ ] 2.2 Réécrire les explications des questions PSK 18 à 30. Vérification : relecture utilisateur.
+- [x] 2.1 Réécrire les explications des questions PSK 11 à 16, chacune propre à son choix. Vérification : relecture utilisateur.
+- [x] 2.2 Réécrire les explications des questions PSK 18 à 30. Vérification : relecture utilisateur.
 
 ## 3. Explications CCA Agile
 

@@ -343,25 +343,25 @@
           "label": "A",
           "text": "WIP Limits inhibit self-management since they limit the team's autonomy to pull work.",
           "isCorrect": false,
-          "explanation": "Reducing variability is not the primary intent of WIP limits in this question."
+          "explanation": "WIP Limits do not inhibit self-management: the Scrum Team sets them itself and still decides what to pull within them."
         },
         {
           "label": "B",
           "text": "As part of self-managing, Scrum Teams figure out their own WIP Limits.",
           "isCorrect": true,
-          "explanation": "WIP limits directly control how many items are started at the same time."
+          "explanation": "Setting and adapting their own WIP Limits is part of how a self-managing Scrum Team decides how to work."
         },
         {
           "label": "C",
           "text": "WIP Limits provide a boundary/container in which the Scrum Team self-manages.",
           "isCorrect": true,
-          "explanation": "Prioritization is handled separately and is not what WIP limits address."
+          "explanation": "WIP Limits act as a boundary within which the Developers self-manage how they pull and finish work."
         },
         {
           "label": "D",
           "text": "A Scrum Master defines a WIP Limit to help the Scrum Team self-manage.",
           "isCorrect": false,
-          "explanation": "Predictability improves indirectly but is not the direct mechanism described."
+          "explanation": "The Scrum Master does not define WIP Limits for the team; the Scrum Team defines them as part of its Definition of Workflow."
         }
       ]
     },
@@ -374,13 +374,13 @@
           "label": "A",
           "text": "True",
           "isCorrect": true,
-          "explanation": "Lead Time includes waiting before work starts, which matches the definition asked."
+          "explanation": "Scrum already contains pull elements: the Developers pull Product Backlog items into the Sprint during Sprint Planning, and the Sprint itself limits how much work is taken on."
         },
         {
           "label": "B",
           "text": "False",
           "isCorrect": false,
-          "explanation": "Cycle Time excludes backlog waiting, so it does not fully match the question."
+          "explanation": "Work is not pushed onto the Developers in Scrum: they select the work they forecast for the Sprint, which is already a pull mechanism."
         }
       ]
     },
@@ -393,13 +393,13 @@
           "label": "A",
           "text": "True",
           "isCorrect": false,
-          "explanation": "Daily tracking of finished work does not describe forecasting."
+          "explanation": "Adding Kanban does not change the role of the Sprint Goal in the Daily Scrum: the Developers still inspect progress toward it, with flow information as an additional input."
         },
         {
           "label": "B",
           "text": "False",
           "isCorrect": true,
-          "explanation": "Throughput data is explicitly used to forecast future delivery."
+          "explanation": "The Daily Scrum stays focused on progress toward the Sprint Goal; Kanban only adds flow information, such as Work Item Age, to support that inspection."
         }
       ]
     },
@@ -431,31 +431,31 @@
           "label": "A",
           "text": "As a leading indicator to the length of the feedback loop for that Work Item.",
           "isCorrect": true,
-          "explanation": "Visualizing workflow makes blocked work immediately visible."
+          "explanation": "Cycle Time is only known once an item is finished, so it is a lagging indicator; it cannot serve as a leading indicator for that item."
         },
         {
           "label": "B",
           "text": "To help the Scrum Team inspect and adapt their process.",
           "isCorrect": false,
-          "explanation": "Visualization does not replace planning activities."
+          "explanation": "Cycle Time data can help the Scrum Team inspect and adapt its process, for example during the Sprint Retrospective."
         },
         {
           "label": "C",
           "text": "As a lagging indicator to the length of the feedback loop for that Work Item.",
           "isCorrect": false,
-          "explanation": "Visibility supports collaboration rather than individual optimization."
+          "explanation": "Cycle Time is a valid lagging indicator of how long the feedback loop for that item took."
         },
         {
           "label": "D",
           "text": "To influence the team’s SLE.",
           "isCorrect": false,
-          "explanation": "The goal is transparency, not reporting compliance."
+          "explanation": "Historical Cycle Times are precisely what the Scrum Team uses to set and adjust its Service Level Expectation."
         },
         {
           "label": "E",
           "text": "To help the Developers inspect and adapt their Sprint in the Daily Scrum.",
           "isCorrect": true,
-          "explanation": "This answer aligns with the Kanban Guide for Scrum Teams principles and demonstrates correct application of Kanban within the Scrum framework."
+          "explanation": "Once an item is finished, its Cycle Time no longer helps manage the remaining work of the Sprint; in the Daily Scrum, Work Item Age is the relevant metric."
         }
       ]
     },
@@ -468,31 +468,31 @@
           "label": "A",
           "text": "As an indicator of the Work Item size.",
           "isCorrect": false,
-          "explanation": "Daily Scrum focuses on inspecting current progress, not historical averages."
+          "explanation": "Work Item Age measures the time elapsed since work on an item started, not the size of the item."
         },
         {
           "label": "B",
           "text": "To help the Developers inspect and adapt their Sprint in the Daily Scrum.",
           "isCorrect": true,
-          "explanation": "Work Item Age highlights items at risk during the current Sprint."
+          "explanation": "Work Item Age highlights items that are getting old compared to the Service Level Expectation, so the Developers can act on them during the Daily Scrum."
         },
         {
           "label": "C",
           "text": "To influence the Scrum Team’s SLE.",
           "isCorrect": false,
-          "explanation": "Velocity is not a Kanban flow metric."
+          "explanation": "The Service Level Expectation is derived from the Cycle Times of finished items, not from the age of items still in progress."
         },
         {
           "label": "D",
           "text": "As a leading indicator to the length of the feedback loop for that Work Item.",
           "isCorrect": true,
-          "explanation": "Cycle Time trends are analyzed over time, not daily execution."
+          "explanation": "Work Item Age is a leading indicator: an aging item tells the team early that its feedback loop is going to be long."
         },
         {
           "label": "E",
           "text": "To help the Scrum Team inspect and adapt their process and Definition of Workflow in their Retrospective.",
           "isCorrect": false,
-          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+          "explanation": "The Sprint Retrospective mainly relies on data about finished work, such as Cycle Time and Throughput; Work Item Age is best used to manage work in progress day to day."
         }
       ]
     },
@@ -523,7 +523,7 @@
           "label": "D",
           "text": "Adjust the WIP Limits to allow for taking on the extra item and record it as part of their Definition of Workflow.",
           "isCorrect": false,
-          "explanation": "WIP Limits should not be changed mid-Sprint to accommodate a single item; they are adjusted deliberately, typically at the Sprint Retrospective."
+          "explanation": "Changing the WIP Limits just to fit one urgent item defeats their purpose; they should be adapted deliberately, based on what the Scrum Team learns about its flow."
         }
       ]
     },
@@ -536,25 +536,25 @@
           "label": "A",
           "text": "The Product Backlog.",
           "isCorrect": true,
-          "explanation": "Service Level Expectation expresses probabilistic delivery expectations."
+          "explanation": "The Product Backlog can be visualized on a Kanban board, for example as the first columns of the workflow, to make upcoming work transparent."
         },
         {
           "label": "B",
           "text": "The Sprint Backlog.",
           "isCorrect": true,
-          "explanation": "Commitments are different from statistical expectations."
+          "explanation": "Visualizing the Sprint Backlog on a Kanban board shows the state of each item and makes the flow of work transparent."
         },
         {
           "label": "C",
           "text": "The Sprint Retrospective.",
           "isCorrect": false,
-          "explanation": "SLE is not a guarantee, but an expectation based on data."
+          "explanation": "The Sprint Retrospective is an event, not work flowing through the workflow; it is not something to visualize on a Kanban board."
         },
         {
           "label": "D",
           "text": "The Definition of Done.",
           "isCorrect": true,
-          "explanation": "SLE focuses on time, not cost."
+          "explanation": "The Definition of Done can be made visible, for example as the policy of the last column, so everyone knows when an item is truly finished."
         }
       ]
     },
@@ -567,25 +567,25 @@
           "label": "A",
           "text": "General Cycle Time trends.",
           "isCorrect": false,
-          "explanation": "Cumulative Flow Diagrams show WIP, throughput, and bottlenecks."
+          "explanation": "A Cycle Time Scatterplot does show general trends, but that is only one of the insights it provides."
         },
         {
           "label": "B",
           "text": "Single Cycle Time outliers.",
           "isCorrect": false,
-          "explanation": "Burn‑down charts are not flow‑based metrics."
+          "explanation": "Single outliers are visible on the scatterplot, but they are only one of the pieces of information it gives."
         },
         {
           "label": "C",
           "text": "Clusters of Cycle Time outliers.",
           "isCorrect": false,
-          "explanation": "Individual task tracking does not show system flow."
+          "explanation": "Clusters of outliers are visible too, but they are only part of what the scatterplot reveals."
         },
         {
           "label": "D",
           "text": "All of the answers.",
           "isCorrect": true,
-          "explanation": "Financial reports do not visualize workflow."
+          "explanation": "A Cycle Time Scatterplot reveals general trends, single outliers and clusters of outliers, which together help the team inspect its flow."
         }
       ]
     },
@@ -598,31 +598,31 @@
           "label": "A",
           "text": "Monte Carlo.",
           "isCorrect": false,
-          "explanation": "Throughput reflects how many items are completed per time period."
+          "explanation": "Monte Carlo is a forecasting technique based on past Throughput, not a leading indicator metric."
         },
         {
           "label": "B",
           "text": "Cycle Time.",
           "isCorrect": false,
-          "explanation": "Cycle Time measures duration, not volume."
+          "explanation": "Cycle Time is only known once an item is finished, so it is a lagging indicator."
         },
         {
           "label": "C",
           "text": "Work in Progress.",
           "isCorrect": true,
-          "explanation": "Lead Time includes waiting and is not about rate."
+          "explanation": "Work in Progress is a leading indicator: today's WIP influences future Cycle Time and Throughput, as described by Little's Law."
         },
         {
           "label": "D",
           "text": "Service Level Expectation.",
           "isCorrect": false,
-          "explanation": "Work Item Age is about ongoing work, not completed output."
+          "explanation": "A Service Level Expectation is a forecast derived from past Cycle Times, not a leading indicator metric."
         },
         {
           "label": "E",
           "text": "Work Item Aging.",
           "isCorrect": true,
-          "explanation": "This answer aligns with the Kanban Guide for Scrum Teams principles and demonstrates correct application of Kanban within the Scrum framework."
+          "explanation": "Work Item Age is a leading indicator: it shows, before an item is finished, that it risks exceeding the expected Cycle Time."
         }
       ]
     },
@@ -635,37 +635,37 @@
           "label": "A",
           "text": "Only during Sprint Planning.",
           "isCorrect": false,
-          "explanation": "Starting all items at once increases parallel work rather than answering the question about flow improvement."
+          "explanation": "WIP Limits are not restricted to Sprint Planning; they can be adapted whenever the team learns something about its flow."
         },
         {
           "label": "B",
           "text": "Only during the Daily Scrum.",
           "isCorrect": false,
-          "explanation": "Limiting started items directly addresses flow by reducing congestion."
+          "explanation": "The Daily Scrum is one possible moment, but changing WIP Limits is not restricted to it."
         },
         {
           "label": "C",
           "text": "It never changes.",
           "isCorrect": false,
-          "explanation": "Changing priorities does not explain how flow is improved."
+          "explanation": "WIP Limits are meant to evolve as the Scrum Team inspects and adapts its workflow."
         },
         {
           "label": "D",
           "text": "At any time.",
           "isCorrect": true,
-          "explanation": "Team size does not describe a flow mechanism."
+          "explanation": "WIP Limits are part of the Definition of Workflow and can be changed at any time, whenever the Scrum Team sees a reason to adapt them."
         },
         {
           "label": "E",
           "text": "When the Product Owner decides to change it.",
           "isCorrect": false,
-          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+          "explanation": "The Product Owner does not decide WIP Limits; they belong to the Scrum Team's Definition of Workflow."
         },
         {
           "label": "F",
           "text": "Only during the Sprint Retrospective.",
           "isCorrect": false,
-          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+          "explanation": "The Sprint Retrospective is a natural moment to revisit WIP Limits, but changing them is not restricted to it."
         }
       ]
     },
@@ -678,13 +678,13 @@
           "label": "A",
           "text": "True",
           "isCorrect": false,
-          "explanation": "A CFD shows accumulation of work, which is what the question asks about."
+          "explanation": "Smaller batches usually improve flow and feedback, but not always efficiency: below a certain size, transaction costs such as coordination, testing or deployment can outweigh the benefits."
         },
         {
           "label": "B",
           "text": "False",
           "isCorrect": true,
-          "explanation": "Velocity does not visualize work states over time."
+          "explanation": "Reducing batch size often helps, but not 'always': every batch carries transaction costs, so beyond a point smaller batches can reduce overall efficiency."
         }
       ]
     },
@@ -697,37 +697,37 @@
           "label": "A",
           "text": "It provides a mutual understanding of when the work is considered to be started and finished.",
           "isCorrect": true,
-          "explanation": "Work Item Age measures how long an item has been in progress, which answers the question."
+          "explanation": "The Definition of Workflow makes explicit when an item is considered started and finished, which is needed to measure flow consistently."
         },
         {
           "label": "B",
           "text": "It creates transparency over the Work in Progress (WIP) limiting rules.",
           "isCorrect": true,
-          "explanation": "Throughput measures completed items, not aging."
+          "explanation": "WIP Limits are part of the Definition of Workflow, so it makes the rules for limiting work in progress transparent."
         },
         {
           "label": "C",
           "text": "It defines how value flows through the system.",
           "isCorrect": true,
-          "explanation": "Lead Time includes waiting before start, not in-progress aging."
+          "explanation": "By defining states, policies and WIP Limits, the Definition of Workflow describes how value flows through the Scrum Team's system."
         },
         {
           "label": "D",
           "text": "It makes handoff policies explicit by defining clear quality gates between the development stages.",
           "isCorrect": false,
-          "explanation": "Story points do not measure time."
+          "explanation": "The Definition of Workflow is not about quality gates or hand-offs between stages; quality is covered by the Definition of Done, and the team collaborates across states."
         },
         {
           "label": "E",
           "text": "It is used as a checklist of all the states that every work item should go through before it is considered to be done.",
           "isCorrect": false,
-          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+          "explanation": "It is not a checklist that every item must go through; it describes the workflow and its policies, while the Definition of Done describes when work is done."
         },
         {
           "label": "F",
           "text": "It helps Service Request Manager track the percent completeness of a work item.",
           "isCorrect": false,
-          "explanation": "This answer does not align with the Kanban Guide for Scrum Teams or does not represent an effective Kanban practice in a Scrum context."
+          "explanation": "There is no Service Request Manager in Scrum with Kanban, and the Definition of Workflow does not track the percent completeness of items."
         }
       ]
     },
@@ -740,13 +740,13 @@
           "label": "A",
           "text": "True",
           "isCorrect": true,
-          "explanation": "Explicit policies define how work moves through the workflow."
+          "explanation": "Column policies in the Definition of Workflow complement the Definition of Done but never replace it: an item is only done when it meets the Definition of Done."
         },
         {
           "label": "B",
           "text": "False",
           "isCorrect": false,
-          "explanation": "Implicit rules are the opposite of what the question targets."
+          "explanation": "Explicit workflow policies do not remove the Definition of Done; it remains the commitment for the Increment."
         }
       ]
     },
@@ -759,25 +759,25 @@
           "label": "A",
           "text": "A forecasted date.",
           "isCorrect": false,
-          "explanation": "SLE communicates expected delivery time, which matches the question."
+          "explanation": "An SLE is not a forecasted date; it expresses how long a single item is expected to take once work on it has started."
         },
         {
           "label": "B",
           "text": "A period of elapsed days.",
           "isCorrect": true,
-          "explanation": "A fixed deadline is not probabilistic."
+          "explanation": "An SLE includes a period of elapsed days, for example 8 days, measured from when work on an item starts."
         },
         {
           "label": "C",
           "text": "A probability.",
           "isCorrect": true,
-          "explanation": "Capacity planning does not describe customer expectations."
+          "explanation": "An SLE includes a probability, for example 85%, expressing how likely an item is to finish within that period."
         },
         {
           "label": "D",
           "text": "A cost of delay.",
           "isCorrect": false,
-          "explanation": "SLE is not a guarantee."
+          "explanation": "Cost of delay is a prioritization concept, not part of a Service Level Expectation."
         }
       ]
     },
@@ -790,19 +790,19 @@
           "label": "A",
           "text": "Cycle Time for some Product Backlog items might be longer than a length of Sprint.",
           "isCorrect": true,
-          "explanation": "Inspecting WIP helps detect flow problems early."
+          "explanation": "Cycle Time measures how long an item takes from start to finish; some items may legitimately take longer than a Sprint."
         },
         {
           "label": "B",
           "text": "Average Cycle Time should be shorter than a length of Sprint.",
           "isCorrect": true,
-          "explanation": "Cost tracking does not address flow."
+          "explanation": "If the average Cycle Time were longer than a Sprint, few items would be done within a Sprint, which would undermine creating a valuable Increment every Sprint."
         },
         {
           "label": "C",
           "text": "Cycle Time should be exactly the length of a Sprint.",
           "isCorrect": false,
-          "explanation": "Individual performance is not the focus of flow metrics."
+          "explanation": "Cycle Time is measured per item and varies; nothing requires it to match the length of the Sprint."
         }
       ]
     },
@@ -815,25 +815,25 @@
           "label": "A",
           "text": "Throughput.",
           "isCorrect": false,
-          "explanation": "Reducing batch size shortens feedback loops."
+          "explanation": "WIP is a leading indicator for Throughput: by Little's Law, the amount of work in progress influences how many items finish."
         },
         {
           "label": "B",
           "text": "Cycle Time.",
           "isCorrect": false,
-          "explanation": "Batch size does not increase parallelism."
+          "explanation": "WIP is a leading indicator for Cycle Time: the more items are in progress, the longer each tends to take."
         },
         {
           "label": "C",
           "text": "Story points delivered.",
           "isCorrect": true,
-          "explanation": "Large batches delay learning."
+          "explanation": "Story points are an estimation unit, not a flow metric; WIP, which counts items, is not a leading indicator for story points delivered."
         },
         {
           "label": "D",
           "text": "Number of Product Backlog items finished in a Sprint.",
           "isCorrect": false,
-          "explanation": "Batch size is not about utilization."
+          "explanation": "The number of items finished in a Sprint is Throughput, for which WIP is a leading indicator."
         }
       ]
     },
@@ -846,25 +846,25 @@
           "label": "A",
           "text": "In the last Sprint the team has been able to complete 85% of Product Backlog items within 5 days of starting work on the item.",
           "isCorrect": false,
-          "explanation": "Daily review of blocked items supports flow recovery."
+          "explanation": "An SLE is not a report on the last Sprint; it is a forward-looking expectation based on historical Cycle Times."
         },
         {
           "label": "B",
           "text": "The team promises to have 85% of all Product Backlog items done within 5 days.",
           "isCorrect": false,
-          "explanation": "Ignoring blockers contradicts the question intent."
+          "explanation": "An SLE is not a promise: it expresses a probability, so some items are expected to take longer."
         },
         {
           "label": "C",
           "text": "The team expects they will complete a work item within 5 days of when they start working on it 85% of the time.",
           "isCorrect": true,
-          "explanation": "Retrospectives are not daily flow controls."
+          "explanation": "An 85% 5-day SLE means that, once work on an item starts, the team expects to finish it within 5 days 85% of the time."
         },
         {
           "label": "D",
           "text": "The team can get any critical system backup within 5 days.",
           "isCorrect": false,
-          "explanation": "Reporting does not remove blockers."
+          "explanation": "An SLE is about the Cycle Time of the team's work items, not about the recovery time of a system backup."
         }
       ]
     },
@@ -877,25 +877,25 @@
           "label": "A",
           "text": "Kanban boards become an official Scrum feedback loop in a Scrum with Kanban environment.",
           "isCorrect": false,
-          "explanation": "Throughput stability supports predictability."
+          "explanation": "A Kanban board supports transparency, but it does not become an additional official Scrum event or feedback loop."
         },
         {
           "label": "B",
           "text": "A Scrum Team must devise and design their own feedback loops through an inspection and adaptation process.",
           "isCorrect": false,
-          "explanation": "Individual estimates do not reflect system behavior."
+          "explanation": "The Scrum Team does not need to invent feedback loops: Scrum already provides them through its events."
         },
         {
           "label": "C",
           "text": "There are five feedback loops in Scrum. The Kanban Guide for Scrum Teams builds upon the Scrum guide. There is no need to explicitly add that practice.",
           "isCorrect": true,
-          "explanation": "Scope commitments do not explain predictability."
+          "explanation": "Scrum already provides five feedback loops, its events; since the Kanban Guide for Scrum Teams builds on Scrum, it does not need to add that practice."
         },
         {
           "label": "D",
           "text": "There is no need to implement feedback loops in Kanban. Feedback loops only apply at the enterprise level.",
           "isCorrect": false,
-          "explanation": "Tool choice does not impact predictability."
+          "explanation": "Feedback loops are central to Scrum and Kanban at every level, not only at the enterprise level."
         }
       ]
     },
@@ -908,25 +908,25 @@
           "label": "A",
           "text": "Work in Progress (WIP), Velocity, Lead Time, Cycle Time.",
           "isCorrect": false,
-          "explanation": "Visualizing workflow makes bottlenecks observable."
+          "explanation": "Velocity is not one of the four flow metrics; Work Item Age and Throughput are missing from this list."
         },
         {
           "label": "B",
           "text": "Velocity, Lead Time, Cycle Time, Cost.",
           "isCorrect": false,
-          "explanation": "Hidden work cannot reveal bottlenecks."
+          "explanation": "Velocity and cost are not flow metrics, and Lead Time is not one of the four key metrics of the Kanban Guide for Scrum Teams."
         },
         {
           "label": "C",
           "text": "Throughput, Work in Progress (WIP), Velocity, Lead Time.",
           "isCorrect": false,
-          "explanation": "Planning sessions do not visualize flow."
+          "explanation": "Velocity and Lead Time are not among the four key flow metrics; Cycle Time and Work Item Age are missing."
         },
         {
           "label": "D",
           "text": "Work in Progress (WIP), Work Item Age, Throughput, Cycle Time.",
           "isCorrect": true,
-          "explanation": "Email communication does not expose bottlenecks."
+          "explanation": "The Kanban Guide for Scrum Teams defines four key flow metrics: Work in Progress, Work Item Age, Throughput and Cycle Time."
         }
       ]
     },
