@@ -29,7 +29,8 @@ import {
     settings: {
       certification: store.get("certification", null),
       size: store.get("size", 10),
-      mode: store.get("mode", "training")
+      mode: store.get("mode", "training"),
+      shuffle: store.get("shuffle", true)
     },
     quiz: null,      // { certification, questions } : vues sans les réponses
     share: false,
@@ -38,6 +39,7 @@ import {
     index: 0,
     answers: {},     // questionId -> [labels]
     checked: {},     // questionId -> CheckResponse (training)
+    flagged: {},     // questionId -> true (examen : à revoir)
     startedAt: 0,
     confirmFinish: false,
     result: null,
@@ -144,6 +146,7 @@ import {
     store.set("certification", certification);
     store.set("size", size);
     store.set("mode", mode);
+    store.set("shuffle", state.settings.shuffle);
     state.busy = true;
     render();
     try {
@@ -154,10 +157,12 @@ import {
         questions = questions.filter((q) => wanted.has(q.id));
         if (!questions.length) throw new Error("Aucune question à retravailler pour cette certification.");
       }
-      quizModel = createQuiz({ certification: cert, questions, size: questionIds ? 0 : size, random });
+      quizModel = createQuiz({
+        certification: cert, questions, size: questionIds ? 0 : size, random, shuffle: state.settings.shuffle
+      });
       state.quiz = { certification: cert, questions: quizModel.questions.map(questionView) };
       Object.assign(state, {
-        view: "quiz", index: 0, answers: {}, checked: {}, result: null,
+        view: "quiz", index: 0, answers: {}, checked: {}, flagged: {}, result: null,
         confirmFinish: false, reviewFilter: "mistakes", startedAt: Date.now()
       });
       setError(null);
@@ -213,13 +218,24 @@ import {
     window.scrollTo({ top: 0 });
   }
 
+  function flaggedCount() {
+    return state.quiz.questions.filter((q) => state.flagged[q.id]).length;
+  }
+
+  // Première question sans réponse, sinon première question marquée
+  function firstPendingIndex() {
+    const qs = state.quiz.questions;
+    const i = qs.findIndex((q) => selectedOf(q).length === 0);
+    return i >= 0 ? i : qs.findIndex((q) => state.flagged[q.id]);
+  }
+
   function unansweredCount() {
     return state.quiz.questions.filter((q) => selectedOf(q).length === 0).length;
   }
 
   async function finishQuiz(force) {
     if (state.busy) return;
-    if (!force && !isTraining() && unansweredCount() > 0) {
+    if (!force && !isTraining() && (unansweredCount() > 0 || flaggedCount() > 0)) {
       state.confirmFinish = true;
       render();
       return;
@@ -372,6 +388,13 @@ import {
         <div class="segmented" role="radiogroup" aria-label="Mode">${modes}</div>
         <p class="mode-help">${MODES[s.mode].help}</p>
       </fieldset>
+      <fieldset class="field">
+        <legend>Ordre des réponses</legend>
+        <div class="segmented" role="radiogroup" aria-label="Ordre des réponses">
+          <button type="button" role="radio" data-shuffle="on" aria-checked="${s.shuffle}">Mélangé</button>
+          <button type="button" role="radio" data-shuffle="off" aria-checked="${!s.shuffle}">Fixe</button>
+        </div>
+      </fieldset>
       <div class="home-actions">
         <button type="button" class="btn primary" data-action="start" ${state.busy || !s.certification ? "disabled" : ""}>
           Commencer le quiz
@@ -391,10 +414,11 @@ import {
       if (chk) cls.push(chk.correct ? "good" : "bad");
       else if (selectedOf(q).length) cls.push("answered");
       if (i === state.index) cls.push("current");
+      if (state.flagged[q.id]) cls.push("flagged");
       const reachable = !training || i <= furthestReachable();
       const status = chk ? (chk.correct ? "juste" : "faux") : (selectedOf(q).length ? "répondue" : "sans réponse");
       return `<button type="button" class="${cls.join(" ")}" data-goto="${i}" ${reachable ? "" : "disabled"}
-        aria-label="Question ${i + 1}, ${status}" ${i === state.index ? 'aria-current="step"' : ""}></button>`;
+        aria-label="Question ${i + 1}, ${status}${state.flagged[q.id] ? ", marquée à revoir" : ""}" ${i === state.index ? 'aria-current="step"' : ""}></button>`;
     }).join("")}</nav>`;
   }
 
@@ -464,11 +488,15 @@ import {
       : `<span>${instruction}</span>`;
 
     const missing = unansweredCount();
+    const flagged = flaggedCount();
     const confirm = state.confirmFinish ? `
       <div class="notice pop" role="alert">
-        <span>${plural(missing, "question est restée", "questions sont restées")} sans réponse et ${missing > 1 ? "compteront" : "comptera"} comme ${missing > 1 ? "fausses" : "fausse"}.</span>
+        <span>${[
+          missing ? `${plural(missing, "question est restée", "questions sont restées")} sans réponse et ${missing > 1 ? "compteront" : "comptera"} comme ${missing > 1 ? "fausses" : "fausse"}.` : "",
+          flagged ? `${plural(flagged, "question est marquée", "questions sont marquées")} à revoir.` : ""
+        ].filter(Boolean).join(" ")}</span>
         <span class="actions">
-          <button type="button" class="btn" data-action="first-unanswered">Y retourner</button>
+          <button type="button" class="btn" data-action="goto-pending">Y retourner</button>
           <button type="button" class="btn primary" data-action="finish-force">Terminer quand même</button>
         </span>
       </div>` : "";
@@ -492,6 +520,13 @@ import {
         <div class="choices" role="${need === 1 ? "radiogroup" : "group"}" aria-label="Réponses">
           ${q.choices.map((c) => choiceView(q, c, correction, sel)).join("")}
         </div>
+        ${!training ? `
+        <div class="q-tools">
+          <button type="button" class="btn quiet flag-btn" data-action="toggle-flag" aria-pressed="${!!state.flagged[q.id]}">
+            ${state.flagged[q.id] ? "Retirer la marque" : "Marquer pour revoir"}
+          </button>
+        </div>` : ""}
+        ${correction ? reportLink(state.quiz.certification, q) : ""}
       </article>
       ${confirm}
       <div class="nav">
@@ -499,6 +534,28 @@ import {
         ${primary}
       </div>
       <p class="hint-keys">Raccourcis : <kbd>${esc(q.choices[0]?.label)}</kbd>…<kbd>${esc(q.choices[q.choices.length - 1]?.label)}</kbd> pour répondre, <kbd>Entrée</kbd> pour valider, <kbd>←</kbd> <kbd>→</kbd> pour naviguer</p>`;
+  }
+
+  // Lien vers une issue GitHub pré-remplie ; sans lettres, car l'ordre des réponses peut changer
+  const ISSUES_URL = "https://github.com/vinchou59/prepare-certification/issues/new";
+
+  function reportLink(cert, q) {
+    const text = String(q.question || "");
+    const title = `[${cert.shortName}] Question ${q.id} : ${text.replace(/\s+/g, " ").slice(0, 60)}${text.length > 60 ? "…" : ""}`;
+    const body = [
+      `**Certification** : ${cert.shortName} (${cert.file})`,
+      `**Question n°** : ${q.id}`,
+      "",
+      "> " + text.slice(0, 1000).replace(/\n/g, "\n> "),
+      "",
+      "**Réponses proposées** :",
+      ...q.choices.map((c) => `- ${c.text}`),
+      "",
+      "**Problème constaté** :",
+      "(bonne réponse discutable, explication incorrecte, faute de frappe…)"
+    ].join("\n");
+    const href = `${ISSUES_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+    return `<p class="report"><a href="${esc(href)}" target="_blank" rel="noopener" data-report>Signaler un problème</a></p>`;
   }
 
   function reviewItemView(item, number) {
@@ -512,6 +569,7 @@ import {
         </div>
         <p class="q-text">${esc(item.question)}</p>
         <div class="choices">${item.choices.map((c) => choiceView(q, c, correction, item.given)).join("")}</div>
+        ${reportLink(state.quiz.certification, item)}
       </section>`;
   }
 
@@ -642,6 +700,7 @@ import {
     if (d.cert) { state.settings.certification = d.cert; render(); return; }
     if (d.size !== undefined) { state.settings.size = Number(d.size); render(); return; }
     if (d.mode) { state.settings.mode = d.mode; render(); return; }
+    if (d.shuffle) { state.settings.shuffle = d.shuffle === "on"; render(); return; }
     if (d.filter) { state.reviewFilter = d.filter; render(); return; }
     if (d.choice) { toggleChoice(d.choice); return; }
     if (d.goto !== undefined) { goTo(Number(d.goto)); return; }
@@ -657,8 +716,14 @@ import {
       case "prev": goTo(state.index - 1); break;
       case "finish": finishQuiz(false); break;
       case "finish-force": finishQuiz(true); break;
-      case "first-unanswered":
-        goTo(state.quiz.questions.findIndex((q) => selectedOf(q).length === 0)); break;
+      case "goto-pending": goTo(firstPendingIndex()); break;
+      case "toggle-flag": {
+        const id = current().id;
+        if (state.flagged[id]) delete state.flagged[id]; else state.flagged[id] = true;
+        state.confirmFinish = false;
+        render();
+        break;
+      }
       case "leave": leaveQuiz(); break;
       case "share": openShare(); break;
       case "share-close": state.share = false; render(); break;

@@ -11,7 +11,10 @@ Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur té
 - **Entraînement** : correction et explications après chaque question.
 - **Examen** : chronomètre, navigation libre entre les questions, correction complète à la fin.
 - Raccourcis clavier : les lettres (A, B, C…) pour répondre, Entrée pour valider, flèches gauche et droite pour naviguer.
-- `?seed=42` à la fin de l'adresse rend le tirage des questions reproductible.
+- En mode Examen, **Marquer pour revoir** signale une question sur la barre de progression ; l'avertissement de fin rappelle les questions marquées.
+- L'ordre des réponses est **mélangé** à chaque quiz (réglage « Ordre des réponses » à l'accueil). Les réponses « All of the above » restent en dernier, les questions Vrai/Faux gardent leur ordre.
+- **Signaler un problème**, sous chaque correction, ouvre une issue GitHub pré-remplie (compte GitHub nécessaire).
+- `?seed=42` à la fin de l'adresse rend le tirage des questions et le mélange des réponses reproductibles.
 
 ## Suivre sa progression
 
@@ -47,3 +50,5 @@ npm start    # sert le site sur http://localhost:8765/ (Python 3)
 1. Ajouter `site/data/questions_<certif>.json` (même format que les fichiers existants).
 2. Déclarer la certification dans `site/data/certifications.json` (identifiant, noms, fichier, seuil de réussite ou `null`).
 3. Lancer `npm test` : le test de cohérence signale toute question incomplète.
+
+Un texte ou une explication ne doit jamais désigner une autre réponse par sa lettre (« option B ») : l'ordre des réponses est mélangé. Le test de cohérence le vérifie.

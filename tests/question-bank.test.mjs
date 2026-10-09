@@ -6,6 +6,8 @@ import { readFileSync, readdirSync } from "node:fs";
 const dataDir = new URL("../site/data/", import.meta.url);
 const read = (name) => JSON.parse(readFileSync(new URL(name, dataDir), "utf8"));
 const certifications = read("certifications.json");
+// Les choix peuvent être mélangés : un texte ne doit pas désigner un autre choix par sa lettre
+const LETTER_REFERENCE = /\b(options?|answers?|choices?|réponses?|choix)\s+[A-I]\b/i;
 
 test("certifications.json : identifiants uniques et fichiers existants", () => {
   const files = readdirSync(dataDir);
@@ -51,6 +53,9 @@ for (const cert of certifications) {
         if (!c.text || !c.text.trim()) problems.push(`${where} : choix ${c.label} sans texte`);
         else if (c.text.includes("\n")) problems.push(`${where} : choix ${c.label} sur plusieurs lignes`);
         if (!c.explanation || !c.explanation.trim()) problems.push(`${where} : choix ${c.label} sans explication`);
+        for (const [field, value] of [["texte", c.text], ["explication", c.explanation]]) {
+          if (LETTER_REFERENCE.test(value ?? "")) problems.push(`${where} : choix ${c.label}, ${field} cite une lettre (« ${value.match(LETTER_REFERENCE)[0]} »)`);
+        }
       });
     }
     assert.deepEqual(problems, [], `Incohérences :\n${problems.join("\n")}`);

@@ -57,8 +57,32 @@ export function questionView(q) {
   };
 }
 
-export function createQuiz({ certification, questions, size, random = Math.random, now = Date.now() }) {
-  return { certification, questions: drawQuestions(questions, size, random), startedAt: now, result: null };
+// Choix qui restent en dernière position quand on mélange : « All of the above », « None of the answers »…
+const ANCHORED = /^\s*(all|none)\s+of\s+the\s+(above|answers)\b|^\s*all\s+answers\s+apply\b/i;
+const TRUE_FALSE = new Set(["true", "false", "vrai", "faux"]);
+
+export function isAnchoredChoice(choice) {
+  return ANCHORED.test(choice.text);
+}
+
+/** Copie de la question avec ses choix mélangés et relettrés A, B, C… dans l'ordre affiché. */
+export function shuffleChoices(question, random = Math.random) {
+  const choices = question.choices;
+  const trueFalse = choices.every((c) => TRUE_FALSE.has(c.text.trim().replace(/\.$/, "").toLowerCase()));
+  if (trueFalse) return question;
+  const movable = choices.filter((c) => !isAnchoredChoice(c));
+  for (let i = movable.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [movable[i], movable[j]] = [movable[j], movable[i]];
+  }
+  const ordered = [...movable, ...choices.filter(isAnchoredChoice)];
+  return { ...question, choices: ordered.map((c, i) => ({ ...c, label: String.fromCharCode(65 + i) })) };
+}
+
+export function createQuiz({ certification, questions, size, random = Math.random, now = Date.now(), shuffle = false }) {
+  let drawn = drawQuestions(questions, size, random);
+  if (shuffle) drawn = drawn.map((q) => shuffleChoices(q, random));
+  return { certification, questions: drawn, startedAt: now, result: null };
 }
 
 /** Correction d'une seule question (mode Entraînement). */

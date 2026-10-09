@@ -231,6 +231,7 @@ h2 { font-size: 22px; margin: 0 0 14px; }
   display: flex;
   gap: 4px;
   margin-bottom: 28px;
+  padding-top: 10px; /* place pour les fanions */
 }
 .track button {
   flex: 1;
@@ -252,6 +253,17 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 .track button.good { background: var(--good); }
 .track button.bad { background: var(--bad); }
 .track button.current { outline: 2px solid var(--ink); outline-offset: 2px; }
+.track button.flagged::before { /* petit fanion au-dessus du segment */
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  width: 8px;
+  height: 8px;
+  transform: translateX(-50%) rotate(45deg);
+  background: var(--accent);
+  border-radius: 2px;
+}
 .track button:disabled { cursor: default; }
 
 .q-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 15px; margin-bottom: 8px; }
@@ -313,6 +325,14 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 .is-bad .verdict { color: var(--bad); }
 .explain { color: var(--muted); font-size: 15px; margin-top: 6px; }
 .is-good .explain, .is-bad .explain { color: var(--ink); }
+
+.q-tools { margin-top: 14px; display: flex; justify-content: flex-end; }
+.flag-btn[aria-pressed="true"] { color: var(--accent); }
+.flag-btn::before { content: ""; width: 9px; height: 9px; transform: rotate(45deg); border: 2px solid currentColor; border-radius: 2px; margin-right: 4px; }
+.flag-btn[aria-pressed="true"]::before { background: currentColor; }
+.report { margin: 12px 0 0; font-size: 14px; }
+.report a { color: var(--muted); text-underline-offset: 3px; }
+.report a:hover { color: var(--ink); }
 
 .feedback {
   font-family: var(--display);
