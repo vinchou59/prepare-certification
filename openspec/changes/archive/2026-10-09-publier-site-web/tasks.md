@@ -13,4 +13,4 @@
 
 - [x] 3.1 Ajouter `package.json` (script `test`) et `.github/workflows/pages.yml` (tests puis publication de `site/`). Vérification : syntaxe du workflow relue, tests lancés localement par `npm test`.
 - [x] 3.2 Supprimer `psm2-quiz/` et les fichiers liés ; mettre à jour `.gitignore`, `README.md` et le contexte de `openspec/config.yaml`. Vérification : plus aucune référence à Java ou Maven hors historique et archives OpenSpec.
-- [ ] 3.3 Guider l'utilisateur pour rendre le dépôt public et activer GitHub Pages (source : GitHub Actions), puis vérifier le premier déploiement. Vérification : le site répond à son adresse publique.
+- [x] 3.3 Guider l'utilisateur pour rendre le dépôt public et activer GitHub Pages (source : GitHub Actions), puis vérifier le premier déploiement. Vérification : le site répond à son adresse publique.

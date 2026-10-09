@@ -1,22 +1,9 @@
 # Quiz Session Specification
 
 ## Purpose
-Déroulé d'un quiz dans l'interface web locale : lancement de l'application, réglages, réponse aux questions dans les modes Entraînement et Examen, correction et résultats. Couvre le serveur (`application/web`) et le front-end (`src/main/resources/web`).
+Déroulé d'un quiz sur le site : réglages, réponse aux questions dans les modes Entraînement et Examen, correction et résultats. Couvre l'interface (`site/js/app.js`).
 
 ## Requirements
-
-### Requirement: Application locale dans le navigateur
-Le lanceur SHALL démarrer un serveur HTTP qui écoute uniquement sur l'interface locale (loopback), puis ouvrir l'interface dans le navigateur par défaut. Le port préféré SHALL être 8765, modifiable par `-Dquiz.port` ; s'il est occupé, le serveur SHALL utiliser un port libre. L'ouverture du navigateur SHALL pouvoir être désactivée par `-Dquiz.noBrowser=true`.
-
-#### Scenario: Lancement standard
-- **GIVEN** le port 8765 libre
-- **WHEN** l'utilisateur lance `launch_quiz.command`
-- **THEN** le navigateur s'ouvre sur http://localhost:8765/ et affiche l'accueil
-
-#### Scenario: Arrêt depuis l'interface
-- **GIVEN** l'application lancée
-- **WHEN** l'utilisateur clique sur « Quitter l'application » depuis l'accueil
-- **THEN** le serveur s'arrête et la page indique que l'onglet peut être fermé
 
 ### Requirement: Réglages du quiz
 L'accueil SHALL permettre de choisir la certification (avec son nombre de questions disponibles), le nombre de questions (5, 10, 20 ou toutes) et le mode (Entraînement ou Examen). Les derniers réglages SHOULD être mémorisés dans le navigateur et proposés au prochain lancement.
@@ -59,17 +46,17 @@ En mode Examen, le système SHALL afficher un chronomètre, permettre de navigue
 - **THEN** la correction montre toutes les questions avec leurs explications
 
 ### Requirement: Confidentialité des réponses
-Le serveur MUST NOT envoyer au navigateur les bonnes réponses ni les explications d'une question avant sa correction : vérification de la question en mode Entraînement, ou fin du quiz.
+L'interface MUST NOT afficher les bonnes réponses ni les explications d'une question avant sa correction : vérification de la question en mode Entraînement, ou fin du quiz. Les données du site contiennent les réponses ; seule leur présentation est contrôlée.
 
-#### Scenario: Lancement d'un quiz
-- **GIVEN** une certification choisie
-- **WHEN** le navigateur demande un nouveau quiz
-- **THEN** la réponse ne contient, pour chaque choix, que sa lettre et son texte
+#### Scenario: Question en cours
+- **GIVEN** une question affichée en mode Examen
+- **WHEN** l'utilisateur sélectionne des réponses
+- **THEN** aucune indication de justesse ni aucune explication n'apparaît avant la fin du quiz
 
-### Requirement: Durée de vie des quiz
-Le serveur SHALL garder en mémoire au plus les 50 quiz les plus récents. Une action sur un quiz inconnu ou expiré SHALL renvoyer une erreur explicite invitant à relancer un quiz depuis l'accueil.
+### Requirement: Site web accessible en ligne
+L'application SHALL être un site web statique utilisable depuis n'importe quel navigateur récent, sur ordinateur comme sur téléphone, sans installation ni compte. Toute la logique du quiz SHALL s'exécuter dans le navigateur.
 
-#### Scenario: Quiz expiré
-- **GIVEN** un quiz qui n'est plus en mémoire, par exemple après un redémarrage de l'application
-- **WHEN** l'utilisateur tente de terminer ce quiz
-- **THEN** l'interface affiche « Ce quiz n'existe plus. Relancez-en un depuis l'accueil. »
+#### Scenario: Ouverture sur téléphone
+- **GIVEN** l'adresse du site
+- **WHEN** quelqu'un l'ouvre sur son téléphone
+- **THEN** l'accueil s'affiche, adapté à la largeur de l'écran, et un quiz peut être joué jusqu'au résultat
