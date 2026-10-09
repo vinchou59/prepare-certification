@@ -57,7 +57,7 @@ Le score SHALL être le nombre de réponses justes sur le nombre de questions du
 ### Requirement: Seuil de réussite officiel
 Chaque certification MAY avoir un seuil de réussite connu, en pourcentage. Lorsqu'il est connu, le système SHALL indiquer si le score atteint ce seuil (score ≥ seuil). Lorsqu'il est inconnu, le système MUST NOT afficher de seuil ni de verdict de réussite.
 
-Seuils actuels : PSM II, PSPO I et PSK I à 85 % ; CCA Agile et PSM-AI sans seuil connu.
+Seuils actuels : PSM II, PSPO I, PSK I, PSM-AI et CCA Agile à 85 %.
 
 #### Scenario: Seuil atteint
 - **GIVEN** un quiz PSPO I de 20 questions
@@ -65,6 +65,6 @@ Seuils actuels : PSM II, PSPO I et PSK I à 85 % ; CCA Agile et PSM-AI sans seui
 - **THEN** le résultat indique que le score est au-dessus du seuil de 85 %
 
 #### Scenario: Seuil inconnu
-- **GIVEN** un quiz CCA Agile terminé
-- **WHEN** le résultat s'affiche
+- **GIVEN** une certification déclarée sans seuil de réussite
+- **WHEN** un de ses quiz se termine
 - **THEN** seuls le score, le pourcentage et la durée sont affichés, sans seuil ni verdict
