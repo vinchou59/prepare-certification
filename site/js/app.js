@@ -731,7 +731,7 @@ import {
       <div class="results-actions">
         <button type="button" class="btn primary" data-action="start">Nouveau quiz ${esc(state.quiz.certification.shortName)}</button>
         ${mistakes.length ? `<button type="button" class="btn" data-action="rework-quiz">Retravailler ces erreurs (${mistakes.length})</button>` : ""}
-        <button type="button" class="btn" data-action="leave">Changer de réglages</button>
+        <button type="button" class="btn danger" data-action="leave">Retour à l'accueil</button>
       </div>
       <div class="review-head">
         <h2>Correction</h2>
