@@ -65,3 +65,11 @@ Le texte d'un choix MUST NOT contenir de retour à la ligne, afin qu'il s'affich
 - **GIVEN** un choix dont le texte contient `\n`
 - **WHEN** la banque de questions est vérifiée
 - **THEN** le choix est signalé comme mal formaté
+
+### Requirement: Choix indépendants de leur lettre
+Comme l'ordre des choix peut être mélangé, les textes et les explications des choix MUST NOT désigner un autre choix par sa lettre (par exemple « option B »). Ils SHALL le désigner par son contenu.
+
+#### Scenario: Référence à une lettre
+- **GIVEN** une explication qui contient « Because option B is correct »
+- **WHEN** la banque de questions est vérifiée
+- **THEN** le choix est signalé comme dépendant de l'ordre des réponses
