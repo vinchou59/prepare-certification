@@ -57,3 +57,32 @@ L'historique SHALL rester dans le navigateur de l'appareil utilisé et MUST NOT 
 - **GIVEN** un navigateur en navigation privée qui refuse le stockage local
 - **WHEN** l'utilisateur termine un quiz
 - **THEN** le résultat s'affiche normalement, sans message d'erreur
+
+### Requirement: Points faibles par thème
+L'accueil SHALL afficher, pour la certification choisie, le taux de réussite de chaque thème déjà travaillé, calculé sur le dernier résultat enregistré de chaque question vue du thème, classés du plus faible au plus solide. Un taux sous le seuil de réussite SHALL être signalé. Chaque thème SHALL proposer un bouton « S'entraîner » qui lance un quiz Entraînement sur ce thème. Les thèmes jamais travaillés MUST NOT figurer dans ce classement.
+
+#### Scenario: Thème faible en premier
+- **GIVEN** en PSM II, 6 questions « Organisation » réussies sur 14 vues et 3 sur 3 en « Théorie »
+- **WHEN** l'utilisateur ouvre l'accueil
+- **THEN** « Organisation » apparaît avant « Théorie », avec 43 % signalé sous le seuil de 85 %
+
+#### Scenario: S'entraîner sur un thème faible
+- **GIVEN** le thème « Organisation » affiché dans les points faibles
+- **WHEN** l'utilisateur clique sur « S'entraîner »
+- **THEN** un quiz Entraînement démarre avec uniquement des questions de ce thème
+
+### Requirement: Niveau de maîtrise par question
+Le système SHALL déduire de l'historique une boîte de 1 à 5 pour chaque question déjà vue : une bonne réponse SHALL la faire monter d'une boîte (boîte 2 si elle est réussie dès sa première apparition), une erreur SHALL la renvoyer en boîte 1. Une question SHALL être à réviser lorsque le délai de sa boîte est écoulé depuis sa dernière réponse : immédiatement en boîte 1, puis 1, 3, 7 et 14 jours pour les boîtes 2 à 5. Une question en boîte 4 ou 5 SHALL être considérée comme maîtrisée.
+
+#### Scenario: Erreur après plusieurs réussites
+- **GIVEN** une question réussie trois fois de suite, donc en boîte 4
+- **WHEN** l'utilisateur se trompe sur cette question
+- **THEN** elle revient en boîte 1 et est à réviser immédiatement
+
+### Requirement: Bilan de progression
+Dès qu'au moins une question de la certification choisie a été vue, l'accueil SHALL afficher la répartition de ses questions entre maîtrisées, en cours, à revoir et jamais vues, ainsi que le nombre de questions à réviser maintenant.
+
+#### Scenario: Premier quiz terminé
+- **GIVEN** un premier entraînement PSM II de 5 questions avec 2 bonnes réponses
+- **WHEN** l'utilisateur revient à l'accueil
+- **THEN** « Ma progression PSM II » indique 0 maîtrisée, 2 en cours, 3 à revoir, 56 jamais vues et 3 questions à réviser

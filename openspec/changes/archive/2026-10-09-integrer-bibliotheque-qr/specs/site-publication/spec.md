@@ -1,22 +1,4 @@
-# Site Publication Specification
-
-## Purpose
-Mettre le quiz à disposition de n'importe qui, sans installation, à une adresse publique stable, et permettre de la partager facilement par lien ou par QR code.
-
-## Requirements
-
-### Requirement: Publication automatique
-Le site SHALL être publié sur GitHub Pages à chaque push sur la branche `main`. La publication MUST NOT avoir lieu si les tests automatisés échouent ; le site déjà en ligne reste alors inchangé.
-
-#### Scenario: Push avec tests au vert
-- **GIVEN** un commit sur `main` dont tous les tests passent
-- **WHEN** il est poussé sur GitHub
-- **THEN** la nouvelle version du site est en ligne quelques minutes plus tard
-
-#### Scenario: Push avec un test en échec
-- **GIVEN** un commit sur `main` qui introduit une question incohérente
-- **WHEN** il est poussé sur GitHub
-- **THEN** le test de cohérence échoue, la publication est annulée et l'ancienne version reste en ligne
+## MODIFIED Requirements
 
 ### Requirement: Partage par QR code
 L'accueil SHALL proposer un bouton « Partager » qui affiche l'adresse du site, un bouton pour la copier et un QR code menant à cette adresse. Le QR code SHALL être généré par une bibliothèque incluse dans le site : le partage MUST NOT dépendre d'un service tiers. Si le QR code ne peut pas être généré, l'adresse et le bouton de copie SHALL rester disponibles.
