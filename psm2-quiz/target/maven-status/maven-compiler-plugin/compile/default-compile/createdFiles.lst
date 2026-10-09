@@ -1,9 +1,0 @@
-domain/service/QuizService.class
-Main.class
-application/QuizRunner.class
-domain/model/QuestionListWrapper.class
-infrastructure/file/JsonQuestionRepository.class
-infrastructure/file/QuestionProvider.class
-infrastructure/file/JsonQuestionProvider.class
-domain/model/Question.class
-domain/model/Choice.class
