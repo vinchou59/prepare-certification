@@ -53,7 +53,7 @@ Les textes des questions et des choix SHALL rester dans la langue de l'examen of
 - **THEN** la consigne apparaît sur sa propre ligne
 
 ### Requirement: Déclaration des certifications
-Chaque certification SHALL être déclarée dans `site/data/certifications.json`, avec un identifiant, un nom court, un nom complet, son fichier de questions, son seuil de réussite s'il est connu, le format de son examen officiel (`exam` : nombre de questions et durée en minutes) et la liste de ses thèmes (`themes` : identifiant et libellé). Ajouter une certification MUST NOT demander de modification de code : elle SHALL apparaître automatiquement à l'accueil avec son nombre de questions.
+Chaque certification SHALL être déclarée dans `site/data/certifications.json`, avec un identifiant, un nom court, un nom complet, son fichier de questions, son seuil de réussite s'il est connu, le format de son examen officiel (`exam` : nombre de questions et durée en minutes) et la liste de ses thèmes (`themes` : identifiant et libellé). L'ordre de déclaration SHALL être l'ordre d'affichage à l'accueil. Ajouter une certification MUST NOT demander de modification de code : elle SHALL apparaître automatiquement à l'accueil avec son nombre de questions.
 
 #### Scenario: Ajout d'une certification
 - **GIVEN** un nouveau fichier `site/data/questions_psm1.json`
