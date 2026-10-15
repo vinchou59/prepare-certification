@@ -4,7 +4,7 @@ Quiz d'entraînement aux certifications agiles : PSM I, PSM II, PSPO I, PSK I, P
 
 **Site : https://vinchou59.github.io/prepare-certification/**
 
-Les questions proviennent d'examens réellement passés ou fait passer : aucune n'est générée. Certaines sont reprises du dépôt public [Ditectrev](https://github.com/Ditectrev) (PSM I, une partie de PSPO I) : elles portent un badge « Ditectrev » dans le quiz, et leurs réponses ont été vérifiées par l'auteur.
+Les questions proviennent d'examens réellement passés ou fait passer : aucune n'est générée. Certaines sont reprises du dépôt public [Ditectrev](https://github.com/Ditectrev) (PSM I, une partie de PSM II et de PSPO I) : elles portent un badge « Ditectrev » dans le quiz, et leurs réponses ont été vérifiées par l'auteur.
 
 Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur téléphone, sans installation ni compte. Le bouton « Partager » de l'accueil affiche le lien et un QR code (bibliothèque [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator), MIT, incluse dans `site/vendor/`).
 

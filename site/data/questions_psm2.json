@@ -2103,6 +2103,1194 @@
           "explanation": "The \"Definition of Ready\" is not a requirement in Scrum. It\u2019s a popular practice in some teams, but not part of the Scrum Guide. Also, it does not guarantee higher velocity or better timeboxing in Sprint Planning."
         }
       ]
+    },
+    {
+      "id": 64,
+      "theme": "produit",
+      "source": "ditectrev",
+      "question": "Paul is a Product Owner for multiple products. Each product is allocated a dedicated Scrum Team and a set budget. Based on the average velocity of a previous product release, Paul had estimated a new product to take 9 Sprints to complete. The average velocity of the previous product release was 50 completed units of work per Sprint. Over the first 3 Sprints, the Developers reported an average velocity of 40 completed units per Sprint, while not fully completing the required integration tests. The Developers estimate that integration testing would require additional effort to make the increments shippable. The Developers are unsure if the required velocity is achievable. What is the most effective way to recover?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "In the next Sprints, the Developers strive to make the selected work as close to 'done' as possible and at the minimum 90% completed. Any undone work is divided into new Product Backlog Items that will be deferred to the last Sprint in order to maintain stable velocity.",
+          "isCorrect": false,
+          "explanation": "Undone work is not part of the Increment; deferring it to the last Sprint hides the real state of the product and creates technical debt."
+        },
+        {
+          "label": "B",
+          "text": "The Developers inform Paul that the progress he has perceived to date is not correct. The Increment is not releasable. They give Paul their estimate of the effort it would take to get the previous work 'done', and suggest doing that work first before proceeding with new features. The team also re-estimates the effort to make the remaining Product Backlog items 'done', including all integration effort. In the end, it is Paul's call to continue the project or to cancel.",
+          "isCorrect": true,
+          "explanation": "Transparency first: the Product Owner must know that the Increment is not releasable, so they can decide with real data whether to continue or cancel."
+        },
+        {
+          "label": "C",
+          "text": "The Scrum Master will manage the Sprint Backlog and assign work to the Developers to ensure maximum utilization of each member. He/she will keep track of unused resources so that it does not impact the budget. Unused budget can be allocated for additional Sprints if needed.",
+          "isCorrect": false,
+          "explanation": "The Scrum Master does not manage the Sprint Backlog or assign work; the Developers self-manage."
+        },
+        {
+          "label": "D",
+          "text": "The Scrum Master sets the open work aside to be performed in one or more release Sprints. They remind Paul to find funding for enough Release Sprints in which this remaining work can be done. Up to one release Sprint per three development Sprints may be required. It is Paul's role to inform users and stakeholders of the impact on the release date.",
+          "isCorrect": false,
+          "explanation": "Release Sprints do not exist in Scrum; every Sprint must produce a usable Increment meeting the Definition of Done."
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "theme": "organisation",
+      "source": "ditectrev",
+      "question": "According to the values of Scrum, which is the best way to create teams?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The Product Owner will create a skills matrix according to what is needed for the project and work with the technical leads to allocate resources to the team.",
+          "isCorrect": false,
+          "explanation": "Allocating people as resources from a skills matrix is top-down and goes against self-management."
+        },
+        {
+          "label": "B",
+          "text": "Work with the leadership team to allocate members according to skills, seniority and experience to ensure that all teams are balanced fairly.",
+          "isCorrect": false,
+          "explanation": "Leadership allocation is still a top-down decision."
+        },
+        {
+          "label": "C",
+          "text": "Provide boundaries to the developers and allow them to self-manage into teams.",
+          "isCorrect": true,
+          "explanation": "Giving clear boundaries and letting people form teams themselves reflects respect, openness and self-management."
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "theme": "organisation",
+      "source": "ditectrev",
+      "question": "True or False: When multiple Scrum Teams are working from the same Product Backlog, also known as scaled Scrum, they must still work in conformance with the Scrum Guide.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True.",
+          "isCorrect": true,
+          "explanation": "Scaling does not change the Scrum framework; every Scrum Team still follows the Scrum Guide."
+        },
+        {
+          "label": "B",
+          "text": "False.",
+          "isCorrect": false,
+          "explanation": "Scaled Scrum is still Scrum: its accountabilities, events, artifacts and rules remain."
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "theme": "equipe",
+      "source": "ditectrev",
+      "question": "What would be two boundaries, defined in Scrum, that give guidance for teams to effectively self-manage?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Timeboxing the events in Scrum to allow for regular inspection and adaptation creating opportunities to adjust course in any given path.",
+          "isCorrect": true,
+          "explanation": "Timeboxed events give regular inspection and adaptation points within which the team self-manages."
+        },
+        {
+          "label": "B",
+          "text": "Clearly defined functional sub-teams among the Developers to define handoff phases during development.",
+          "isCorrect": false,
+          "explanation": "Functional sub-teams with handoffs go against cross-functionality."
+        },
+        {
+          "label": "C",
+          "text": "Creating an integrated and potentially shippable Increment by the end of each Sprint.",
+          "isCorrect": true,
+          "explanation": "The obligation to create an integrated, usable Increment every Sprint frames how the team self-manages."
+        },
+        {
+          "label": "D",
+          "text": "Having a mixture of different levels of skills and experience to promote domain knowledge sharing.",
+          "isCorrect": false,
+          "explanation": "Scrum does not prescribe a mixture of skill levels."
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "theme": "organisation",
+      "source": "ditectrev",
+      "question": "What is management's role in Scrum?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "To provide the necessary environment and support needed as defined by the Scrum Guide by providing insights and resources that help the Scrum Teams continue moving forward.",
+          "isCorrect": true,
+          "explanation": "Management supports Scrum Teams by providing the environment, insights and resources they need."
+        },
+        {
+          "label": "B",
+          "text": "Identifying and removing people that are performing poorly.",
+          "isCorrect": false,
+          "explanation": "Removing people is not management's role in Scrum."
+        },
+        {
+          "label": "C",
+          "text": "Monitoring skill levels of the Developers.",
+          "isCorrect": false,
+          "explanation": "Monitoring skills is not management's role in Scrum."
+        },
+        {
+          "label": "D",
+          "text": "Monitoring the Developers' velocity.",
+          "isCorrect": false,
+          "explanation": "Velocity is not a management metric in Scrum."
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "theme": "theorie",
+      "source": "ditectrev",
+      "question": "What would likely happen if management only changed the organization's current terminology to fit Scrum without the proper understanding and support of Scrum as defined in the Scrum Guide?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Very little change will happen as the vocabulary in Scrum is specifically defined for implementing Scrum.",
+          "isCorrect": false,
+          "explanation": "Without the new vocabulary as a reminder of the change, little may actually change."
+        },
+        {
+          "label": "B",
+          "text": "The organization may not realize the real benefits of Scrum as there would be no real change on the way the teams work.",
+          "isCorrect": false,
+          "explanation": "Real benefits come from real change in the way of working, not from new labels."
+        },
+        {
+          "label": "C",
+          "text": "Organizations may feel less stressed as the behaviors would remain familiar to management.",
+          "isCorrect": false,
+          "explanation": "Familiar behaviors may comfort management while hiding the lack of change."
+        },
+        {
+          "label": "D",
+          "text": "All answers apply.",
+          "isCorrect": true,
+          "explanation": "All these consequences are likely."
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "theme": "theorie",
+      "source": "ditectrev",
+      "question": "Which statement best describes Scrum?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "A clearly defined methodology that defines the software development process.",
+          "isCorrect": false,
+          "explanation": "Scrum is not a methodology."
+        },
+        {
+          "label": "B",
+          "text": "A manual for defining best practices for software development.",
+          "isCorrect": false,
+          "explanation": "Scrum is not a manual of best practices."
+        },
+        {
+          "label": "C",
+          "text": "A clearly defined and predictable process that follows the principles of Computer Science.",
+          "isCorrect": false,
+          "explanation": "Scrum is empirical, not a predictable defined process."
+        },
+        {
+          "label": "D",
+          "text": "A framework to address complex products in complex environments.",
+          "isCorrect": true,
+          "explanation": "Scrum is a lightweight framework to address complex problems in complex environments."
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "theme": "theorie",
+      "source": "ditectrev",
+      "question": "True or False: In order to start the first Sprint, Scrum only requires a Product Owner with enough ideas, Developers to execute on those ideas, and a Scrum Master to guide the process.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True.",
+          "isCorrect": true,
+          "explanation": "Scrum only needs a Product Owner with enough ideas, Developers and a Scrum Master to start."
+        },
+        {
+          "label": "B",
+          "text": "False.",
+          "isCorrect": false,
+          "explanation": "Scrum does not require a complete Product Backlog to start."
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "theme": "theorie",
+      "source": "ditectrev",
+      "question": "Scrum is based on which of the following?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Defined process.",
+          "isCorrect": false,
+          "explanation": "Scrum is the opposite of a defined process."
+        },
+        {
+          "label": "B",
+          "text": "Complex process.",
+          "isCorrect": false,
+          "explanation": "Complex describes the problem, not the process control."
+        },
+        {
+          "label": "C",
+          "text": "Empiricism.",
+          "isCorrect": true,
+          "explanation": "Scrum is founded on empiricism and lean thinking."
+        },
+        {
+          "label": "D",
+          "text": "Hybrid model.",
+          "isCorrect": false,
+          "explanation": "Scrum is not a hybrid model."
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "theme": "evenements",
+      "source": "ditectrev",
+      "question": "True or False: Stakeholders are only allowed to meet with the Scrum Team at Sprint Review.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True.",
+          "isCorrect": false,
+          "explanation": "Stakeholders can collaborate with the Scrum Team at any time."
+        },
+        {
+          "label": "B",
+          "text": "False.",
+          "isCorrect": true,
+          "explanation": "The Sprint Review is a key moment, but not the only time stakeholders can meet the Scrum Team."
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "theme": "theorie",
+      "source": "ditectrev",
+      "question": "Which Scrum Value is impacted by trust?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Respect.",
+          "isCorrect": false,
+          "explanation": "Respect is impacted by trust, but not only respect."
+        },
+        {
+          "label": "B",
+          "text": "Courage.",
+          "isCorrect": false,
+          "explanation": "Courage is impacted by trust, but not only courage."
+        },
+        {
+          "label": "C",
+          "text": "Commitment.",
+          "isCorrect": false,
+          "explanation": "Commitment is impacted by trust, but not only commitment."
+        },
+        {
+          "label": "D",
+          "text": "Openness.",
+          "isCorrect": false,
+          "explanation": "Openness is impacted by trust, but not only openness."
+        },
+        {
+          "label": "E",
+          "text": "Focus.",
+          "isCorrect": false,
+          "explanation": "Focus is impacted by trust, but not only focus."
+        },
+        {
+          "label": "F",
+          "text": "All of the above.",
+          "isCorrect": true,
+          "explanation": "Trust underpins all five Scrum values."
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "theme": "theorie",
+      "source": "ditectrev",
+      "question": "Doing your best and helping other Scrum Team members demonstrates which of the following?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Value of Commitment.",
+          "isCorrect": true,
+          "explanation": "Doing one's best and helping others demonstrates commitment to the team's goals."
+        },
+        {
+          "label": "B",
+          "text": "Increased Revenue.",
+          "isCorrect": false,
+          "explanation": "Revenue is not what this behavior demonstrates."
+        },
+        {
+          "label": "C",
+          "text": "Increased Profit.",
+          "isCorrect": false,
+          "explanation": "Profit is not what this behavior demonstrates."
+        },
+        {
+          "label": "D",
+          "text": "Maximizing utilization.",
+          "isCorrect": false,
+          "explanation": "Utilization is not a Scrum goal."
+        },
+        {
+          "label": "E",
+          "text": "High Performance.",
+          "isCorrect": false,
+          "explanation": "Performance may follow, but the behavior reflects the value of commitment."
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "theme": "organisation",
+      "source": "ditectrev",
+      "question": "Peter, a Project Manager, has raised concerns about your Scrum Team's productivity and progress towards the objectives. Which is the best way to respond to Peter's concerns?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Share the Product Backlog, the projections towards the release dates and ensure that Peter has access.",
+          "isCorrect": true,
+          "explanation": "The Product Backlog and its projections give transparent information on progress."
+        },
+        {
+          "label": "B",
+          "text": "Show the Profit & Loss (P&L) report.",
+          "isCorrect": false,
+          "explanation": "A P&L report does not show progress toward objectives."
+        },
+        {
+          "label": "C",
+          "text": "Share the current impediments.",
+          "isCorrect": false,
+          "explanation": "Impediments do not show overall progress."
+        },
+        {
+          "label": "D",
+          "text": "Share the last stakeholder status report prepared by the Scrum Master.",
+          "isCorrect": false,
+          "explanation": "Scrum has no status reports prepared by the Scrum Master."
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "theme": "theorie",
+      "source": "ditectrev",
+      "question": "The three pillars of empirical process control consist of:\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Planning, Inspection, Adaptation.",
+          "isCorrect": false,
+          "explanation": "Planning is not one of the three pillars."
+        },
+        {
+          "label": "B",
+          "text": "Inspection, Transparency, Adaptation.",
+          "isCorrect": true,
+          "explanation": "Transparency, inspection and adaptation are the three pillars of empiricism."
+        },
+        {
+          "label": "C",
+          "text": "Planning, Demonstration, Retrospective.",
+          "isCorrect": false,
+          "explanation": "These are not the pillars."
+        },
+        {
+          "label": "D",
+          "text": "Respect For People, Kaizen, Eliminating Waste.",
+          "isCorrect": false,
+          "explanation": "These are Lean principles, not Scrum pillars."
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "You have been hired as a Scrum Master for a company that has been doing business for over fifty years. In order to stay competitive, they have started an initiative to digitize their legacy systems. The company has several Scrum Teams working on different components that will be integrated to a single back office platform. Your team is responsible for building the back office platform and integrating all other components. The Scrum Teams work in two week Sprints and are expected to deliver all functionality in six Sprints. During development the requirement changes in the other components have been slowing down your team's progress. Because of these changes, your team has estimated that they will not be able to deliver all expected work within the original timeframe. The Scrum Teams working on the other components confirm that they are still on track to meet the expected delivery date. The program manager in charge of the digitization initiative is upset and angry with your team. As a Scrum Master, what could you do to help the Product Owner?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "You suggest working with the program manager and the other teams on the ordering and the value of your team's open Product Backlog items to redefine the possible delivery date.",
+          "isCorrect": true,
+          "explanation": "Working transparently with stakeholders and the other teams on value and ordering helps redefine a realistic date."
+        },
+        {
+          "label": "B",
+          "text": "You shorten your team's Sprints to be ready sooner.",
+          "isCorrect": false,
+          "explanation": "Shortening Sprints does not speed up delivery."
+        },
+        {
+          "label": "C",
+          "text": "You remove all items from the Product Backlog for which development is forecasted to be beyond the expected date. These are likely to be low value anyhow.",
+          "isCorrect": false,
+          "explanation": "Removing items without discussion is not transparent and may remove valuable work."
+        },
+        {
+          "label": "D",
+          "text": "You suggest adding additional developers to the team in order to increase velocity and meet the original date.",
+          "isCorrect": false,
+          "explanation": "Adding developers usually slows teams down in the short term."
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "theme": "artefacts",
+      "source": "ditectrev",
+      "question": "At the fifth Sprint Retrospective, the Product Owner mentions that he is surprised about the amount of technical debt that has built up in the system and that the product is not able to support an adequate number of users. Peter, the Product Owner, is upset that the product will need several more Sprints to address the scalability issues in order to meet his expectations. What factors may have led to this?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The Scrum Team has not used the past Sprint Retrospectives effectively to inspect and adapt.",
+          "isCorrect": false,
+          "explanation": "Retrospectives should have surfaced the technical debt."
+        },
+        {
+          "label": "B",
+          "text": "The Developers have not been paying enough attention to technical quality.",
+          "isCorrect": false,
+          "explanation": "The Developers are accountable for quality."
+        },
+        {
+          "label": "C",
+          "text": "The Developers and the Product Owner are not having conversations around technical debt.",
+          "isCorrect": false,
+          "explanation": "Technical debt should be discussed between the Developers and the Product Owner."
+        },
+        {
+          "label": "D",
+          "text": "The Scrum Master has not ensured that the Scrum Team is transparent.",
+          "isCorrect": false,
+          "explanation": "The Scrum Master promotes transparency."
+        },
+        {
+          "label": "E",
+          "text": "All of the above.",
+          "isCorrect": true,
+          "explanation": "All these factors may have contributed."
+        },
+        {
+          "label": "F",
+          "text": "None of the above.",
+          "isCorrect": false,
+          "explanation": "Several factors did contribute."
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "After several Sprints, a key stakeholder starts using the product. The stakeholder is surprised by the slow performance and complains to the Product Owner. The Product Owner comes to the Scrum Master asking for advice. What is the best action for a Scrum Master to take?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Wait until the next Sprint Retrospective as it is the most opportune time to modify the Definition of Done.",
+          "isCorrect": false,
+          "explanation": "There is no need to wait; the concern can be addressed immediately."
+        },
+        {
+          "label": "B",
+          "text": "Bring the concern to the testers among the Developers and ask them to include performance testing.",
+          "isCorrect": false,
+          "explanation": "Scrum has no testers; quality is a responsibility of all Developers."
+        },
+        {
+          "label": "C",
+          "text": "Explain to the Product Owner that it's up to the Developers to decide on acceptable performance standards as they own the Definition of Done.",
+          "isCorrect": false,
+          "explanation": "The Definition of Done is the Scrum Team's, and the Product Owner can bring quality expectations."
+        },
+        {
+          "label": "D",
+          "text": "Encourage the Product Owner to bring the performance concerns to the Developers and work with them on how to improve performance, and ultimately have stronger Definition of Done.",
+          "isCorrect": true,
+          "explanation": "The Product Owner and Developers collaborate on the concern and can strengthen the Definition of Done."
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "theme": "artefacts",
+      "source": "ditectrev",
+      "question": "In what two ways is velocity and technical debt related?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "They are not related because technical debt is non-functional and velocity is calculated based on end user functionality.",
+          "isCorrect": false,
+          "explanation": "Technical debt affects velocity, even if it is non-functional."
+        },
+        {
+          "label": "B",
+          "text": "As the Developers are working on new Product Backlog items, they may unexpectedly run into technical debt that will result in the team's velocity dropping.",
+          "isCorrect": true,
+          "explanation": "Hidden technical debt slows work down when the team runs into it."
+        },
+        {
+          "label": "C",
+          "text": "Developers can artificially increase velocity by allowing technical debt to be incurred.",
+          "isCorrect": true,
+          "explanation": "Cutting corners artificially increases velocity in the short term."
+        },
+        {
+          "label": "D",
+          "text": "Adding estimates to technical debt will allow the Developers to maintain constant velocity therefore ensuring predictability.",
+          "isCorrect": false,
+          "explanation": "Estimating technical debt does not guarantee constant velocity or predictability."
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "theme": "artefacts",
+      "source": "ditectrev",
+      "question": "If burndown charts are used to visualize progress, what does a trendline through a release burndown chart indicate?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "When all work will be completed so the Scrum Team can start work on a new Product Backlog.",
+          "isCorrect": false,
+          "explanation": "A burndown does not decide when the team starts on another Product Backlog."
+        },
+        {
+          "label": "B",
+          "text": "When the project will be over if the Product Owner removes work that is equal in effort to any new work that is added.",
+          "isCorrect": false,
+          "explanation": "The trend line does not assume new work is compensated by removed work."
+        },
+        {
+          "label": "C",
+          "text": "When the work remaining is projected to be completed if nothing changes on the Product Backlog or Developers.",
+          "isCorrect": true,
+          "explanation": "The trend line projects when remaining work will be completed if nothing changes."
+        },
+        {
+          "label": "D",
+          "text": "The evolution of the return of investment on the project.",
+          "isCorrect": false,
+          "explanation": "A burndown does not track return on investment."
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "theme": "artefacts",
+      "source": "ditectrev",
+      "question": "What is a good way for a Scrum Team to ensure that security concerns are addressed and transparent?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Add Security Sprints to resolve security concerns when needed.",
+          "isCorrect": false,
+          "explanation": "There are no special-purpose Sprints in Scrum."
+        },
+        {
+          "label": "B",
+          "text": "Have the Scrum Team create Product Backlog items for each concern and/or add security concerns to the Definition of Done.",
+          "isCorrect": true,
+          "explanation": "Making concerns transparent in the Product Backlog and/or the Definition of Done addresses them every Sprint."
+        },
+        {
+          "label": "C",
+          "text": "Create a separate backlog for security items and only work on the items when a specialist becomes available.",
+          "isCorrect": false,
+          "explanation": "A separate backlog fragments the work and delays it."
+        },
+        {
+          "label": "D",
+          "text": "Delegate the work to an external team.",
+          "isCorrect": false,
+          "explanation": "Delegating outside the Scrum Team removes accountability."
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "theme": "equipe",
+      "source": "ditectrev",
+      "question": "Select the correct Scrum Team roles defined in Scrum.\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Developers, Scrum Master, Product Owner.",
+          "isCorrect": true,
+          "explanation": "Scrum defines three accountabilities: Developers, Scrum Master and Product Owner."
+        },
+        {
+          "label": "B",
+          "text": "Engineers, Business Analyst, Product Owner.",
+          "isCorrect": false,
+          "explanation": "Engineers and Business Analysts are not Scrum accountabilities."
+        },
+        {
+          "label": "C",
+          "text": "Stakeholders, Scrum Master, Project Manager, Product Owner.",
+          "isCorrect": false,
+          "explanation": "Stakeholders and Project Managers are not part of the Scrum Team."
+        },
+        {
+          "label": "D",
+          "text": "Product Manager, Business Analyst, Developers, Stakeholders.",
+          "isCorrect": false,
+          "explanation": "Product Managers, Business Analysts and stakeholders are not Scrum accountabilities."
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "theme": "equipe",
+      "source": "ditectrev",
+      "question": "True or False: Scrum has a role called \"Project Manager\".",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True.",
+          "isCorrect": false,
+          "explanation": "Scrum has no Project Manager role."
+        },
+        {
+          "label": "B",
+          "text": "False.",
+          "isCorrect": true,
+          "explanation": "Scrum defines only Product Owner, Scrum Master and Developers."
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "theme": "equipe",
+      "source": "ditectrev",
+      "question": "What would be the main benefits of self-management?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Increased rule compliance, self-accountability, commitment.",
+          "isCorrect": false,
+          "explanation": "Rule compliance is not a benefit of self-management."
+        },
+        {
+          "label": "B",
+          "text": "Increased rule compliance, self-accountability, output.",
+          "isCorrect": false,
+          "explanation": "Rule compliance and output are not the main benefits."
+        },
+        {
+          "label": "C",
+          "text": "Increased capacity, accuracy of estimates, output.",
+          "isCorrect": false,
+          "explanation": "Self-management does not mainly increase capacity, estimate accuracy or output."
+        },
+        {
+          "label": "D",
+          "text": "Increased creativity, self-accountability, commitment.",
+          "isCorrect": true,
+          "explanation": "Self-management increases creativity, self-accountability and commitment."
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "theme": "equipe",
+      "source": "ditectrev",
+      "question": "A Scrum Team must have a Product Owner and Scrum Master.\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "False. A Scrum Master is only necessary when requested or needed.",
+          "isCorrect": false,
+          "explanation": "The Scrum Master is a required accountability of every Scrum Team."
+        },
+        {
+          "label": "B",
+          "text": "True. Each must be a full-time member on the Scrum Team.",
+          "isCorrect": false,
+          "explanation": "Scrum does not require full-time membership."
+        },
+        {
+          "label": "C",
+          "text": "True. Their participation and availability will impact the outcomes produced by the Scrum Team.",
+          "isCorrect": true,
+          "explanation": "Both are required, and their participation and availability affect outcomes."
+        },
+        {
+          "label": "D",
+          "text": "False. If a Product Owner is unavailable, he/she can be replaced by a Business Analyst.",
+          "isCorrect": false,
+          "explanation": "The Product Owner cannot be replaced by a Business Analyst."
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "theme": "organisation",
+      "source": "ditectrev",
+      "question": "True or False: Collaboration issues and technical dependencies between multiple Scrum Teams working on the same product can be fully resolved by using the correct version control tools.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True.",
+          "isCorrect": false,
+          "explanation": "Tools help, but collaboration and dependencies require people working together."
+        },
+        {
+          "label": "B",
+          "text": "False.",
+          "isCorrect": true,
+          "explanation": "No tool can fully resolve collaboration issues and dependencies between teams."
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "During the Sprint Retrospective, the team is discussing the quality issues that prevented the team from delivering a releasable Increment at the end of the Sprint. The Developers do, however, mention that they were able to achieve a high velocity. What are the best two responses for Steven, their Scrum Master, to take?\n(choose the best two answers)",
+      "expectedAnswers": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Stress the value of working software over measured velocity.",
+          "isCorrect": true,
+          "explanation": "Working, releasable software matters more than velocity."
+        },
+        {
+          "label": "B",
+          "text": "Agree and acknowledge the Developers' hard work, so they will be motivated to do even more in the next Sprint.",
+          "isCorrect": false,
+          "explanation": "Praising velocity reinforces the wrong focus."
+        },
+        {
+          "label": "C",
+          "text": "Acknowledge the hard work but remind the Developers that they need to improve in order to do even more in the next Sprint.",
+          "isCorrect": false,
+          "explanation": "Pushing for more velocity ignores the quality problem."
+        },
+        {
+          "label": "D",
+          "text": "Facilitate a discussion on how to improve the quality to a level high enough for the Increment to be releasable, even if the measured velocity drops in the next Sprint.",
+          "isCorrect": true,
+          "explanation": "Improving quality to make the Increment releasable is the priority, even if velocity drops."
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "Steven, who is a Scrum Master, on one of the Scrum Teams has approached you asking for advice. Their Daily Scrum requires more than 15 minutes and the team has suggested dividing themselves into two separate teams in order to stay within the time box. As another Scrum Master, what would be the best response?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Agree — this is an appropriate solution to the problem.",
+          "isCorrect": false,
+          "explanation": "Splitting the team may not address the root cause."
+        },
+        {
+          "label": "B",
+          "text": "Disagree — as the root cause may not be that the team is too big.",
+          "isCorrect": false,
+          "explanation": "Disagreeing without knowing the context is premature."
+        },
+        {
+          "label": "C",
+          "text": "Unsure — dividing a team into two cannot be decided based on this information. You offer to observe.",
+          "isCorrect": true,
+          "explanation": "More information is needed before deciding; observing helps understand the root cause."
+        },
+        {
+          "label": "D",
+          "text": "Agree — You agree that dividing the team into two is a good strategy to allow the teams to learn how to run Daily Scrums quickly and effectively. Once they've learned to limit the Daily Scrum to 15 minutes, you can merge the teams again.",
+          "isCorrect": false,
+          "explanation": "Splitting and merging teams to learn timeboxing is disruptive and not justified."
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "theme": "organisation",
+      "source": "ditectrev",
+      "question": "True or False: During the Sprint Review of a scaled development effort, each Scrum Team should demonstrate its individual Increment in a separate branch of the code.",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "True.",
+          "isCorrect": false,
+          "explanation": "At the Sprint Review, teams present a single integrated Increment, not separate branches."
+        },
+        {
+          "label": "B",
+          "text": "False.",
+          "isCorrect": true,
+          "explanation": "Teams working on the same product inspect one integrated Increment together."
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "In what ways does the Scrum Master keep the Developers working at their highest level of productivity?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "By removing impediments that hinder the Developers and facilitating their decisions.",
+          "isCorrect": true,
+          "explanation": "Removing impediments and facilitating decisions helps the Developers stay productive."
+        },
+        {
+          "label": "B",
+          "text": "By helping the Developers with user acceptance tests and tracking defects.",
+          "isCorrect": false,
+          "explanation": "The Scrum Master is not a tester or defect tracker."
+        },
+        {
+          "label": "C",
+          "text": "By ensuring each member takes turns speaking at the Daily Scrum and ending the event on time.",
+          "isCorrect": false,
+          "explanation": "The Developers manage their own Daily Scrum."
+        },
+        {
+          "label": "D",
+          "text": "By keeping the Scrum board and burn-down chart updated daily.",
+          "isCorrect": false,
+          "explanation": "Keeping boards and charts up to date is the Developers' job, if they use them."
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "Which of the following statements are true about the Scrum Master role?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "The Scrum Master assigns the tasks to Developers and ensures they are completed within the committed timebox.",
+          "isCorrect": false,
+          "explanation": "The Scrum Master does not assign tasks."
+        },
+        {
+          "label": "B",
+          "text": "The Scrum Master helps those outside the Scrum Team understand which interactions are helpful and teaches the Developers to keep the Scrum meetings within the timebox.",
+          "isCorrect": true,
+          "explanation": "The Scrum Master helps outsiders interact helpfully and teaches the team to respect timeboxes."
+        },
+        {
+          "label": "C",
+          "text": "The Scrum Master is responsible for updating the Scrum board and ensuring team members avoid conflicts.",
+          "isCorrect": false,
+          "explanation": "Updating boards is not the Scrum Master's job, and conflicts are not to be avoided but resolved."
+        },
+        {
+          "label": "D",
+          "text": "At the Sprint Review, the Scrum Master demonstrates the completed Increment and answers any questions from the stakeholders.",
+          "isCorrect": false,
+          "explanation": "The Scrum Team presents the work at the Sprint Review, not the Scrum Master alone."
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "The Developers, some of whom work remotely, typically spend time before the Daily Scrum to setup the meeting rooms and conference calling equipment and tools in order to have their Daily Scrum. How should the Scrum Master handle this situation?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Allow the Developers to self-manage and decide for themselves what to do.",
+          "isCorrect": true,
+          "explanation": "The Developers self-manage and can solve their own logistics."
+        },
+        {
+          "label": "B",
+          "text": "Setup the meeting and tell the Developers that is how it will be done.",
+          "isCorrect": false,
+          "explanation": "Imposing a solution undermines self-management."
+        },
+        {
+          "label": "C",
+          "text": "Ask the Developers to alternate who is responsible for meeting setup.",
+          "isCorrect": false,
+          "explanation": "The Scrum Master should not impose a solution, even a rotation."
+        },
+        {
+          "label": "D",
+          "text": "Inform management and ask them to solve it.",
+          "isCorrect": false,
+          "explanation": "Escalating removes the team's autonomy."
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "A Developer has notified the Scrum Master of a potential data security risk. What action should the Scrum Master take?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Notify the test team.",
+          "isCorrect": false,
+          "explanation": "Scrum has no test team; security is the Scrum Team's responsibility."
+        },
+        {
+          "label": "B",
+          "text": "Add a Product Backlog item to address the security issue.",
+          "isCorrect": false,
+          "explanation": "The Scrum Master does not decide alone; the team should be informed first."
+        },
+        {
+          "label": "C",
+          "text": "Ask the Developer to share the issue with the team as soon as possible.",
+          "isCorrect": true,
+          "explanation": "Encouraging transparency lets the team address the risk together."
+        },
+        {
+          "label": "D",
+          "text": "Wait until the Sprint Retrospective to add security to the Definition of Done.",
+          "isCorrect": false,
+          "explanation": "Waiting delays a potentially serious risk."
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "A Scrum Master is keeping a list of open impediments, but it is growing and he/she has been able to resolve only a small portion of the impediments. Which would be the LEAST helpful technique in this situation?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Consulting with the Developers.",
+          "isCorrect": false,
+          "explanation": "Consulting the team is helpful."
+        },
+        {
+          "label": "B",
+          "text": "Prioritizing the list and working on them in order.",
+          "isCorrect": false,
+          "explanation": "Prioritizing helps address the most impactful impediments first."
+        },
+        {
+          "label": "C",
+          "text": "Arranging a triage meeting with all project managers.",
+          "isCorrect": true,
+          "explanation": "There are no project managers in Scrum; this would be the least helpful option."
+        },
+        {
+          "label": "D",
+          "text": "Alerting management to the impediments and their impact.",
+          "isCorrect": false,
+          "explanation": "Alerting management helps remove organizational impediments."
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "Your organization has formed a new Scrum Team and has assigned you as the Scrum Master. In what ways would you help the team start?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Ensure the Scrum Team members have compatible personalities, have the tech leads clarify the expectations and responsibilities of each role, and propose a performance rewards system.",
+          "isCorrect": false,
+          "explanation": "Personalities, tech leads and individual rewards undermine self-management and team collaboration."
+        },
+        {
+          "label": "B",
+          "text": "Have the Scrum Team members introduce their background experience with each other, ask the Product Owner to discuss the product and answer questions, and ensure the team understands the need for a Definition of Done.",
+          "isCorrect": true,
+          "explanation": "Getting to know each other, understanding the product and having a Definition of Done help a new team start."
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "What guideline should the Scrum Master provide if the Product Owner asks how estimations should be made in Scrum?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Estimates must be made in Story Points.",
+          "isCorrect": false,
+          "explanation": "Scrum does not prescribe story points."
+        },
+        {
+          "label": "B",
+          "text": "Estimates must be in relative units.",
+          "isCorrect": false,
+          "explanation": "Scrum does not prescribe relative units."
+        },
+        {
+          "label": "C",
+          "text": "The Developers are responsible for estimates.",
+          "isCorrect": true,
+          "explanation": "The Developers who will do the work are responsible for the sizing."
+        },
+        {
+          "label": "D",
+          "text": "Estimates are made by the Product Owner.",
+          "isCorrect": false,
+          "explanation": "The Product Owner does not size the work."
+        },
+        {
+          "label": "E",
+          "text": "Estimates must follow the Fibonacci Sequence.",
+          "isCorrect": false,
+          "explanation": "Scrum does not prescribe the Fibonacci sequence."
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "The Developers discover that they don't have the tools and infrastructure to make each selected Product Backlog item done. What is the most appropriate action for the Scrum Master to take?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Stop the Sprint and have the Developers work on the infrastructure before continuing.",
+          "isCorrect": false,
+          "explanation": "Stopping the Sprint is not appropriate; only the Product Owner can cancel a Sprint."
+        },
+        {
+          "label": "B",
+          "text": "Encourage the Product Owner to accept partially done Increments and complete the work in the Hardening Sprint.",
+          "isCorrect": false,
+          "explanation": "Partially done Increments are not Increments, and Hardening Sprints do not exist."
+        },
+        {
+          "label": "C",
+          "text": "Coach the Developers to improve their skills, tools and infrastructure over time and establish a Definition of Done that is actually possible to achieve given the current circumstances.",
+          "isCorrect": true,
+          "explanation": "The team defines an achievable Definition of Done and improves it over time along with its skills and tools."
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "What action can the Scrum Master take to ensure communication between the Developers and Product Owner is effective?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Ensure all communication goes through the Scrum Master first.",
+          "isCorrect": false,
+          "explanation": "Routing all communication through the Scrum Master prevents direct collaboration."
+        },
+        {
+          "label": "B",
+          "text": "Teach the Product Owner to talk in terms of technology and technical requirements.",
+          "isCorrect": false,
+          "explanation": "The Product Owner should talk in terms of value, not technology."
+        },
+        {
+          "label": "C",
+          "text": "Observe the communications between them and facilitate discussions if needed or by request.",
+          "isCorrect": true,
+          "explanation": "Observing and facilitating when needed fosters direct, effective collaboration."
+        },
+        {
+          "label": "D",
+          "text": "Translate the technologies used by the Developers in order for the Product Owner to make decisions.",
+          "isCorrect": false,
+          "explanation": "Acting as a translator prevents direct collaboration."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "theme": "scrum-master",
+      "source": "ditectrev",
+      "question": "What would be typical Scrum Master activities during the Sprint?\n(choose the best answer)",
+      "expectedAnswers": 1,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Monitor the progress of the Developers and assigning tasks.",
+          "isCorrect": false,
+          "explanation": "The Developers monitor their own progress and choose their own tasks."
+        },
+        {
+          "label": "B",
+          "text": "Remove impediments and facilitating inspection and adaptation opportunities as requested or needed.",
+          "isCorrect": true,
+          "explanation": "Removing impediments and facilitating inspection and adaptation are typical Scrum Master services."
+        },
+        {
+          "label": "C",
+          "text": "Avoiding conflicts and escalating to the line managers if conflicts occur.",
+          "isCorrect": false,
+          "explanation": "Conflicts should be resolved, not avoided or escalated."
+        }
+      ]
     }
   ]
 }
