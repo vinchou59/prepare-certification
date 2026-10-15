@@ -62,7 +62,7 @@ Le score SHALL être le nombre de réponses justes sur le nombre de questions du
 ### Requirement: Seuil de réussite officiel
 Chaque certification MAY avoir un seuil de réussite connu, en pourcentage. Lorsqu'il est connu, le système SHALL indiquer si le score atteint ce seuil (score ≥ seuil). Lorsqu'il est inconnu, le système MUST NOT afficher de seuil ni de verdict de réussite.
 
-Seuils actuels : PSM II, PSPO I, PSK I, PSM-AI et CCA Agile à 85 %.
+Seuils actuels : PSM I, PSM II, PSPO I, PSK I, PSM-AI et CCA Agile à 85 %.
 
 #### Scenario: Seuil atteint
 - **GIVEN** un quiz PSPO I de 20 questions

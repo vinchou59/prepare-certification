@@ -1,5 +1,18 @@
 [
   {
+    "id": "PSM1", "shortName": "PSM I", "fullName": "Professional Scrum Master I", "file": "questions_psm1.json", "passMark": 85,
+    "exam": { "questions": 80, "minutes": 60 },
+    "themes": [
+      { "id": "theorie", "label": "Théorie et valeurs Scrum" },
+      { "id": "equipe", "label": "Équipe et responsabilités" },
+      { "id": "evenements", "label": "Événements" },
+      { "id": "artefacts", "label": "Artefacts et engagements" },
+      { "id": "produit", "label": "Product Owner et valeur produit" },
+      { "id": "organisation", "label": "Organisation et passage à l'échelle" },
+      { "id": "scrum-master", "label": "Posture du Scrum Master" }
+    ]
+  },
+  {
     "id": "PSM2", "shortName": "PSM II", "fullName": "Professional Scrum Master II", "file": "questions_psm2.json", "passMark": 85,
     "exam": { "questions": 30, "minutes": 90 },
     "themes": [

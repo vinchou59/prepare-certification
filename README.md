@@ -1,10 +1,10 @@
 # prepare-certification
 
-Quiz d'entraînement aux certifications agiles : PSM II, PSPO I, PSK I, PSM-AI et CCA Agile.
+Quiz d'entraînement aux certifications agiles : PSM I, PSM II, PSPO I, PSK I, PSM-AI et CCA Agile.
 
 **Site : https://vinchou59.github.io/prepare-certification/**
 
-Les questions proviennent d'examens réellement passés ou fait passer : aucune n'est générée.
+Les questions proviennent d'examens réellement passés ou fait passer : aucune n'est générée. Certaines sont reprises du dépôt public [Ditectrev](https://github.com/Ditectrev) (PSM I, une partie de PSPO I) : elles portent un badge « Ditectrev » dans le quiz, et leurs réponses ont été vérifiées par l'auteur.
 
 Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur téléphone, sans installation ni compte. Le bouton « Partager » de l'accueil affiche le lien et un QR code (bibliothèque [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator), MIT, incluse dans `site/vendor/`).
 
@@ -15,6 +15,7 @@ Le quiz fonctionne entièrement dans le navigateur, sur ordinateur comme sur té
 
 | Certification | Examen officiel | Seuil |
 | --- | --- | --- |
+| PSM I | 80 questions, 60 min | 85 % |
 | PSM II | 30 questions, 90 min | 85 % |
 | PSPO I | 80 questions, 60 min | 85 % |
 | PSK I | 45 questions, 60 min | 85 % |

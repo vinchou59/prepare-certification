@@ -45,7 +45,7 @@ Par défaut, une question vient d'un examen passé ou fait passer par l'auteur. 
 - **THEN** la question est signalée comme invalide
 
 ### Requirement: Langue et mise en forme des questions
-Les textes des questions et des choix SHALL rester dans la langue de l'examen officiel : en anglais pour les certifications Scrum.org (PSM II, PSPO I, PSK I, PSM-AI), en français pour CCA Agile. Les retours à la ligne (`\n`) dans les textes SHALL être conservés à l'affichage.
+Les textes des questions et des choix SHALL rester dans la langue de l'examen officiel : en anglais pour les certifications Scrum.org (PSM I, PSM II, PSPO I, PSK I, PSM-AI), en français pour CCA Agile. Les retours à la ligne (`\n`) dans les textes SHALL être conservés à l'affichage.
 
 #### Scenario: Consigne sur une seconde ligne
 - **GIVEN** une question dont le texte se termine par `\n(choose the best two answers)`
