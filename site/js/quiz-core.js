@@ -246,6 +246,11 @@ export function masterySummary(questions, progress, now = Date.now()) {
 // ---------- Thèmes (openspec/specs/question-bank, progress-tracking) ----------
 
 /** Questions d'un thème ; toutes si le thème est vide. */
+/** Apparence du site : "auto" (thème du système), "light" ou "dark" ; toute autre valeur vaut "auto". */
+export function normalizeAppearance(value) {
+  return value === "light" || value === "dark" ? value : "auto";
+}
+
 /** Ordre d'affichage des certifications : ordre du fichier, celles sans questions disponibles en dernier. */
 export function orderCertifications(certifications) {
   return [...certifications.filter((c) => c.questionCount), ...certifications.filter((c) => !c.questionCount)];

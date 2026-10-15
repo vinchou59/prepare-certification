@@ -1,7 +1,7 @@
 import {
   seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, questionView,
   historyEntry, recordResult, questionsToRework, recentResults, examFormat,
-  questionProgress, masterySummary, filterByTheme, themeStats, weakThemes, orderCertifications
+  questionProgress, masterySummary, filterByTheme, themeStats, weakThemes, orderCertifications, normalizeAppearance
 } from "./quiz-core.js";
 
 (() => {
@@ -13,6 +13,8 @@ import {
     training: { label: "Entraînement", help: "La correction et les explications s'affichent après chaque question. Vos erreurs à revoir et les questions jamais vues passent en priorité." },
     exam: { label: "Examen", help: "Format de l'examen officiel, compte à rebours, navigation libre, correction à la fin." }
   };
+
+  const APPEARANCES = [["auto", "Automatique"], ["light", "Clair"], ["dark", "Sombre"]];
 
   const store = {
     get(key, fallback) {
@@ -32,7 +34,8 @@ import {
       size: store.get("size", 10),
       mode: store.get("mode", "training"),
       shuffle: store.get("shuffle", true),
-      theme: store.get("theme", "") // "" = tous les thèmes
+      theme: store.get("theme", ""), // "" = tous les thèmes
+      appearance: normalizeAppearance(store.get("appearance", "auto"))
     },
     quiz: null,      // { certification, questions } : vues sans les réponses
     share: false,
@@ -463,7 +466,8 @@ import {
       </div>
       ${shareView()}
       ${progressView(cert)}
-      ${historyView(cert)}`;
+      ${historyView(cert)}
+      ${appearanceView()}`;
   }
 
   function themePickerView(cert) {
@@ -799,6 +803,23 @@ import {
       </section>`;
   }
 
+  function appearanceView() {
+    const options = APPEARANCES.map(([key, label]) => `
+      <button type="button" role="radio" data-appearance="${key}" aria-checked="${key === state.settings.appearance}">${label}</button>`).join("");
+    return `
+      <div class="appearance">
+        <span class="appearance-label" id="appearance-label">Apparence</span>
+        <div class="segmented small" role="radiogroup" aria-labelledby="appearance-label">${options}</div>
+      </div>`;
+  }
+
+  // Thème clair ou sombre imposé, ou celui du système en mode Automatique
+  function applyAppearance() {
+    const a = state.settings.appearance;
+    if (a === "auto") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = a;
+  }
+
   function shareView() {
     const sh = state.share;
     if (!sh) return "";
@@ -836,6 +857,13 @@ import {
     if (d.size !== undefined) { state.settings.size = Number(d.size); render(); return; }
     if (d.mode) { state.settings.mode = d.mode; render(); return; }
     if (d.shuffle) { state.settings.shuffle = d.shuffle === "on"; render(); return; }
+    if (d.appearance) {
+      state.settings.appearance = normalizeAppearance(d.appearance);
+      store.set("appearance", state.settings.appearance);
+      applyAppearance();
+      render();
+      return;
+    }
     if (d.theme !== undefined) { state.settings.theme = d.theme; render(); return; }
     if (d.trainTheme) {
       Object.assign(state.settings, { theme: d.trainTheme, mode: "training" });
@@ -902,5 +930,6 @@ import {
   });
 
   render();
+  applyAppearance();
   loadCertifications();
 })();

@@ -18,8 +18,9 @@
   color-scheme: light;
 }
 
+/* Thème sombre : celui du système en mode Automatique, ou imposé par le réglage Apparence (data-theme sur <html>) */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #151A20;
     --surface: #1E252D;
     --ink: #E5E9ED;
@@ -34,6 +35,22 @@
     --bad-soft: #3D2320;
     color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+  --paper: #151A20;
+  --surface: #1E252D;
+  --ink: #E5E9ED;
+  --muted: #9CA7B2;
+  --line: #34404B;
+  --accent: #8EA3F2;
+  --accent-soft: #263055;
+  --on-accent: #10172E;
+  --good: #72C796;
+  --good-soft: #1D3428;
+  --bad: #F08C7F;
+  --bad-soft: #3D2320;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -149,6 +166,11 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 .segmented button[aria-checked="true"] { background: var(--ink); color: var(--paper); }
 
 .mode-help { color: var(--muted); font-size: 15px; margin: 8px 0 0; }
+
+/* Réglage Apparence, discret en bas de l'accueil */
+.appearance { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 40px; padding-top: 20px; border-top: 1.5px solid var(--line); }
+.appearance-label { color: var(--muted); font-size: 15px; font-weight: 700; }
+.segmented.small button { min-height: 32px; padding: 0 14px; font-size: 14px; }
 
 .legend-like { font-family: var(--body); font-size: 17px; font-weight: 700; letter-spacing: 0; margin: 0 0 10px; }
 .exam-facts { display: flex; flex-wrap: wrap; gap: 8px; }

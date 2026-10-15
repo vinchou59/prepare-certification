@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
   seededRandom, drawQuestions, normalizeAnswers, isCorrect,
-  questionView, createQuiz, checkQuestion, finishQuiz, orderCertifications
+  questionView, createQuiz, checkQuestion, finishQuiz, orderCertifications, normalizeAppearance
 } from "../site/js/quiz-core.js";
 
 const choice = (label, isCorrect, explanation = "x") => ({ label, text: `Choice ${label}`, isCorrect, explanation });
@@ -93,4 +93,10 @@ test("ordre des certifications : celui du fichier, les indisponibles en dernier"
   ];
   assert.deepEqual(orderCertifications(certs).map((c) => c.id), ["A", "C", "E", "B", "D"]);
   assert.deepEqual(certs.map((c) => c.id), ["A", "B", "C", "D", "E"]); // tableau d'origine intact
+});
+
+test("apparence : clair, sombre ou automatique par défaut", () => {
+  assert.equal(normalizeAppearance("light"), "light");
+  assert.equal(normalizeAppearance("dark"), "dark");
+  for (const v of ["auto", undefined, null, "", "bleu", 3]) assert.equal(normalizeAppearance(v), "auto");
 });
