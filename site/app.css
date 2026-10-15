@@ -247,6 +247,17 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 .btn.quiet.small { color: var(--accent); }
 
 .q-theme { display: block; font-family: var(--body, inherit); font-weight: 400; font-size: 14px; color: var(--muted); white-space: normal; }
+.q-source {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  vertical-align: 1px;
+}
 
 @media (max-width: 560px) {
   .theme-row { grid-template-columns: minmax(0, 1fr) auto; row-gap: 4px; }

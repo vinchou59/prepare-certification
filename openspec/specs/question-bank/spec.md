@@ -26,6 +26,24 @@ Pour chaque question, `expectedAnswers` MUST être égal au nombre de choix marq
 - **WHEN** la banque de questions est vérifiée
 - **THEN** la question est signalée comme incohérente
 
+### Requirement: Origine des questions
+Par défaut, une question vient d'un examen passé ou fait passer par l'auteur. Une question reprise d'une source externe SHALL porter un champ `source` : un identifiant en minuscules (par exemple `"ditectrev"` pour le dépôt GitHub Ditectrev). Avant d'être ajoutée, une question externe MUST être comparée aux questions existantes : celle qui pose la même question, même avec une formulation différente, n'est pas ajoutée. Ses explications SHALL être rédigées comme celles de l'auteur, et ses bonnes réponses validées par l'auteur.
+
+#### Scenario: Badge de source
+- **GIVEN** une question avec `"source": "ditectrev"`
+- **WHEN** elle est affichée, en quiz comme dans la revue des réponses
+- **THEN** un badge « Ditectrev » apparaît à côté de son thème
+
+#### Scenario: Question de l'auteur
+- **GIVEN** une question sans champ `source`
+- **WHEN** elle est affichée
+- **THEN** aucun badge de source n'apparaît
+
+#### Scenario: Source mal formée
+- **GIVEN** une question dont la `source` est vide ou n'est pas un identifiant en minuscules
+- **WHEN** la banque de questions est vérifiée
+- **THEN** la question est signalée comme invalide
+
 ### Requirement: Langue et mise en forme des questions
 Les textes des questions et des choix SHALL rester dans la langue de l'examen officiel : en anglais pour les certifications Scrum.org (PSM II, PSPO I, PSK I, PSM-AI), en français pour CCA Agile. Les retours à la ligne (`\n`) dans les textes SHALL être conservés à l'affichage.
 

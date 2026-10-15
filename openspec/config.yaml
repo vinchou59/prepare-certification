@@ -13,6 +13,8 @@ context: |
   L'interface ne doit jamais afficher les bonnes réponses ni les explications avant la correction.
   Les questions proviennent d'examens réellement passés ou fait passer par l'auteur : ne jamais générer ni inventer de question ;
   on peut corriger une question existante (réponse, explication, forme) avec la validation de l'auteur.
+  Exception : l'auteur peut demander d'importer des questions d'une source externe identifiée ; elles portent alors
+  un champ `source` (badge dans l'interface) et les doublons avec les questions existantes ne sont pas importés.
   Les questions sont dans la langue de l'examen officiel (anglais pour Scrum.org, français pour CCA Agile) ; l'interface est en français.
   Tests : lanceur intégré de Node.js (npm test), à faire évoluer avec chaque changement de comportement ;
   la publication GitHub Actions est bloquée si un test échoue.

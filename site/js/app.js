@@ -651,7 +651,19 @@ import {
 
   function themeTag(q) {
     const label = themeLabel(state.quiz.certification, q.theme);
-    return label ? `<span class="q-theme">${esc(label)}</span>` : "";
+    const source = sourceTag(q);
+    return label || source ? `<span class="q-theme">${esc(label)}${source}</span>` : "";
+  }
+
+  // Questions reprises d'une source externe : badge pour les distinguer des questions de l'auteur
+  const SOURCES = {
+    ditectrev: { label: "Ditectrev", title: "Question issue du dépôt Ditectrev (github.com/Ditectrev), pas d'un examen passé par l'auteur" }
+  };
+
+  function sourceTag(q) {
+    if (!q.source) return "";
+    const s = SOURCES[q.source] || { label: q.source, title: `Question issue de la source externe « ${q.source} »` };
+    return `<span class="q-source" title="${esc(s.title)}">${esc(s.label)}</span>`;
   }
 
   // Lien vers une issue GitHub pré-remplie ; sans lettres, car l'ordre des réponses peut changer
@@ -662,7 +674,7 @@ import {
     const title = `[${cert.shortName}] Question ${q.id} : ${text.replace(/\s+/g, " ").slice(0, 60)}${text.length > 60 ? "…" : ""}`;
     const body = [
       `**Certification** : ${cert.shortName} (${cert.file})`,
-      `**Question n°** : ${q.id}`,
+      `**Question n°** : ${q.id}${q.source ? ` (source : ${q.source})` : ""}`,
       "",
       "> " + text.slice(0, 1000).replace(/\n/g, "\n> "),
       "",

@@ -77,3 +77,11 @@ test("fin de quiz idempotente", () => {
   assert.equal(second, first);
   assert.equal(second.score, 2);
 });
+
+test("la source externe d'une question est conservée dans la vue et la correction", () => {
+  const external = { ...sample()[0], source: "ditectrev" };
+  assert.equal(questionView(external).source, "ditectrev");
+  assert.equal(questionView(sample()[0]).source, null);
+  const quiz = createQuiz({ certification: cert, questions: [external], now: 0 });
+  assert.equal(finishQuiz(quiz, { 1: ["A"] }, 1000).review[0].source, "ditectrev");
+});

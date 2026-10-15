@@ -52,7 +52,7 @@ function corrections(question) {
 /** Vue d'une question sans les réponses : c'est tout ce que l'interface affiche avant correction. */
 export function questionView(q) {
   return {
-    id: q.id, question: q.question, expectedAnswers: q.expectedAnswers, theme: q.theme ?? null,
+    id: q.id, question: q.question, expectedAnswers: q.expectedAnswers, theme: q.theme ?? null, source: q.source ?? null,
     choices: q.choices.map((c) => ({ label: c.label, text: c.text }))
   };
 }
@@ -109,7 +109,7 @@ export function finishQuiz(quiz, answers = {}, now = Date.now()) {
   const review = quiz.questions.map((q) => {
     const given = normalizeAnswers(answers[q.id] ?? answers[String(q.id)]);
     return {
-      id: q.id, question: q.question, expectedAnswers: q.expectedAnswers, theme: q.theme ?? null,
+      id: q.id, question: q.question, expectedAnswers: q.expectedAnswers, theme: q.theme ?? null, source: q.source ?? null,
       correct: isCorrect(q, given), given, choices: corrections(q)
     };
   });

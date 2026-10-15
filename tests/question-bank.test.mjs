@@ -53,6 +53,7 @@ for (const cert of certifications) {
       texts.add(key);
       if (!themes.has(q.theme)) problems.push(`${where} : thème « ${q.theme ?? ""} » absent de certifications.json`);
       used.add(q.theme);
+      if ("source" in q && !(typeof q.source === "string" && /^[a-z0-9-]+$/.test(q.source))) problems.push(`${where} : source « ${q.source} » invalide (identifiant en minuscules attendu)`);
       if (!Array.isArray(q.choices) || q.choices.length < 2) { problems.push(`${where} : moins de 2 choix`); continue; }
       const correct = q.choices.filter((c) => c.isCorrect === true).length;
       if (correct === 0) problems.push(`${where} : aucune bonne réponse`);
