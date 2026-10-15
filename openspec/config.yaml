@@ -3,7 +3,7 @@ schema: spec-driven
 # Project context: constraints an agent cannot infer from the code.
 context: |
   Rédiger tous les artefacts OpenSpec (proposal, design, specs, tasks) en français.
-  Application d'entraînement aux certifications agiles (Scrum.org PSM I, PSM II, PSPO I, PSK I, PSM-AI, CCA Agile),
+  Application d'entraînement aux certifications agiles (Scrum.org PSM I, PSM II, PSPO I, PSD I, PSK I, PSM-AI, CCA Agile),
   publiée comme site statique sur GitHub Pages (https://vinchou59.github.io/prepare-certification/), dépôt public.
   Pas de serveur, pas de comptes : tout s'exécute dans le navigateur, sur ordinateur et téléphone.
   Stack : HTML/CSS/JavaScript vanilla en modules ES, sans framework ni étape de build (dossier site/).

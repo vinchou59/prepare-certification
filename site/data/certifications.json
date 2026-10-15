@@ -26,6 +26,21 @@
     ]
   },
   {
+    "id": "PSD1", "shortName": "PSD I", "fullName": "Professional Scrum Developer I", "file": "questions_psd1.json", "passMark": 85,
+    "exam": { "questions": 80, "minutes": 60 },
+    "themes": [
+      { "id": "theorie", "label": "Théorie et valeurs Scrum" },
+      { "id": "equipe", "label": "Équipe et responsabilités" },
+      { "id": "evenements", "label": "Événements" },
+      { "id": "artefacts", "label": "Artefacts et engagements" },
+      { "id": "organisation", "label": "Organisation et passage à l'échelle" },
+      { "id": "tests", "label": "Tests et TDD" },
+      { "id": "integration", "label": "Intégration et livraison continues" },
+      { "id": "architecture", "label": "Architecture et conception" },
+      { "id": "qualite", "label": "Qualité du code et dette technique" }
+    ]
+  },
+  {
     "id": "PSK", "shortName": "PSK I", "fullName": "Professional Scrum with Kanban", "file": "questions_psk.json", "passMark": 85,
     "exam": { "questions": 45, "minutes": 60 },
     "themes": [
