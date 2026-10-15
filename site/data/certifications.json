@@ -26,6 +26,18 @@
     ]
   },
   {
+    "id": "PSPO1", "shortName": "PSPO I", "fullName": "Professional Scrum Product Owner I", "file": "questions_pspo1.json", "passMark": 85,
+    "exam": { "questions": 80, "minutes": 60 },
+    "themes": [
+      { "id": "theorie", "label": "Théorie et valeurs Scrum" },
+      { "id": "equipe", "label": "Équipe et responsabilités" },
+      { "id": "evenements", "label": "Événements" },
+      { "id": "artefacts", "label": "Artefacts et engagements" },
+      { "id": "produit", "label": "Product Owner et valeur produit" },
+      { "id": "organisation", "label": "Organisation et passage à l'échelle" }
+    ]
+  },
+  {
     "id": "PSD1", "shortName": "PSD I", "fullName": "Professional Scrum Developer I", "file": "questions_psd1.json", "passMark": 85,
     "exam": { "questions": 80, "minutes": 60 },
     "themes": [
@@ -52,7 +64,16 @@
     ]
   },
   {
-    "id": "CCAAGILE", "shortName": "CCA Agile", "fullName": "Certified Agile Coach", "file": "questions_cca_agile.json", "passMark": 85,
+    "id": "PSMAI", "shortName": "PSM-AI", "fullName": "Professional Scrum Master with AI", "file": "questions_psmai.json", "passMark": 85,
+    "exam": { "questions": 40, "minutes": 60 },
+    "themes": [
+      { "id": "ia-bases", "label": "Fondamentaux de l'IA" },
+      { "id": "ia-scrum", "label": "L'IA dans la pratique Scrum" },
+      { "id": "ia-responsable", "label": "IA responsable" }
+    ]
+  },
+  {
+    "id": "CCAAGILE", "shortName": "CCA Agile", "fullName": "Centre de Certification Agile - Agile", "file": "questions_cca_agile.json", "passMark": 85,
     "exam": { "questions": 60, "minutes": 60 },
     "themes": [
       { "id": "valeurs", "label": "Valeurs et état d'esprit" },
@@ -61,27 +82,6 @@
       { "id": "collaboration", "label": "Collaboration et communication" },
       { "id": "amelioration", "label": "Amélioration continue et apprentissage" },
       { "id": "outils", "label": "Outils et pratiques" }
-    ]
-  },
-  {
-    "id": "PSPO1", "shortName": "PSPO I", "fullName": "Professional Scrum Product Owner I", "file": "questions_pspo1.json", "passMark": 85,
-    "exam": { "questions": 80, "minutes": 60 },
-    "themes": [
-      { "id": "theorie", "label": "Théorie et valeurs Scrum" },
-      { "id": "equipe", "label": "Équipe et responsabilités" },
-      { "id": "evenements", "label": "Événements" },
-      { "id": "artefacts", "label": "Artefacts et engagements" },
-      { "id": "produit", "label": "Product Owner et valeur produit" },
-      { "id": "organisation", "label": "Organisation et passage à l'échelle" }
-    ]
-  },
-  {
-    "id": "PSMAI", "shortName": "PSM-AI", "fullName": "Professional Scrum Master with AI", "file": "questions_psmai.json", "passMark": 85,
-    "exam": { "questions": 40, "minutes": 60 },
-    "themes": [
-      { "id": "ia-bases", "label": "Fondamentaux de l'IA" },
-      { "id": "ia-scrum", "label": "L'IA dans la pratique Scrum" },
-      { "id": "ia-responsable", "label": "IA responsable" }
     ]
   }
 ]

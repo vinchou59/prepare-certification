@@ -1,7 +1,7 @@
 import {
   seededRandom, createQuiz, checkQuestion, finishQuiz as computeResult, questionView,
   historyEntry, recordResult, questionsToRework, recentResults, examFormat,
-  questionProgress, masterySummary, filterByTheme, themeStats, weakThemes
+  questionProgress, masterySummary, filterByTheme, themeStats, weakThemes, orderCertifications
 } from "./quiz-core.js";
 
 (() => {
@@ -123,10 +123,10 @@ import {
       return;
     }
     const errors = [];
-    state.certifications = await Promise.all(certs.map(async (c) => {
+    state.certifications = orderCertifications(await Promise.all(certs.map(async (c) => {
       try { return { ...c, questionCount: (await loadBank(c.file)).length }; }
       catch (e) { errors.push(e.message); return { ...c, questionCount: null }; }
-    }));
+    })));
     const usable = state.certifications.filter((c) => c.questionCount);
     if (!usable.some((c) => c.id === state.settings.certification)) {
       state.settings.certification = usable.length ? usable[0].id : null;
@@ -411,12 +411,15 @@ import {
     const s = state.settings;
     const cert = state.certifications.find((c) => c.id === s.certification);
     const rework = reworkIds(cert);
+    // Pastilles compactes : nom court et nombre de questions ; le nom complet de la certification choisie s'affiche dessous
     const certs = state.certifications.map((c) => `
-      <button type="button" role="radio" class="cert" data-cert="${esc(c.id)}" aria-checked="${c.id === s.certification}" ${c.questionCount ? "" : "disabled"}>
+      <button type="button" role="radio" class="cert" data-cert="${esc(c.id)}" aria-checked="${c.id === s.certification}"
+        aria-label="${esc(`${c.shortName}, ${c.fullName}, ${c.questionCount ? plural(c.questionCount, "question", "questions") : "indisponible"}`)}"
+        title="${esc(c.fullName)}" ${c.questionCount ? "" : "disabled"}>
         <span class="cert-name">${esc(c.shortName)}</span>
-        <span class="cert-full">${esc(c.fullName)}</span>
-        <span class="cert-count">${c.questionCount ? plural(c.questionCount, "question", "questions") : "indisponible"}</span>
+        <span class="cert-count">${c.questionCount ? c.questionCount : "indisponible"}</span>
       </button>`).join("");
+    const certDetail = cert ? `<p class="cert-detail">${esc(cert.fullName)} · ${plural(cert.questionCount, "question", "questions")}</p>` : "";
 
     const sizes = SIZES.map((n) => `
       <button type="button" role="radio" data-size="${n}" aria-checked="${n === s.size}">${n === 0 ? "Toutes" : n}</button>`).join("");
@@ -431,6 +434,7 @@ import {
       <fieldset class="field">
         <legend>Certification</legend>
         <div class="cert-list" role="radiogroup" aria-label="Certification">${certs}</div>
+        ${certDetail}
       </fieldset>
       <fieldset class="field">
         <legend>Mode</legend>

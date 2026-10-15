@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
   seededRandom, drawQuestions, normalizeAnswers, isCorrect,
-  questionView, createQuiz, checkQuestion, finishQuiz
+  questionView, createQuiz, checkQuestion, finishQuiz, orderCertifications
 } from "../site/js/quiz-core.js";
 
 const choice = (label, isCorrect, explanation = "x") => ({ label, text: `Choice ${label}`, isCorrect, explanation });
@@ -84,4 +84,13 @@ test("la source externe d'une question est conservée dans la vue et la correcti
   assert.equal(questionView(sample()[0]).source, null);
   const quiz = createQuiz({ certification: cert, questions: [external], now: 0 });
   assert.equal(finishQuiz(quiz, { 1: ["A"] }, 1000).review[0].source, "ditectrev");
+});
+
+test("ordre des certifications : celui du fichier, les indisponibles en dernier", () => {
+  const certs = [
+    { id: "A", questionCount: 10 }, { id: "B", questionCount: null },
+    { id: "C", questionCount: 5 }, { id: "D", questionCount: 0 }, { id: "E", questionCount: 3 }
+  ];
+  assert.deepEqual(orderCertifications(certs).map((c) => c.id), ["A", "C", "E", "B", "D"]);
+  assert.deepEqual(certs.map((c) => c.id), ["A", "B", "C", "D", "E"]); // tableau d'origine intact
 });
